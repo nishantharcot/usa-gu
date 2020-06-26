@@ -1,38 +1,14 @@
 <template>
   <div>
-    <v-row id="screen1" class="pa-0 ma-0">
-      <v-carousel
-        class="carouselBackground"
-        height="800"
-        cycle
-        hide-delimiter-background
-      >
-        <v-carousel-item
-          v-for="(item, i) in screen1Data"
-          :key="i"
-          reverse-transition="fade-transition"
-          transition="fade-transition"
-        >
-          <v-row class="gapClass"></v-row>
-          <v-row>
-            <v-col cols="1"></v-col>
-            <v-col cols="5">
-              <h1 class="mainHeading">
-                {{ item.text }}
-              </h1>
-              <p>
-                A small river named Durden flows by their place and supplies it
-                with the necessary regililia
-              </p>
-              <v-btn x-large color="primary" rounded>
-                Contact Us
-              </v-btn>
-            </v-col>
-            <v-col cols="1"></v-col>
-          </v-row>
-          <v-row class="gapClass"></v-row>
-        </v-carousel-item>
-      </v-carousel>
+    <v-row id="screen1" app>
+      <v-col id="screen1-content" cols="6" sm="12">
+        <h1 id="mainHeading" class="display-1 centerClass">
+          EDUCATION NEEDS COMPLETE SOLUTION
+        </h1>
+        <v-btn x-large color="primary" class="mt-5">
+          CONTACT US
+        </v-btn>
+      </v-col>
     </v-row>
     <v-row id="secondScreen">
       <v-col
@@ -193,8 +169,23 @@
 <style lang="scss" scoped>
 #screen1 {
   min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url('../assets/bg_1.jpg');
   background-size: cover;
+  background-position: center;
+  color: white;
+}
+#screen1-content {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(black, 0.7);
+  z-index: 2;
+  // color: darkblue;
 }
 
 .centerClass {
