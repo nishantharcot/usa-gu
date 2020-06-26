@@ -1,0 +1,54 @@
+<template>
+  <v-card class="mx-auto" max-width="400">
+    <v-img class="white--text align-end" height="200px" :src="blogInfo.image">
+      <!-- <v-card-title>
+        {{ blogInfo.title }}
+      </v-card-title> -->
+    </v-img>
+
+    <v-card-title class="pb-0">
+      Skills To Develop Your Child Memory
+    </v-card-title>
+
+    <v-card-text class="text--primary cardText">
+      <div>
+        Far far away, behind the word mountains, far from the countries Vokalia
+        and Consonantia, there live the blind texts.
+      </div>
+    </v-card-text>
+
+    <v-card-actions>
+      <v-btn color="primary">
+        Read More
+        <v-icon class="ml-2">
+          fas fa-arrow-right
+        </v-icon>
+      </v-btn>
+    </v-card-actions>
+  </v-card>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    //
+  }),
+  props: {
+    blogInfo: {
+      type: Object,
+      required: true
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.cardText {
+  text-align: start;
+}
+
+.v-card__text,
+.v-card__title {
+  word-break: normal;
+}
+</style>
