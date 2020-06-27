@@ -1,5 +1,5 @@
 <template>
-  <v-row id="screen4" class="theme--dark">
+  <v-row id="screen4" class="theme--dark mt-10">
     <v-col
       cols="12"
       md="2"
@@ -48,7 +48,7 @@ export default {
 <style lang="scss" scoped>
 #screen4 {
   // height: 40vh;
-  min-height: 50vh;
+  // min-height: 50vh;
   display: flex;
   justify-content: space-around;
   align-content: space-around;

@@ -94,45 +94,53 @@
       </v-row>
     </v-container>
     <v-parallax
-      :height="$vuetify.breakpoint.smAndDown ? 800 : 500"
-      class="$vuetify.breakpoint.smAndDown ? text-center : ''"
+      :height="$vuetify.breakpoint.smAndDown ? 1000 : 500"
       src="../assets/about2.jpg"
     >
-      <v-overlay opacity="0.7" absolute>
-        <v-row align="center" justify="center">
-          <v-col class="text-center pa-0" cols="12" md="5">
-            <v-img height="300" src="../assets/about-2.jpg"></v-img>
-          </v-col>
-          <v-col cols="12" md="5" class="text-center">
-            <h1 class="display-1 font-weight-thin mb-4">USA GU University</h1>
-            <p>
-              Separated they live in. A small river named Duden flows by their
-              place and supplies it with the necessary regelialia. It is a
-              paradisematic country. A small river named Duden flows by their
-              place and supplies it with the necessary regelialia. It is a
-              paradisematic country, in which roasted parts of sentences fly
-              into your mouth.
-            </p>
-            <p>
-              A small river named Duden flows by their place and supplies it
-              with the necessary regelialia. It is a paradisematic country, in
-              which roasted parts of sentences fly into your mouth.
-            </p>
-          </v-col>
-        </v-row>
-        <v-row justify="center" class="theme--dark">
-          <v-col
-            cols="6"
-            md="2"
-            v-for="item in collegeStatistics"
-            :key="item.title"
-          >
-            <v-card color="transparent">
-              <h2 class="centerClass">{{ item.title }}</h2>
-              <h4 class="centerClass">{{ item.label }}</h4>
-            </v-card>
-          </v-col>
-        </v-row>
+      <v-overlay opacity="0.7" absolute style="max-width: 100vw">
+        <v-container style="max-width: 100vw">
+          <v-row align="center" justify="center">
+            <v-col class="text-center pa-0" cols="12" md="5">
+              <v-img height="300" src="../assets/about-2.jpg"></v-img>
+            </v-col>
+            <v-col cols="12" md="5" class="text-center">
+              <h1 class="display-1 font-weight-thin mb-4">USA GU University</h1>
+              <p>
+                Separated they live in. A small river named Duden flows by their
+                place and supplies it with the necessary regelialia. It is a
+                paradisematic country. A small river named Duden flows by their
+                place and supplies it with the necessary regelialia. It is a
+                paradisematic country, in which roasted parts of sentences fly
+                into your mouth.
+              </p>
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
+            </v-col>
+          </v-row>
+          <v-row justify="center" class="theme--dark">
+            <v-col
+              cols="6"
+              md="2"
+              xs="6"
+              v-for="item in collegeStatistics"
+              :key="item.title"
+            >
+              <v-card
+                width="100%"
+                class="justify-center text-center"
+                color="red"
+              >
+                <v-card-text class="text-center">
+                  <h3>{{ item.title }}</h3>
+                  <p>{{ item.label }}</p>
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-container>
       </v-overlay>
     </v-parallax>
     <v-container>
@@ -162,7 +170,7 @@
         <v-col cols="12" md="8">
           <div class="centerClass">
             <h1 class="mainHeading mb-5">
-              Certified teachers
+              Certified Professors
             </h1>
             <p>
               Separated they live in. A small river named Duden flows by their
@@ -261,6 +269,10 @@
   // background-image: url('../assets/about2.jpg');
   background-position: center;
   background-size: cover;
+}
+
+.v-overlay__content {
+  max-width: 100vw !important;
 }
 
 .screen2Heading {

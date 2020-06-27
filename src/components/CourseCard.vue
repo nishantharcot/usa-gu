@@ -1,9 +1,6 @@
 <template>
-  <v-card class="mx-auto" max-width="400">
+  <v-card class="mx-auto" max-width="300" max-height="500">
     <v-img class="white--text align-end" height="200px" :src="courseInfo.image">
-      <!-- <v-card-title>
-        {{ courseInfo.title }}
-      </v-card-title> -->
     </v-img>
 
     <v-card-title class="pb-0">

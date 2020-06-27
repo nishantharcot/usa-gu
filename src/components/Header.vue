@@ -1,6 +1,6 @@
 <template>
-  <v-container grid-list-xs class="pb-0">
-    <v-row class="mt-5">
+  <v-container class="pa-0 mx-0 full-width">
+    <v-row class="mt-5" v-if="$vuetify.breakpoint.mdAndUp">
       <v-col v-if="$vuetify.breakpoint.mdAndUp" cols="12" md="3">
         <h1 class="centerClass">
           USA-GU
@@ -43,7 +43,7 @@
         </v-btn>
       </v-col>
     </v-row>
-    <v-app-bar class="darkBackground" dark>
+    <v-app-bar class="darkBackground pa-0" dark>
       <v-app-bar-nav-icon
         v-if="$vuetify.breakpoint.smAndDown"
         color="white"
@@ -64,7 +64,7 @@
           </v-list>
         </v-menu>
       </v-app-bar-nav-icon>
-      <v-toolbar-title>
+      <v-toolbar-title v-if="$vuetify.breakpoint.smAndDown">
         MENU
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -123,6 +123,11 @@ export default {
   display: flex;
   // flex-direction: row;
   justify-content: space-around;
+}
+
+.full-width {
+  width: 100vw !important;
+  max-width: 100vw !important;
 }
 
 .centerClass {

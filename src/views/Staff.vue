@@ -70,12 +70,12 @@ export default {
 
 <style lang="scss" scoped>
 #screen1 {
-  background-image: url('../assets/staff.jpeg');
+  background-image: url('../assets/course-4.jpg');
 }
 
-#screen2 {
-  min-height: 150vh;
-}
+// #screen2 {
+//   min-height: 150vh;
+// }
 
 .centerClass {
   text-align: center;

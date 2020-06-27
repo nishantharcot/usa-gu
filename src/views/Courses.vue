@@ -3,7 +3,13 @@
     <StartScreen pageHeading="Courses" caption="COURSES" />
     <v-container>
       <v-row id="screen2" class="mx-auto mt-10">
-        <v-col v-for="index2 in courses.length" :key="index2" cols="12" md="3">
+        <v-col
+          v-for="index2 in courses.length"
+          :key="index2"
+          cols="12"
+          md="3"
+          max-height="500"
+        >
           <CourseCard :courseInfo="courses[index2 - 1]" />
         </v-col>
       </v-row>
@@ -67,10 +73,10 @@ export default {
 
 <style lang="scss" scoped>
 #screen1 {
-  background-image: url('../assets/courses.jpg');
+  background-image: url('../assets/course-7.jpg');
 }
 
-#screen2 {
-  min-height: 150vh;
-}
+// #screen2 {
+//   // min-height: 150vh;
+// }
 </style>

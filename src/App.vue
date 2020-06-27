@@ -12,10 +12,8 @@
       </v-container>
     </v-main>
 
-    <v-footer class="pa-0">
-      <!-- -->
-      <Footer />
-    </v-footer>
+    <!-- -->
+    <Footer />
   </v-app>
 </template>
 

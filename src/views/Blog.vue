@@ -59,10 +59,10 @@ export default {
 
 <style lang="scss" scoped>
 #screen1 {
-  background-image: url('../assets/blog.jpeg');
+  background-image: url('../assets/course-5.jpg');
 }
 
-#screen2 {
-  min-height: 120vh;
-}
+// #screen2 {
+//   min-height: 120vh;
+// }
 </style>

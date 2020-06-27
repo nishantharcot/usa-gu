@@ -139,7 +139,7 @@ export default {
 
 <style lang="scss" scoped>
 #screen1 {
-  background-image: url('../assets/about-5.jpeg');
+  background-image: url('../assets/course-1.jpg');
   // background-position: top;
 }
 

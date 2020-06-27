@@ -40,8 +40,8 @@
             <h3 class="display flexStart footer">
               Subscribe Us!
             </h3>
-            <v-text-field label="Name" type="text"></v-text-field>
-            <v-text-field label="Email" type="email"></v-text-field>
+            <v-text-field dark label="Name" type="text"></v-text-field>
+            <v-text-field dark label="Email" type="email"></v-text-field>
             <v-btn color="primary" x-large block>Subscribe</v-btn>
           </v-main>
         </v-col>
@@ -100,12 +100,7 @@ export default {
         data: ['Home', 'About', 'Services', 'Departments', 'Contact']
       }
     ],
-    icons: [
-      'fab fa-facebook',
-      'fab fa-twitter',
-      'fab fa-linkedin',
-      'fab fa-pinterest'
-    ]
+    icons: ['fab fa-facebook', 'fab fa-twitter', 'fab fa-linkedin']
   })
 }
 </script>

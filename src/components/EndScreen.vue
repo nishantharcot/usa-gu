@@ -30,7 +30,7 @@
                     <v-img :src="item.image"></v-img>
                   </v-list-item-avatar>
                   <v-list-item-content>
-                    <div class="overline mb-4 blackColor">
+                    <div class="mb-4 blackColor">
                       Far far away, behind the word mountains, far from the
                       countries Vokaila and Consonantia, there live the blind
                       texts
