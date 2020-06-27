@@ -1,6 +1,6 @@
 <template>
   <div>
-    <StartScreen pageHeading="Certified Teacher" caption="TEACHER" />
+    <StartScreen pageHeading="Certified Professor" caption="PROFESSOR" />
     <v-container>
       <v-row id="screen2" class="mx-auto mt-10">
         <v-col v-for="index2 in courses.length" :key="index2" cols="12" md="3">
@@ -24,42 +24,42 @@ export default {
       courses: [
         {
           image: require('../assets/teacher-1.jpg'),
-          title: 'English Teacher',
+          title: 'English Professor',
           name: 'Bianca Wilson'
         },
         {
           image: require('../assets/teacher-2.jpg'),
-          title: 'Art Teacher',
+          title: 'Art Professor',
           name: 'Mitch Parker'
         },
         {
           image: require('../assets/teacher-3.jpg'),
-          title: 'Science Teacher',
+          title: 'Science Professor',
           name: 'Stella Smith'
         },
         {
           image: require('../assets/teacher-4.jpg'),
-          title: 'Maths Teacher',
+          title: 'Maths Professor',
           name: 'Monshe Henderson'
         },
         {
           image: require('../assets/teacher-5.jpg'),
-          title: 'Electrical Teacher',
+          title: 'Electrical Professor',
           name: 'Bianca Wilson'
         },
         {
           image: require('../assets/teacher-6.jpg'),
-          title: 'Electrical Teacher',
+          title: 'Electrical Professor',
           name: 'Mitch Parker'
         },
         {
           image: require('../assets/teacher-7.jpg'),
-          title: 'Electrical Teacher',
+          title: 'Electrical Professor',
           name: 'Stella Smith'
         },
         {
           image: require('../assets/teacher-8.jpg'),
-          title: 'Electrical Teacher',
+          title: 'Electrical Professor',
           name: 'Monshe Henderson'
         }
       ]

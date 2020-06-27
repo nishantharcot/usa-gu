@@ -27,8 +27,16 @@ import {
   faCaretRight,
   faChevronLeft,
   faChevronRight,
-  faCircle
+  faCircle,
+  faBars
 } from '@fortawesome/free-solid-svg-icons'
+import {
+  faTwitter,
+  faFacebook,
+  faInstagram,
+  faPinterest,
+  faLinkedin
+} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import App from './App.vue'
 import './registerServiceWorker'
@@ -63,7 +71,13 @@ library.add(
   faCaretRight,
   faChevronLeft,
   faChevronRight,
-  faCircle
+  faCircle,
+  faTwitter,
+  faFacebook,
+  faInstagram,
+  faPinterest,
+  faBars,
+  faLinkedin
 )
 Vue.config.productionTip = false
 

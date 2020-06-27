@@ -3,8 +3,8 @@
     <v-container class="pt-0">
       <v-row>
         <v-col class="pl-2" cols="12" md="3" xs="12">
-          <v-main class="pa-1 mr-3" outlined tile>
-            <h3 class="display flexStart ml-3 footer">
+          <v-main class="pa-1" outlined tile>
+            <h3 class="display flexStart footer">
               Have a Question?
             </h3>
             <v-col
@@ -12,9 +12,11 @@
               v-for="item in footerStart"
               :key="item.text"
             >
-              <v-icon class="mr-2 footer">{{ item.icon }}</v-icon>
+              <v-icon class="footer">{{ item.icon }}</v-icon>
               &nbsp;
-              {{ item.text }}
+              <label class="pl-3">
+                {{ item.text }}
+              </label>
             </v-col>
           </v-main>
         </v-col>
@@ -45,23 +47,25 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-card color="grey darken-3" class="flex" flat tile>
-      <v-card-title>
-        <strong class="subheading footer">&copy; All rights reserved</strong>
+    <v-container>
+      <v-card color="grey darken-3" class="flex" flat tile>
+        <v-card-title>
+          <strong class="subheading footer">&copy; All rights reserved</strong>
 
-        <v-spacer></v-spacer>
+          <v-spacer></v-spacer>
 
-        <v-btn
-          color="primary"
-          v-for="icon in icons"
-          :key="icon"
-          class="mx-4"
-          icon
-        >
-          <v-icon color="white" class="footer" size="24px">{{ icon }}</v-icon>
-        </v-btn>
-      </v-card-title>
-    </v-card>
+          <v-btn
+            color="primary"
+            v-for="icon in icons"
+            :key="icon"
+            class="mx-4"
+            icon
+          >
+            <v-icon color="white" class="footer" size="24px">{{ icon }}</v-icon>
+          </v-btn>
+        </v-card-title>
+      </v-card>
+    </v-container>
   </v-footer>
 </template>
 
@@ -96,7 +100,12 @@ export default {
         data: ['Home', 'About', 'Services', 'Departments', 'Contact']
       }
     ],
-    icons: ['mdi-facebook', 'fab fa-twitter', 'mdi-linkedin', 'mdi-instagram']
+    icons: [
+      'fab fa-facebook',
+      'fab fa-twitter',
+      'fab fa-linkedin',
+      'fab fa-pinterest'
+    ]
   })
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <v-row class="gapClass"></v-row>
-    <v-row class="lastScreen">
+    <!-- <v-row class="gapClass"></v-row> -->
+    <v-row class="lastScreen mt-5">
       <v-col cols="2"></v-col>
       <v-col cols="12" md="8">
         <div class="centerClass">
@@ -18,25 +18,28 @@
           cycle
           height="400"
           hide-delimiter-background
+          hide-delimiters
           show-arrows-on-hover
-          class="mt-10"
+          class="mt-5"
         >
           <v-carousel-item v-for="item in testimaonials" :key="item.name">
             <div>
-              <v-card class="mx-auto" max-width="400">
+              <v-card flat class="mx-auto mt-15" max-width="500">
                 <v-list-item three-line>
-                  <v-list-item-avatar tile size="80" color="grey">
-                    <v-img :src="item.image"> </v-img>
+                  <v-list-item-avatar size="80">
+                    <v-img :src="item.image"></v-img>
                   </v-list-item-avatar>
                   <v-list-item-content>
-                    <div class="overline mb-4">
+                    <div class="overline mb-4 blackColor">
                       Far far away, behind the word mountains, far from the
                       countries Vokaila and Consonantia, there live the blind
                       texts
                     </div>
-                    <v-list-item-title class="headline mb-1">{{
-                      item.name
-                    }}</v-list-item-title>
+                    <v-list-item-title
+                      color="black"
+                      class="headline mb-1 blackColor"
+                      >{{ item.name }}</v-list-item-title
+                    >
                     <span
                       class="flexStart px-0 mt-3 redColor"
                       color="red"
@@ -62,11 +65,14 @@
       >
         <v-img height="400" :src="image"></v-img>
       </v-col>
+      <!-- <vue-picture-swipe :items="items"></vue-picture-swipe> -->
     </v-row>
   </div>
 </template>
 
 <script>
+// import VuePictureSwipe from 'vue-picture-swipe'
+
 export default {
   data: () => ({
     testimaonials: [
@@ -80,7 +86,7 @@ export default {
       {
         text:
           'Far far away, behind the word mountains, far from the countries Vokaila and Consonantia, there live the blind texts',
-        name: 'Racky Henderson',
+        name: 'Will Smith',
         relation: 'Father',
         image: require('../assets/teacher-5.jpg')
       },
@@ -111,14 +117,39 @@ export default {
       require('../assets/image_2.jpg'),
       require('../assets/course-1.jpg'),
       require('../assets/image_4.jpg')
+    ],
+    items: [
+      {
+        src: '../assets/image_1.jpg',
+        w: 600,
+        h: 400
+      },
+      {
+        src: '../assets/image_2.jpg',
+        w: 600,
+        h: 400
+      },
+      {
+        src: '../assets/course-1.jpg',
+        w: 600,
+        h: 400
+      },
+      {
+        src: '../assets/image_4.jpg',
+        w: 600,
+        h: 400
+      }
     ]
-  })
+  }),
+  components: {
+    // VuePictureSwipe
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 .lastScreen {
-  min-height: 70vh;
+  min-height: 50vh;
 }
 
 .minHeightImages {
@@ -145,6 +176,15 @@ export default {
 
 .redColor {
   color: red;
+}
+
+.blackColor {
+  color: black;
+}
+
+.v-list-item {
+  background-color: white !important;
+  color: black;
 }
 
 .gapClass {

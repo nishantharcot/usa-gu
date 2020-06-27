@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row id="screen1" app>
-      <v-col id="screen1-content" cols="6" sm="12">
+      <v-col id="screen1-content" cols="12" sm="12">
         <h1 id="mainHeading" class="display-1 centerClass">
           EDUCATION NEEDS COMPLETE SOLUTION
         </h1>
@@ -92,7 +92,50 @@
           </div>
         </v-col>
       </v-row>
-      <v-row id="screen4"></v-row>
+    </v-container>
+    <v-parallax
+      :height="$vuetify.breakpoint.smAndDown ? 800 : 500"
+      class="$vuetify.breakpoint.smAndDown ? text-center : ''"
+      src="../assets/about2.jpg"
+    >
+      <v-overlay opacity="0.7" absolute>
+        <v-row align="center" justify="center">
+          <v-col class="text-center pa-0" cols="12" md="5">
+            <v-img height="300" src="../assets/about-2.jpg"></v-img>
+          </v-col>
+          <v-col cols="12" md="5" class="text-center">
+            <h1 class="display-1 font-weight-thin mb-4">USA GU University</h1>
+            <p>
+              Separated they live in. A small river named Duden flows by their
+              place and supplies it with the necessary regelialia. It is a
+              paradisematic country. A small river named Duden flows by their
+              place and supplies it with the necessary regelialia. It is a
+              paradisematic country, in which roasted parts of sentences fly
+              into your mouth.
+            </p>
+            <p>
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country, in
+              which roasted parts of sentences fly into your mouth.
+            </p>
+          </v-col>
+        </v-row>
+        <v-row justify="center" class="theme--dark">
+          <v-col
+            cols="6"
+            md="2"
+            v-for="item in collegeStatistics"
+            :key="item.title"
+          >
+            <v-card color="transparent">
+              <h2 class="centerClass">{{ item.title }}</h2>
+              <h4 class="centerClass">{{ item.label }}</h4>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-overlay>
+    </v-parallax>
+    <v-container>
       <v-row class="lastScreen">
         <v-col cols="2"></v-col>
         <v-col cols="12" md="8">
@@ -119,7 +162,7 @@
         <v-col cols="12" md="8">
           <div class="centerClass">
             <h1 class="mainHeading mb-5">
-              Certified Teachers
+              Certified teachers
             </h1>
             <p>
               Separated they live in. A small river named Duden flows by their
@@ -132,12 +175,12 @@
       </v-row>
       <v-row id="screen2" class="mx-auto mt-10 mb-10">
         <v-col
-          v-for="index2 in courseTeachers.length"
+          v-for="index2 in courseteachers.length"
           :key="index2"
           cols="12"
           md="3"
         >
-          <Teacher :teacher="courseTeachers[index2 - 1]" />
+          <Teacher :teacher="courseteachers[index2 - 1]" />
         </v-col>
       </v-row>
       <v-row class="lastScreen">
@@ -161,8 +204,8 @@
           <BlogPost :blogInfo="blogs[index2 - 1]" />
         </v-col>
       </v-row>
-      <EndScreen />
     </v-container>
+    <EndScreen />
   </div>
 </template>
 
@@ -183,9 +226,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(black, 0.7);
+  background-color: rgba(black, 0.5);
   z-index: 2;
   // color: darkblue;
+}
+
+#parallaxScreen {
+  min-height: 120vh;
 }
 
 .centerClass {
@@ -211,7 +258,7 @@
 
 #screen4 {
   min-height: 130vh;
-  background-image: url('../assets/about2.jpg');
+  // background-image: url('../assets/about2.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -223,7 +270,7 @@
 }
 
 .lastScreen {
-  min-height: 30vh;
+  min-height: 25vh;
 }
 
 .cardClass {
@@ -301,7 +348,7 @@ export default {
         {
           id: 1,
           icon: 'fas fa-user-check',
-          title: 'Certified Teachers',
+          title: 'Certified teachers',
           content: ''
         },
         {
@@ -335,7 +382,7 @@ export default {
           text: ''
         },
         {
-          title: 'Certified Teachers',
+          title: 'Certified teachers',
           icon: 'fas fa-certificate',
           text: ''
         },
@@ -358,7 +405,7 @@ export default {
       courses: [
         {
           image: require('../assets/course-1.jpg'),
-          title: 'Electrical Engineering'
+          title: 'Computer Engineering'
         },
         {
           image: require('../assets/course-2.jpg'),
@@ -366,33 +413,51 @@ export default {
         },
         {
           image: require('../assets/course-3.jpg'),
-          title: 'Electrical Engineering'
+          title: 'Civil Engineering'
         },
         {
           image: require('../assets/course-4.jpg'),
-          title: 'Electrical Engineering'
+          title: 'Mechanical Engineering'
         }
       ],
-      courseTeachers: [
+      courseteachers: [
         {
           image: require('../assets/teacher-1.jpg'),
-          title: 'English Teacher',
+          title: 'English Professor',
           name: 'Bianca Wilson'
         },
         {
           image: require('../assets/teacher-2.jpg'),
-          title: 'Art Teacher',
+          title: 'Art Professor',
           name: 'Mitch Parker'
         },
         {
           image: require('../assets/teacher-3.jpg'),
-          title: 'Science Teacher',
+          title: 'Science Professor',
           name: 'Stella Smith'
         },
         {
           image: require('../assets/teacher-4.jpg'),
-          title: 'Maths Teacher',
+          title: 'Maths Professor',
           name: 'Monshe Henderson'
+        }
+      ],
+      collegeStatistics: [
+        {
+          title: 18,
+          label: 'teachers'
+        },
+        {
+          title: 401,
+          label: 'Students'
+        },
+        {
+          title: 30,
+          label: 'Courses'
+        },
+        {
+          title: 50,
+          label: 'Awards Won'
         }
       ]
     }

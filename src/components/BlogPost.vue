@@ -20,7 +20,7 @@
     <v-card-actions>
       <v-btn color="primary">
         Read More
-        <v-icon class="ml-2">
+        <v-icon class="pl-2">
           fas fa-arrow-right
         </v-icon>
       </v-btn>
