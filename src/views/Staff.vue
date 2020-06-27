@@ -45,7 +45,7 @@ export default {
         {
           image: require('../assets/teacher-5.jpg'),
           title: 'Electrical Professor',
-          name: 'Bianca Wilson'
+          name: 'Will Smith'
         },
         {
           image: require('../assets/teacher-6.jpg'),
