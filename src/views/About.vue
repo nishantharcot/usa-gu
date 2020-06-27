@@ -55,9 +55,6 @@
         <v-container style="max-width: 100vw">
           <v-row align="center" justify="center">
             <v-col class="text-center pa-0" cols="12" md="5">
-              <!-- <v-img height="300" src="../assets/about-2.jpg"></v-img> -->
-              <!-- <youtube video-id="BBJa32lCaaY" />
-               -->
               <LazyYoutubeVideo
                 src="https://www.youtube.com/embed/xmCWXOO1XNA"
               />
@@ -87,15 +84,11 @@
               v-for="item in collegeStatistics"
               :key="item.title"
             >
-              <v-card
-                width="100%"
-                class="justify-center text-center"
-                color="red"
-              >
-                <v-card-text class="text-center">
+              <v-card width="100%" class="justify-center text-center">
+                <v-card-title class="d-flex flex-column text-center">
                   <h3>{{ item.title }}</h3>
                   <p>{{ item.label }}</p>
-                </v-card-text>
+                </v-card-title>
               </v-card>
             </v-col>
           </v-row>
@@ -122,7 +115,7 @@ export default {
       collegeStatistics: [
         {
           title: '18',
-          label: 'Certified teachers'
+          label: 'Professors'
         },
         {
           title: '401',

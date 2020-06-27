@@ -39,7 +39,7 @@
                       class="headline mb-1 black--text"
                       >{{ item.name }}</v-list-item-title
                     >
-                    <span class="d-flex px-0 mt-3 red--text" text>{{
+                    <span class="d-flex px-0 mt-3 black--text" text>{{
                       item.relation
                     }}</span>
                   </v-list-item-content>

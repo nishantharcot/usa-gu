@@ -1,12 +1,6 @@
 import Vue from 'vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
-  faSearch,
-  faPlusCircle,
-  faMinusCircle,
-  faCheck,
-  faTimes,
-  faHome,
   faPhone,
   faEnvelope,
   faMapMarkerAlt,
@@ -23,18 +17,13 @@ import {
   faSchool,
   faPlus,
   faChalkboardTeacher,
-  faCaretLeft,
-  faCaretRight,
   faChevronLeft,
   faChevronRight,
-  faCircle,
   faBars
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faTwitter,
   faFacebook,
-  faInstagram,
-  faPinterest,
   faLinkedin
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -47,12 +36,6 @@ import VueYoutube from 'vue-youtube'
 import 'leaflet/dist/leaflet.css'
 
 library.add(
-  faSearch,
-  faPlusCircle,
-  faMinusCircle,
-  faCheck,
-  faTimes,
-  faHome,
   faPhone,
   faEnvelope,
   faMapMarkerAlt,
@@ -69,15 +52,10 @@ library.add(
   faSchool,
   faPlus,
   faChalkboardTeacher,
-  faCaretLeft,
-  faCaretRight,
   faChevronLeft,
   faChevronRight,
-  faCircle,
   faTwitter,
   faFacebook,
-  faInstagram,
-  faPinterest,
   faBars,
   faLinkedin
 )

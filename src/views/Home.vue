@@ -443,7 +443,7 @@ export default {
       collegeStatistics: [
         {
           title: 18,
-          label: 'teachers'
+          label: 'Professors'
         },
         {
           title: 401,
