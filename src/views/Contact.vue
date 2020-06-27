@@ -3,7 +3,7 @@
     <StartScreen pageHeading="Contact Us" caption="CONTACT" />
     <v-container>
       <ContactInfo />
-      <v-row>
+      <v-row class="mt-10">
         <v-col cols="12" md="6">
           <l-map
             v-if="showMap"

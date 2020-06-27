@@ -10,7 +10,7 @@
       Skills To Develop Your Child Memory
     </v-card-title>
 
-    <v-card-text class="text--primary cardText">
+    <v-card-text class="text--primary">
       <div>
         Far far away, behind the word mountains, far from the countries Vokalia
         and Consonantia, there live the blind texts.
@@ -43,10 +43,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.cardText {
-  text-align: start;
-}
-
 .v-card__text,
 .v-card__title {
   word-break: normal;

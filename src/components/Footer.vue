@@ -1,18 +1,14 @@
 <template>
-  <v-footer color="grey darken-3" class="white pa-0" padless>
+  <v-footer dark color="grey darken-3" class="pa-0" padless>
     <v-container class="pt-0">
       <v-row>
         <v-col class="pl-2" cols="12" md="3" xs="12">
           <v-main class="pa-1" outlined tile>
-            <h3 class="display flexStart footer">
+            <h3 class="display" dark>
               Have a Question?
             </h3>
-            <v-col
-              class="flexStart footer"
-              v-for="item in footerStart"
-              :key="item.text"
-            >
-              <v-icon class="footer">{{ item.icon }}</v-icon>
+            <v-col class="d-flex" v-for="item in footerStart" :key="item.text">
+              <v-icon>{{ item.icon }}</v-icon>
               &nbsp;
               <label class="pl-3">
                 {{ item.text }}
@@ -24,20 +20,20 @@
           cols="12"
           md="2"
           xs="12"
-          class="flexStart footer"
+          class="d-flex"
           v-for="item in footerResources"
           :key="item.heading"
         >
           <div class="pa-2" outlined tile>
-            <h3 class="display flexStart pl-2">{{ item.heading }}</h3>
-            <v-col class="flexStart" v-for="data in item.data" :key="data">{{
+            <h3 class="display pl-2">{{ item.heading }}</h3>
+            <v-col class="" v-for="data in item.data" :key="data">{{
               data
             }}</v-col>
           </div>
         </v-col>
         <v-col class="mt-1" cols="12" md="3" xs="12">
           <v-main class="pa-1 mr-3" outlined tile>
-            <h3 class="display flexStart footer">
+            <h3 class="display">
               Subscribe Us!
             </h3>
             <v-text-field dark label="Name" type="text"></v-text-field>
@@ -50,7 +46,7 @@
     <v-container>
       <v-card color="grey darken-3" class="flex" flat tile>
         <v-card-title>
-          <strong class="subheading footer">&copy; All rights reserved</strong>
+          <strong class="subheading">&copy; All rights reserved</strong>
 
           <v-spacer></v-spacer>
 
@@ -61,7 +57,7 @@
             class="mx-4"
             icon
           >
-            <v-icon color="white" class="footer" size="24px">{{ icon }}</v-icon>
+            <v-icon color="white" size="24px">{{ icon }}</v-icon>
           </v-btn>
         </v-card-title>
       </v-card>
@@ -104,20 +100,3 @@ export default {
   })
 }
 </script>
-
-<style lang="scss" scoped>
-.footer {
-  color: white;
-}
-.white {
-  color: white;
-}
-.containerStyle {
-  padding: -12px !important;
-}
-
-.flexStart {
-  display: flex;
-  justify-content: flex-start;
-}
-</style>

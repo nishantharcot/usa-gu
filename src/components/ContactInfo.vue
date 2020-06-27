@@ -1,5 +1,5 @@
 <template>
-  <v-row id="screen4" class="theme--dark mt-10">
+  <v-row class="d-flex justify-space-around align-stretch theme--dark mt-10">
     <v-col
       cols="12"
       md="2"
@@ -7,8 +7,8 @@
       v-for="item in collegeStatistics"
       :key="item.title"
     >
-      <div class="screen4Card">
-        <h2 class="text-center">{{ item.title }}</h2>
+      <div class="d-flex flex-column">
+        <h3 class="text-center">{{ item.title }}</h3>
         <hr
           role="separator"
           aria-orientation="horizontal"
@@ -46,28 +46,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#screen4 {
-  display: flex;
-  justify-content: space-around;
-  align-content: space-around;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Roboto Slab', serif !important;
-}
-
-.screen4Card {
-  display: flex;
-  height: 20vh;
-  flex-direction: column;
-  justify-content: baseline;
-}
-
 hr {
   width: 20%;
   margin: 0 auto;

@@ -6,17 +6,17 @@
           USA-GU
         </h1>
       </v-col>
-      <v-col v-else class="flexStart" cols="12" md="3">
+      <v-col v-else class="d-flex flex-column" cols="12" md="3">
         <h1>
           USA-GU
         </h1>
       </v-col>
       <v-col cols="12" md="3">
-        <div class="flexRow">
+        <div class="d-flex flex-row">
           <v-icon color="primary" class="mt-3">
             fas fa-paper-plane
           </v-icon>
-          <div class="flexStart pl-3">
+          <div class="d-flex flex-column pl-3">
             <strong>Email</strong>
             <p>
               youremail@email.com
@@ -25,11 +25,11 @@
         </div>
       </v-col>
       <v-col cols="12" md="3">
-        <div class="flexRow">
+        <div class="d-flex flex-row">
           <v-icon color="primary" class="mt-3">
             fas fa-phone-alt
           </v-icon>
-          <div class="flexStart pl-2">
+          <div class="d-flex flex-column pl-2">
             <strong>Call</strong>
             <p>
               Call Us: + 1235 2355 98
@@ -37,7 +37,7 @@
           </div>
         </div>
       </v-col>
-      <v-col class="flexStart" cols="12" md="2">
+      <v-col cols="12" md="2">
         <v-btn class="mt-2" color="primary">
           Apply Now
         </v-btn>
@@ -119,39 +119,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#navbarTop {
-  display: flex;
-  // flex-direction: row;
-  justify-content: space-around;
-}
-
 .full-width {
   width: 100vw !important;
   max-width: 100vw !important;
-}
-
-.flexRowCenter {
-  display: flex;
-  justify-content: space-around;
-}
-
-.flexRow {
-  display: flex;
-  // justify-content: center;
-}
-
-.flexStart {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.flexCenterColumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
 }
 
 .darkBackground {

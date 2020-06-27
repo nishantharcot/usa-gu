@@ -7,7 +7,7 @@
       {{ courseInfo.title }}
     </v-card-title>
 
-    <v-card-text class="text--primary cardText">
+    <v-card-text class="text--primary d-flex">
       <div>
         Separated they live in. A small river named Duden flows by their place
         and supplies it with the necessary regelialia. It is a paradisematic
@@ -36,9 +36,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.cardText {
-  text-align: start;
-}
-</style>

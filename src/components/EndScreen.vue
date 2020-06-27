@@ -1,6 +1,6 @@
 <template>
   <v-container class="pb-0">
-    <v-row class="lastScreen mt-5">
+    <v-row class="mt-5">
       <v-col cols="2"></v-col>
       <v-col cols="12" md="8">
         <div class="text-center">
@@ -28,23 +28,20 @@
                   <v-list-item-avatar size="80">
                     <v-img :src="item.image"></v-img>
                   </v-list-item-avatar>
-                  <v-list-item-content>
-                    <div class="mb-4 blackColor">
+                  <v-list-item-content dark>
+                    <div class="mb-4 black--text">
                       Far far away, behind the word mountains, far from the
                       countries Vokaila and Consonantia, there live the blind
                       texts
                     </div>
                     <v-list-item-title
                       color="black"
-                      class="headline mb-1 blackColor"
+                      class="headline mb-1 black--text"
                       >{{ item.name }}</v-list-item-title
                     >
-                    <span
-                      class="flexStart px-0 mt-3 redColor"
-                      color="red"
-                      text
-                      >{{ item.relation }}</span
-                    >
+                    <span class="d-flex px-0 mt-3 red--text" text>{{
+                      item.relation
+                    }}</span>
                   </v-list-item-content>
                 </v-list-item>
               </v-card>
@@ -147,42 +144,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.lastScreen {
-  min-height: 50vh;
-}
-
-.minHeightImages {
-  min-height: 30vh;
-}
-
-.flexStart {
-  display: flex;
-  justify-content: flex-start;
-}
-
 .mainHeading {
   font-size: 50px;
   font-weight: 900;
 }
 
-#endingImages {
-  min-height: 40vh;
-}
-
-.redColor {
-  color: red;
-}
-
-.blackColor {
-  color: black;
-}
-
 .v-list-item {
   background-color: white !important;
   color: black;
-}
-
-.gapClass {
-  height: 20vh;
 }
 </style>
