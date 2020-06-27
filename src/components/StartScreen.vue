@@ -1,10 +1,10 @@
 <template>
-  <v-row id="screen1" app>
+  <v-row class="mx-0 screen1 white--text">
     <v-col id="screen1-content" cols="12" sm="12">
       <h1 id="mainHeading" class="display-1 mb-5 centerClass">
         {{ pageHeading }}
       </h1>
-      <div class="startCaption mr-3" v-if="Boolean(caption) === true">
+      <div class="startCaption" v-if="Boolean(caption) === true">
         <v-btn text to="/" color="white">
           Home >
         </v-btn>
@@ -29,15 +29,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#screen1 {
-  min-height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // background-color: yellow;
+.screen1 {
   background-size: cover;
   background-position: center;
-  color: white;
 }
 
 .centerClass {

@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#screen1 {
+.screen1 {
   background-image: url('../assets/image_1.jpg');
   // background-position: top;
 }

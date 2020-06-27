@@ -58,7 +58,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#screen1 {
+.screen1 {
   background-image: url('../assets/course-5.jpg');
 }
 
