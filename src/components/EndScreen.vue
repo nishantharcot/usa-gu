@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <!-- <v-row class="gapClass"></v-row> -->
+  <v-container class="pb-0">
     <v-row class="lastScreen mt-5">
       <v-col cols="2"></v-col>
       <v-col cols="12" md="8">
@@ -55,7 +54,7 @@
       </v-col>
       <v-col cols="2"></v-col>
     </v-row>
-    <v-row>
+    <v-row class="">
       <v-col
         class="pa-0 mb-0"
         cols="12"
@@ -67,7 +66,7 @@
       </v-col>
       <!-- <vue-picture-swipe :items="items"></vue-picture-swipe> -->
     </v-row>
-  </div>
+  </v-container>
 </template>
 
 <script>

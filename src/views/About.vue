@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <StartScreen pageHeading="About Us" caption="ABOUT US" /> -->
+    <StartScreen pageHeading="About Us" caption="ABOUT US" />
     <v-container>
       <v-row id="screen2">
         <v-col class="about2" cols="12" sm="12" md="6">
@@ -113,11 +113,11 @@
 </template>
 
 <script>
-// import StartScreen from '@/components/StartScreen.vue'
+import StartScreen from '@/components/StartScreen.vue'
 import EndScreen from '@/components/EndScreen.vue'
 export default {
   components: {
-    // StartScreen,
+    StartScreen,
     EndScreen
   },
   data() {
@@ -146,7 +146,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#screen1 {
+.screen1 {
   background-image: url('../assets/course-1.jpg');
   // background-position: top;
 }

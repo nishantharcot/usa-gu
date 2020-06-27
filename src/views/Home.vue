@@ -1,6 +1,18 @@
 <template>
   <div>
-    <v-row id="screen1" app>
+    <v-container class="pt-0" v-if="$vuetify.breakpoint.smAndDown">
+      <v-row id="screen1" app>
+        <v-col id="screen1-content" cols="12" sm="12">
+          <h1 id="mainHeading" class="display-1 centerClass">
+            EDUCATION NEEDS COMPLETE SOLUTION
+          </h1>
+          <v-btn x-large color="primary" class="mt-5">
+            CONTACT US
+          </v-btn>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-row v-else id="screen1" app>
       <v-col id="screen1-content" cols="12" sm="12">
         <h1 id="mainHeading" class="display-1 centerClass">
           EDUCATION NEEDS COMPLETE SOLUTION
@@ -10,7 +22,39 @@
         </v-btn>
       </v-col>
     </v-row>
-    <v-row id="secondScreen">
+    <v-container class="pt-0 mt-0" v-if="$vuetify.breakpoint.smAndDown">
+      <v-row id="secondScreen">
+        <v-col
+          class="pa-0 colorCard"
+          cols="12"
+          md="3"
+          v-for="item in screen2Data"
+          :key="item.title"
+        >
+          <v-card
+            class="mx-auto cardClass mb-0"
+            height="300"
+            :color="item.id % 2 === 0 ? 'primary' : 'secondary'"
+            dark
+            tile
+          >
+            <div class="centerClass">
+              <v-icon>
+                {{ item.icon }}
+              </v-icon>
+            </div>
+            <h3 class="centerClass screen2Heading">
+              {{ item.title }}
+            </h3>
+            <p class="centerClass screen2Text px-3">
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-row v-else id="secondScreen">
       <v-col
         class="pa-0 colorCard"
         cols="12"
@@ -93,7 +137,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-parallax
+    <!-- <v-parallax
       :height="$vuetify.breakpoint.smAndDown ? 1000 : 500"
       src="../assets/about2.jpg"
     >
@@ -142,7 +186,7 @@
           </v-row>
         </v-container>
       </v-overlay>
-    </v-parallax>
+    </v-parallax> -->
     <v-container>
       <v-row class="lastScreen">
         <v-col cols="2"></v-col>
