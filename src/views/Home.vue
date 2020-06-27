@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container class="pt-0" v-if="$vuetify.breakpoint.smAndDown">
+    <v-container class="pt-0 pb-0" v-if="$vuetify.breakpoint.smAndDown">
       <v-row id="screen1" app>
         <v-col id="screen1-content" cols="12" sm="12">
           <h1 id="mainHeading" class="display-1 centerClass">
@@ -12,7 +12,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-row v-else id="screen1" app>
+    <v-row v-else id="screen1" class="pb-0" app>
       <v-col id="screen1-content" cols="12" sm="12">
         <h1 id="mainHeading" class="display-1 centerClass">
           EDUCATION NEEDS COMPLETE SOLUTION
@@ -23,7 +23,7 @@
       </v-col>
     </v-row>
     <v-container class="pt-0 mt-0" v-if="$vuetify.breakpoint.smAndDown">
-      <v-row id="secondScreen">
+      <v-row class="pt-0 mt-0" id="secondScreen">
         <v-col
           class="pa-0 colorCard"
           cols="12"
@@ -32,7 +32,7 @@
           :key="item.title"
         >
           <v-card
-            class="mx-auto cardClass mb-0"
+            class="mx-auto cardClass mb-0 mt-0 pt-0"
             height="300"
             :color="item.id % 2 === 0 ? 'primary' : 'secondary'"
             dark
@@ -137,7 +137,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <!-- <v-parallax
+    <v-parallax
       :height="$vuetify.breakpoint.smAndDown ? 1000 : 500"
       src="../assets/about2.jpg"
     >
@@ -145,7 +145,12 @@
         <v-container style="max-width: 100vw">
           <v-row align="center" justify="center">
             <v-col class="text-center pa-0" cols="12" md="5">
-              <v-img height="300" src="../assets/about-2.jpg"></v-img>
+              <!-- <v-img height="300" src="../assets/about-2.jpg"></v-img> -->
+              <!-- <youtube video-id="BBJa32lCaaY" />
+               -->
+              <LazyYoutubeVideo
+                src="https://www.youtube.com/embed/xmCWXOO1XNA"
+              />
             </v-col>
             <v-col cols="12" md="5" class="text-center">
               <h1 class="display-1 font-weight-thin mb-4">USA GU University</h1>
@@ -186,7 +191,7 @@
           </v-row>
         </v-container>
       </v-overlay>
-    </v-parallax> -->
+    </v-parallax>
     <v-container>
       <v-row class="lastScreen">
         <v-col cols="2"></v-col>
@@ -365,6 +370,8 @@ import EndScreen from '@/components/EndScreen.vue'
 import BlogPost from '@/components/BlogPost.vue'
 import CourseCard from '@/components/CourseCard.vue'
 import Teacher from '@/components/Teacher.vue'
+import 'vue-lazy-youtube-video/dist/style.css'
+import LazyYoutubeVideo from 'vue-lazy-youtube-video'
 
 export default {
   name: 'Home',
@@ -372,7 +379,8 @@ export default {
     EndScreen,
     BlogPost,
     CourseCard,
-    Teacher
+    Teacher,
+    LazyYoutubeVideo
   },
   data() {
     return {

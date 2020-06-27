@@ -43,6 +43,8 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
+import VueYoutube from 'vue-youtube'
+import 'leaflet/dist/leaflet.css'
 
 library.add(
   faSearch,
@@ -82,6 +84,7 @@ library.add(
 Vue.config.productionTip = false
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
+Vue.use(VueYoutube)
 
 new Vue({
   router,

@@ -66,7 +66,12 @@
         <v-container style="max-width: 100vw">
           <v-row align="center" justify="center">
             <v-col class="text-center pa-0" cols="12" md="5">
-              <v-img height="300" src="../assets/about-2.jpg"></v-img>
+              <!-- <v-img height="300" src="../assets/about-2.jpg"></v-img> -->
+              <!-- <youtube video-id="BBJa32lCaaY" />
+               -->
+              <LazyYoutubeVideo
+                src="https://www.youtube.com/embed/xmCWXOO1XNA"
+              />
             </v-col>
             <v-col cols="12" md="5" class="text-center">
               <h1 class="display-1 font-weight-thin mb-4">USA GU University</h1>
@@ -115,10 +120,13 @@
 <script>
 import StartScreen from '@/components/StartScreen.vue'
 import EndScreen from '@/components/EndScreen.vue'
+import LazyYoutubeVideo from 'vue-lazy-youtube-video'
+
 export default {
   components: {
     StartScreen,
-    EndScreen
+    EndScreen,
+    LazyYoutubeVideo
   },
   data() {
     return {
