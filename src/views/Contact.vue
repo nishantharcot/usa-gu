@@ -13,10 +13,7 @@
             </v-text-field>
             <v-text-field label="Subject" type="text" v-model="subject">
             </v-text-field>
-            <v-textarea
-              label="Message"
-              background-color="grey lighten-2"
-            ></v-textarea>
+            <v-textarea label="Message"></v-textarea>
             <v-btn color="primary" x-large>
               Send Message
             </v-btn>
