@@ -62,11 +62,6 @@ export default {
         }
       ]
     }
-  },
-  computed: {
-    courseLength() {
-      return Math.ceil(this.data.courses.length / 3)
-    }
   }
 }
 </script>

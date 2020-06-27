@@ -67,8 +67,6 @@
 </template>
 
 <script>
-// import VuePictureSwipe from 'vue-picture-swipe'
-
 export default {
   data: () => ({
     testimaonials: [
@@ -136,10 +134,7 @@ export default {
         h: 400
       }
     ]
-  }),
-  components: {
-    // VuePictureSwipe
-  }
+  })
 }
 </script>
 

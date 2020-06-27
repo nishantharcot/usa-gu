@@ -1,9 +1,6 @@
 <template>
   <v-card class="mx-auto" max-width="450">
     <v-img class="white--text align-end" height="200px" :src="blogInfo.image">
-      <!-- <v-card-title>
-        {{ blogInfo.title }}
-      </v-card-title> -->
     </v-img>
 
     <v-card-title class="pb-0">
@@ -30,9 +27,6 @@
 
 <script>
 export default {
-  data: () => ({
-    //
-  }),
   props: {
     blogInfo: {
       type: Object,

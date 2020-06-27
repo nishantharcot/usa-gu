@@ -3,22 +3,27 @@
     <StartScreen pageHeading="About Us" caption="ABOUT US" />
     <v-container>
       <v-row id="screen2">
-        <v-col class="about2" cols="12" sm="12" md="6">
+        <v-col
+          class="de-flex flex-column justify-center align-center"
+          cols="12"
+          sm="12"
+          md="6"
+        >
           <h2 class="mb-5">
             USA GU Stablished Since 1960
           </h2>
-          <p class="flexStart">
+          <p>
             On her way she met a copy. The copy warned the Little Blind Text,
             that where it came from it would have been rewritten a thousand
             times and everything that was left from its origin would be the
             word.
           </p>
-          <p class="flexStart">
+          <p>
             A small river named Duden flows by their place and supplies it with
             the necessary regelialia. It is a paradisematic country, in which
             roasted parts of sentences fly into your mouth.
           </p>
-          <p class="flexStart">
+          <p>
             On her way she met a copy. The copy warned the Little Blind Text,
             that where it came from it would have been rewritten a thousand
             times and everything that was left from its origin would be the word
@@ -140,18 +145,5 @@ export default {
 <style lang="scss" scoped>
 .screen1 {
   background-image: url('../assets/course-1.jpg');
-}
-
-.about2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.flexStart {
-  display: flex;
-  justify-content: flex-start !important;
-  align-items: flex-start;
 }
 </style>

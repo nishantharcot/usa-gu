@@ -20,9 +20,6 @@
 
 <script>
 export default {
-  data: () => ({
-    //
-  }),
   props: {
     teacher: {
       type: Object,

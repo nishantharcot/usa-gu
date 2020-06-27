@@ -25,9 +25,6 @@
 
 <script>
 export default {
-  data: () => ({
-    //
-  }),
   props: {
     courseInfo: {
       type: Object,

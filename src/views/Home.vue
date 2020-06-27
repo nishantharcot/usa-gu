@@ -63,7 +63,7 @@
         :key="item.title"
       >
         <v-card
-          class="mx-auto cardClass mb-0 text-center"
+          class="mx-auto d-flex flex-colum cardClass mb-0 text-center"
           height="300"
           :color="item.id % 2 === 0 ? 'primary' : 'secondary'"
           dark
@@ -193,7 +193,7 @@
       </v-overlay>
     </v-parallax>
     <v-container>
-      <v-row class="lastScreen">
+      <v-row>
         <v-col cols="2"></v-col>
         <v-col cols="12" md="8">
           <div class="text-center">
@@ -214,7 +214,7 @@
           <CourseCard :courseInfo="courses[index2 - 1]" />
         </v-col>
       </v-row>
-      <v-row class="lastScreen">
+      <v-row>
         <v-col cols="2"></v-col>
         <v-col cols="12" md="8">
           <div class="text-center">
@@ -240,7 +240,7 @@
           <Teacher :teacher="courseteachers[index2 - 1]" />
         </v-col>
       </v-row>
-      <v-row class="lastScreen">
+      <v-row>
         <v-col cols="2"></v-col>
         <v-col cols="12" md="8">
           <div class="text-center">
@@ -303,10 +303,6 @@
   line-height: 1.5;
 }
 
-.lastScreen {
-  min-height: 25vh;
-}
-
 .cardClass {
   display: flex;
   flex-direction: column;
@@ -339,16 +335,6 @@ export default {
   },
   data() {
     return {
-      screen1Data: [
-        {
-          image: require('../assets/bg_1.jpg'),
-          text: 'Education Needs Complete Solution'
-        },
-        {
-          image: require('../assets/bg_2.jpg'),
-          text: 'University, College School Education'
-        }
-      ],
       blogs: [
         {
           image: require('../assets/image_1.jpg'),
