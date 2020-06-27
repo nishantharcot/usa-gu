@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto" max-width="300" max-height="500">
+  <v-card class="mx-auto" max-width="450" max-height="500">
     <v-img class="white--text align-end" height="200px" :src="courseInfo.image">
     </v-img>
 

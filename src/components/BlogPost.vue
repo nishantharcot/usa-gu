@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto" max-width="400">
+  <v-card class="mx-auto" max-width="450">
     <v-img class="white--text align-end" height="200px" :src="blogInfo.image">
       <!-- <v-card-title>
         {{ blogInfo.title }}
