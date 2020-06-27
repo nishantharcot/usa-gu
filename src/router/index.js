@@ -59,7 +59,17 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes
+  routes,
+  scrollBehavior: to => {
+    if (to.hash) {
+      const toHash = document.querySelector(to.hash)
+      return window.scrollTo({
+        top: toHash.offsetTop,
+        behavior: 'smooth'
+      })
+    }
+    return window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 })
 
 export default router
