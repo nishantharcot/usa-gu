@@ -3,7 +3,7 @@
     <v-row class="lastScreen mt-5">
       <v-col cols="2"></v-col>
       <v-col cols="12" md="8">
-        <div class="centerClass">
+        <div class="text-center">
           <h1 class="mainHeading mb-5">
             Student Says About Us
           </h1>
@@ -153,10 +153,6 @@ export default {
 
 .minHeightImages {
   min-height: 30vh;
-}
-
-.centerClass {
-  text-align: center;
 }
 
 .flexStart {

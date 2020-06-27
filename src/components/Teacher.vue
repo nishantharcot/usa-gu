@@ -1,19 +1,16 @@
 <template>
-  <v-card class="mx-auto" max-width="450">
+  <v-card class="mx-auto text-center" max-width="450">
     <v-img class="white--text align-end" height="300px" :src="teacher.image">
-      <!-- <v-card-title>
-        {{ teacher.title }}
-      </v-card-title> -->
     </v-img>
 
-    <v-card-title class="pb-0 centerClass mb-4">
+    <v-card-title class="pb-0 mb-4 justify-center">
       {{ teacher.name }}
     </v-card-title>
-    <v-card-subtitle class="pb-0 centerClass">
+    <v-card-subtitle class="pb-0">
       {{ teacher.title }}
     </v-card-subtitle>
 
-    <v-card-text class="text--primary centerClass">
+    <v-card-text class="text--primary">
       <div>
         I am an ambitious workaholic, but apart from that, pretty simple person.
       </div>
@@ -34,15 +31,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.cardText {
-  text-align: start;
-}
-
-.centerClass {
-  text-align: center !important;
-  display: flex;
-  justify-content: center;
-}
-</style>

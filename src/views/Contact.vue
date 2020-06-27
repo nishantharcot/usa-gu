@@ -117,6 +117,5 @@ export default {
 <style lang="scss" scoped>
 .screen1 {
   background-image: url('../assets/image_1.jpg');
-  // background-position: top;
 }
 </style>

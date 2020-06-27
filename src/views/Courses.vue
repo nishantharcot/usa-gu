@@ -75,8 +75,4 @@ export default {
 .screen1 {
   background-image: url('../assets/course-7.jpg');
 }
-
-// #screen2 {
-//   // min-height: 150vh;
-// }
 </style>

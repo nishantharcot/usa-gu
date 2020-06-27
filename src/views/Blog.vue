@@ -48,11 +48,6 @@ export default {
         }
       ]
     }
-  },
-  computed: {
-    courseLength() {
-      return Math.ceil(this.data.blogs.length / 3)
-    }
   }
 }
 </script>
@@ -61,8 +56,4 @@ export default {
 .screen1 {
   background-image: url('../assets/course-5.jpg');
 }
-
-// #screen2 {
-//   min-height: 120vh;
-// }
 </style>

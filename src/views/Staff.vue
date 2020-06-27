@@ -72,12 +72,4 @@ export default {
 .screen1 {
   background-image: url('../assets/course-4.jpg');
 }
-
-// #screen2 {
-//   min-height: 150vh;
-// }
-
-.centerClass {
-  text-align: center;
-}
 </style>

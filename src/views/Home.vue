@@ -1,9 +1,9 @@
 <template>
   <div>
-    <v-container class="pt-0 pb-0" v-if="$vuetify.breakpoint.smAndDown">
+    <v-container v-if="$vuetify.breakpoint.smAndDown" class="pt-0 pb-0">
       <v-row id="screen1" app>
         <v-col id="screen1-content" cols="12" sm="12">
-          <h1 id="mainHeading" class="display-1 centerClass">
+          <h1 id="mainHeading" class="display-1 text-center">
             EDUCATION NEEDS COMPLETE SOLUTION
           </h1>
           <v-btn x-large color="primary" class="mt-5">
@@ -14,7 +14,7 @@
     </v-container>
     <v-row v-else id="screen1" class="pb-0" app>
       <v-col id="screen1-content" cols="12" sm="12">
-        <h1 id="mainHeading" class="display-1 centerClass">
+        <h1 id="mainHeading" class="display-1 text-center">
           EDUCATION NEEDS COMPLETE SOLUTION
         </h1>
         <v-btn x-large color="primary" class="mt-5">
@@ -23,7 +23,7 @@
       </v-col>
     </v-row>
     <v-container class="pt-0 mt-0" v-if="$vuetify.breakpoint.smAndDown">
-      <v-row class="pt-0 mt-0" id="secondScreen">
+      <v-row class="pt-0 mt-0">
         <v-col
           class="pa-0 colorCard"
           cols="12"
@@ -38,15 +38,15 @@
             dark
             tile
           >
-            <div class="centerClass">
+            <div class="text-center">
               <v-icon>
                 {{ item.icon }}
               </v-icon>
             </div>
-            <h3 class="centerClass screen2Heading">
+            <h3 class="text-center screen2Heading">
               {{ item.title }}
             </h3>
-            <p class="centerClass screen2Text px-3">
+            <p class="text-center screen2Text px-3">
               Even the all-powerful Pointing has no control about the blind
               texts it is an almost unorthographic.
             </p>
@@ -54,7 +54,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-row v-else id="secondScreen">
+    <v-row v-else>
       <v-col
         class="pa-0 colorCard"
         cols="12"
@@ -63,21 +63,21 @@
         :key="item.title"
       >
         <v-card
-          class="mx-auto cardClass mb-0"
+          class="mx-auto cardClass mb-0 text-center"
           height="300"
           :color="item.id % 2 === 0 ? 'primary' : 'secondary'"
           dark
           tile
         >
-          <div class="centerClass">
+          <div>
             <v-icon>
               {{ item.icon }}
             </v-icon>
           </div>
-          <h3 class="centerClass screen2Heading">
+          <h3 class="screen2Heading">
             {{ item.title }}
           </h3>
-          <p class="centerClass screen2Text px-3">
+          <p class="screen2Text px-3">
             Even the all-powerful Pointing has no control about the blind texts
             it is an almost unorthographic.
           </p>
@@ -85,7 +85,7 @@
       </v-col>
     </v-row>
     <v-container class="home">
-      <v-row id="screen3">
+      <v-row class="mt-3">
         <v-col class="about2" cols="12" sm="12" md="7">
           <h2 class="mb-5 display-1">
             What We Offer
@@ -196,7 +196,7 @@
       <v-row class="lastScreen">
         <v-col cols="2"></v-col>
         <v-col cols="12" md="8">
-          <div class="centerClass">
+          <div class="text-center">
             <h1 class="mainHeading mb-5">
               Our Courses
             </h1>
@@ -217,7 +217,7 @@
       <v-row class="lastScreen">
         <v-col cols="2"></v-col>
         <v-col cols="12" md="8">
-          <div class="centerClass">
+          <div class="text-center">
             <h1 class="mainHeading mb-5">
               Certified Professors
             </h1>
@@ -243,7 +243,7 @@
       <v-row class="lastScreen">
         <v-col cols="2"></v-col>
         <v-col cols="12" md="8">
-          <div class="centerClass">
+          <div class="text-center">
             <h1 class="mainHeading mb-5">
               Recent Blog
             </h1>
@@ -285,39 +285,12 @@
   align-items: center;
   background-color: rgba(black, 0.5);
   z-index: 2;
-  // color: darkblue;
-}
-
-#parallaxScreen {
-  min-height: 120vh;
-}
-
-.centerClass {
-  text-align: center;
-}
-
-.flexRow {
-  display: flex;
-  flex-direction: row;
 }
 
 .screen2Text {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.8;
-}
-
-#screen3 {
-  min-height: 80vh;
-  // height: 80vh;
-  // background-color: aqua;
-}
-
-#screen4 {
-  min-height: 130vh;
-  // background-image: url('../assets/about2.jpg');
-  background-position: center;
-  background-size: cover;
 }
 
 .v-overlay__content {
@@ -340,27 +313,9 @@
   justify-content: space-evenly;
 }
 
-#secondScreen {
-  min-height: 50vh;
-}
-
 .mainHeading {
   font-size: 50px;
   font-weight: 900;
-}
-
-.gapClass {
-  height: 25vh;
-}
-
-.mainHeading {
-  font-weight: 600;
-  font-size: 50px;
-}
-
-.carouselBackground {
-  background-color: rgba(black, 0.7);
-  z-index: 2;
 }
 </style>
 

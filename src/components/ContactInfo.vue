@@ -8,13 +8,13 @@
       :key="item.title"
     >
       <div class="screen4Card">
-        <h2 class="centerClass">{{ item.title }}</h2>
+        <h2 class="text-center">{{ item.title }}</h2>
         <hr
           role="separator"
           aria-orientation="horizontal"
           class="v-divider lineAdjust"
         />
-        <h4 class="centerClass pt-2">{{ item.label }}</h4>
+        <h4 class="text-center pt-2">{{ item.label }}</h4>
       </div>
     </v-col>
   </v-row>
@@ -47,13 +47,9 @@ export default {
 
 <style lang="scss" scoped>
 #screen4 {
-  // height: 40vh;
-  // min-height: 50vh;
   display: flex;
   justify-content: space-around;
   align-content: space-around;
-  // background-color: #1a237e;
-  // color: white;
 }
 
 h1,
@@ -70,10 +66,6 @@ h6 {
   height: 20vh;
   flex-direction: column;
   justify-content: baseline;
-}
-
-.centerClass {
-  text-align: center;
 }
 
 hr {

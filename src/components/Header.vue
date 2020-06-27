@@ -2,7 +2,7 @@
   <v-container class="pa-0 mx-0 full-width">
     <v-row class="mt-5" v-if="$vuetify.breakpoint.mdAndUp">
       <v-col v-if="$vuetify.breakpoint.mdAndUp" cols="12" md="3">
-        <h1 class="centerClass">
+        <h1 class="text-center">
           USA-GU
         </h1>
       </v-col>
@@ -128,10 +128,6 @@ export default {
 .full-width {
   width: 100vw !important;
   max-width: 100vw !important;
-}
-
-.centerClass {
-  text-align: center;
 }
 
 .flexRowCenter {

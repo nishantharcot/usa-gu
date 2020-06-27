@@ -41,22 +41,6 @@
           </div>
         </v-col>
       </v-row>
-      <!-- <v-row id="screen4" class="theme--dark">
-        <v-col cols="1"></v-col>
-        <v-col
-          cols="12"
-          md="2"
-          sm="12"
-          v-for="item in collegeStatistics"
-          :key="item.title"
-        >
-          <div class="screen4Card">
-            <h2 class="centerClass">{{ item.title }}</h2>
-            <h4 class="centerClass">{{ item.label }}</h4>
-          </div>
-        </v-col>
-        <v-col cols="1"></v-col>
-      </v-row> -->
     </v-container>
     <v-parallax
       :height="$vuetify.breakpoint.smAndDown ? 1000 : 500"
@@ -156,40 +140,6 @@ export default {
 <style lang="scss" scoped>
 .screen1 {
   background-image: url('../assets/course-1.jpg');
-  // background-position: top;
-}
-
-#start-gap {
-  min-width: 20vh;
-}
-
-#screen2 {
-  min-height: 80vh;
-  // height: 80vh;
-  // background-color: aqua;
-}
-
-#screen3 {
-  min-height: 130vh;
-  background-image: url('../assets/about2.jpg');
-  background-position: center;
-  background-size: cover;
-}
-
-#screen4 {
-  // height: 40vh;
-  min-height: 50vh;
-  display: flex;
-  justify-content: space-around;
-  align-content: space-around;
-  // background-color: #1a237e;
-  // color: white;
-}
-
-.screen3-content {
-  // background: linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
-  z-index: 2;
-  background-color: rgba(orange, 0.7);
 }
 
 .about2 {
@@ -203,26 +153,5 @@ export default {
   display: flex;
   justify-content: flex-start !important;
   align-items: flex-start;
-}
-
-.whiteText {
-  color: white !important;
-}
-
-.screen4Card {
-  display: flex;
-  height: 15vh;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.centerClass {
-  text-align: center;
-}
-
-.flexCenter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 </style>

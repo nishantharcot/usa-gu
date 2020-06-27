@@ -1,7 +1,7 @@
 <template>
   <v-row class="mx-0 screen1 white--text">
     <v-col id="screen1-content" cols="12" sm="12">
-      <h1 id="mainHeading" class="display-1 mb-5 centerClass">
+      <h1 id="mainHeading" class="display-1 mb-5 text-center">
         {{ pageHeading }}
       </h1>
       <div class="startCaption" v-if="Boolean(caption) === true">
@@ -32,10 +32,6 @@ export default {
 .screen1 {
   background-size: cover;
   background-position: center;
-}
-
-.centerClass {
-  text-align: center;
 }
 
 .centerText {
