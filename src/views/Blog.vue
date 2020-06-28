@@ -3,8 +3,8 @@
     <StartScreen pageHeading="Blog" caption="BLOG" />
     <v-container>
       <v-row id="screen2" class="mx-auto mt-10 mb-10">
-        <v-col v-for="index2 in blogs.length" :key="index2" cols="12" md="4">
-          <BlogPost :blogInfo="blogs[index2 - 1]" />
+        <v-col v-for="index in blogs.length" :key="index" cols="12" md="4">
+          <BlogPost :blogInfo="blogs[index - 1]" />
         </v-col>
       </v-row>
     </v-container>

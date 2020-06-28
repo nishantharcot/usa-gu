@@ -13,41 +13,6 @@
             paradisematic country
           </p>
         </div>
-        <v-carousel
-          cycle
-          height="400"
-          hide-delimiter-background
-          hide-delimiters
-          show-arrows-on-hover
-          class="mt-5"
-        >
-          <v-carousel-item v-for="item in testimaonials" :key="item.name">
-            <div>
-              <v-card flat class="mx-auto mt-15" max-width="500">
-                <v-list-item three-line>
-                  <v-list-item-avatar size="80">
-                    <v-img :src="item.image"></v-img>
-                  </v-list-item-avatar>
-                  <v-list-item-content dark>
-                    <div class="mb-4 black--text">
-                      Far far away, behind the word mountains, far from the
-                      countries Vokaila and Consonantia, there live the blind
-                      texts
-                    </div>
-                    <v-list-item-title
-                      color="black"
-                      class="headline mb-1 black--text"
-                      >{{ item.name }}</v-list-item-title
-                    >
-                    <span class="d-flex px-0 mt-3 black--text" text>{{
-                      item.relation
-                    }}</span>
-                  </v-list-item-content>
-                </v-list-item>
-              </v-card>
-            </div>
-          </v-carousel-item>
-        </v-carousel>
       </v-col>
       <v-col cols="2"></v-col>
     </v-row>

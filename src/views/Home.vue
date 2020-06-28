@@ -145,9 +145,10 @@
         <v-container style="max-width: 100vw">
           <v-row align="center" justify="center">
             <v-col class="text-center pa-0" cols="12" md="5">
-              <LazyYoutubeVideo
+              <!-- <LazyYoutubeVideo
                 src="https://www.youtube.com/embed/xmCWXOO1XNA"
-              />
+              /> -->
+              <v-img src="../assets/bg_2.jpg"></v-img>
             </v-col>
             <v-col cols="12" md="5" class="text-center">
               <h1 class="display-1 font-weight-thin mb-4">USA GU University</h1>
@@ -315,7 +316,7 @@ import BlogPost from '@/components/BlogPost.vue'
 import CourseCard from '@/components/CourseCard.vue'
 import Teacher from '@/components/Teacher.vue'
 import 'vue-lazy-youtube-video/dist/style.css'
-import LazyYoutubeVideo from 'vue-lazy-youtube-video'
+// import LazyYoutubeVideo from 'vue-lazy-youtube-video'
 
 export default {
   name: 'Home',
@@ -323,8 +324,8 @@ export default {
     EndScreen,
     BlogPost,
     CourseCard,
-    Teacher,
-    LazyYoutubeVideo
+    Teacher
+    // LazyYoutubeVideo
   },
   data() {
     return {
