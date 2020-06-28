@@ -1,15 +1,14 @@
 <template>
-  <v-footer dark color="grey darken-3" class="pa-0" padless>
-    <v-container class="pt-0">
+  <v-footer dark color="grey darken-3">
+    <v-container>
       <v-row>
-        <v-col class="pl-2" cols="12" md="3" xs="12">
-          <v-main class="pa-1" outlined tile>
-            <h3 class="display" dark>
+        <v-col cols="12" md="3">
+          <v-main>
+            <h3 class="display pl-3">
               Have a Question?
             </h3>
             <v-col class="d-flex" v-for="item in footerStart" :key="item.text">
               <v-icon>{{ item.icon }}</v-icon>
-              &nbsp;
               <label class="pl-3">
                 {{ item.text }}
               </label>
@@ -19,47 +18,41 @@
         <v-col
           cols="12"
           md="2"
-          xs="12"
-          class="d-flex"
           v-for="item in footerResources"
           :key="item.heading"
         >
-          <div class="pa-2" outlined tile>
+          <div>
             <h3 class="display pl-2">{{ item.heading }}</h3>
-            <v-col class="" v-for="data in item.data" :key="data">{{
-              data
-            }}</v-col>
+            <v-col v-for="data in item.data" :key="data">{{ data }}</v-col>
           </div>
         </v-col>
-        <v-col class="mt-1" cols="12" md="3" xs="12">
-          <v-main class="pa-1 mr-3" outlined tile>
+        <v-col cols="12" md="3">
+          <v-main>
             <h3 class="display">
               Subscribe Us!
             </h3>
-            <v-text-field dark label="Name" type="text"></v-text-field>
-            <v-text-field dark label="Email" type="email"></v-text-field>
+            <v-text-field label="Name" type="text"></v-text-field>
+            <v-text-field label="Email" type="email"></v-text-field>
             <v-btn color="primary" x-large block>Subscribe</v-btn>
           </v-main>
         </v-col>
       </v-row>
-    </v-container>
-    <v-container>
-      <v-card color="grey darken-3" class="flex" flat tile>
+      <v-card
+        :class="$vuetify.breakpoint.mdAndUp ? 'd-flex' : ''"
+        color="grey darken-3"
+        flat
+      >
         <v-card-title>
-          <strong class="subheading">&copy; All rights reserved</strong>
-
-          <v-spacer></v-spacer>
-
-          <v-btn
-            color="primary"
-            v-for="icon in icons"
-            :key="icon"
-            class="mx-4"
-            icon
-          >
-            <v-icon color="white" size="24px">{{ icon }}</v-icon>
-          </v-btn>
+          <strong>&copy; All rights reserved</strong>
         </v-card-title>
+
+        <v-spacer></v-spacer>
+
+        <v-card-actions>
+          <v-btn v-for="icon in icons" :key="icon" icon>
+            <v-icon>{{ icon }}</v-icon>
+          </v-btn>
+        </v-card-actions>
       </v-card>
     </v-container>
   </v-footer>
