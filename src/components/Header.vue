@@ -38,7 +38,7 @@
         </div>
       </v-col>
       <v-col cols="12" md="2">
-        <v-btn class="mt-2" color="primary">
+        <v-btn class="mt-2" color="primary" to="/application">
           Apply Now
         </v-btn>
       </v-col>
@@ -94,7 +94,7 @@ export default {
         url: '/'
       },
       {
-        label: 'About',
+        label: 'About us',
         url: '/about'
       },
       {
@@ -110,7 +110,15 @@ export default {
         url: '/blog'
       },
       {
-        label: 'Contact',
+        label: 'Gallery',
+        url: '/gallery'
+      },
+      {
+        label: 'Admissions & Fees',
+        url: '/admissions'
+      },
+      {
+        label: 'Contact us',
         url: '/contact'
       }
     ]
