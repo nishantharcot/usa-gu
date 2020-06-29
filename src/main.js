@@ -21,7 +21,8 @@ import {
   faChevronRight,
   faBars,
   faTrophy,
-  faUserGraduate
+  faUserGraduate,
+  faCaretDown
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faTwitter,
@@ -62,7 +63,8 @@ library.add(
   faLinkedin,
   faTrophy,
   faUserGraduate,
-  faChalkboardTeacher
+  faChalkboardTeacher,
+  faCaretDown
 )
 Vue.config.productionTip = false
 
