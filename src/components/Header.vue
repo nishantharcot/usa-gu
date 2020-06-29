@@ -98,20 +98,20 @@ export default {
         url: '/about'
       },
       {
-        label: 'Courses',
-        url: '/courses'
+        label: 'Programs',
+        url: '/programs'
       },
       {
         label: 'Staff',
         url: '/staff'
       },
       {
-        label: 'Blog',
-        url: '/blog'
-      },
-      {
         label: 'Gallery',
         url: '/gallery'
+      },
+      {
+        label: 'Awards',
+        url: '/awards'
       },
       {
         label: 'Admissions & Fees',

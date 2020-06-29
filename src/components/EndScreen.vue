@@ -16,7 +16,7 @@
       </v-col>
       <v-col cols="2"></v-col>
     </v-row>
-    <v-row class="">
+    <!-- <v-row class="">
       <v-col
         class="pa-0 mb-0"
         cols="12"
@@ -26,7 +26,33 @@
       >
         <v-img height="400" :src="image"></v-img>
       </v-col>
-      <!-- <vue-picture-swipe :items="items"></vue-picture-swipe> -->
+      <vue-picture-swipe :items="items"></vue-picture-swipe>
+    </v-row> -->
+    <v-row class="mt-15">
+      <v-col
+        v-for="testimonial in studentTestimonials"
+        :key="testimonial.name"
+        cols="12"
+        md="4"
+      >
+        <v-card class="mx-auto" max-width="400">
+          <v-img
+            class="white--text align-end"
+            height="300px"
+            :src="testimonial.image"
+          >
+          </v-img>
+          <v-card-text class="text--primary">
+            {{ testimonial.description }}
+          </v-card-text>
+          <v-card-title>
+            {{ testimonial.name }}
+          </v-card-title>
+          <v-card-subtitle class="pb-0">
+            {{ testimonial.branch }}
+          </v-card-subtitle>
+        </v-card>
+      </v-col>
     </v-row>
   </v-container>
 </template>
@@ -97,6 +123,29 @@ export default {
         src: '../assets/image_4.jpg',
         w: 600,
         h: 400
+      }
+    ],
+    studentTestimonials: [
+      {
+        name: 'WILSON E. POLAND',
+        image: require('../assets/admission-last-screen-2.jpg'),
+        branch: 'Computer Science, Bachelor Degree',
+        description:
+          'American British Graduate University is amazing because it lets me pursue my dream of working in computer science alongside my demanding full-time job.'
+      },
+      {
+        name: 'AMANDA C, UNITED STATES',
+        image: require('../assets/admission-last-screen-1.jpg'),
+        branch: 'Business Administration, Bachelor Degree',
+        description:
+          'I am glad to be a part of American British Graduate University because it stands for the standardization of higher education that should be provided globally to all mankind'
+      },
+      {
+        name: 'ELIZAVETA K. UKRAINE',
+        image: require('../assets/admission-last-screen-3.jpg'),
+        branch: 'Computer Science, Master Degree',
+        description:
+          'American British Graduate University has rekindled my enthusiasm to achieve my academic dreams with rigorous academic programs and the highest standards of academic excellence.'
       }
     ]
   })

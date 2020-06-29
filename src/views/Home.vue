@@ -14,7 +14,10 @@
     </v-container>
     <v-row v-else id="screen1" class="pb-0" app>
       <v-col id="screen1-content" cols="12" sm="12">
-        <h1 id="mainHeading" class="display-1 text-center">
+        <h1
+          id="mainHeading"
+          class="display-1 text-center animate__animated animate__bounce"
+        >
           EDUCATION NEEDS COMPLETE SOLUTION
         </h1>
         <v-btn x-large color="primary" class="mt-5">
@@ -457,6 +460,29 @@ export default {
         {
           title: 50,
           label: 'Awards Won'
+        }
+      ],
+      studentTestimonials: [
+        {
+          name: 'WILSON E. POLAND',
+          image: require('../assets/admission-last-screen-2.jpg'),
+          branch: 'Computer Science, Bachelor Degree',
+          description:
+            'American British Graduate University is amazing because it lets me pursue my dream of working in computer science alongside my demanding full-time job.'
+        },
+        {
+          name: 'AMANDA C, UNITED STATES',
+          image: require('../assets/admission-last-screen-1.jpg'),
+          branch: 'Business Administration, Bachelor Degree',
+          description:
+            'I am glad to be a part of American British Graduate University because it stands for the standardization of higher education that should be provided globally to all mankind'
+        },
+        {
+          name: 'ELIZAVETA K. UKRAINE',
+          image: require('../assets/admission-last-screen-3.jpg'),
+          branch: 'Computer Science, Master Degree',
+          description:
+            'American British Graduate University has rekindled my enthusiasm to achieve my academic dreams with rigorous academic programs and the highest standards of academic excellence.'
         }
       ]
     }
