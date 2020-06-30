@@ -1,6 +1,6 @@
 <template>
   <div>
-    <StartScreen pageHeading="Admission and Fees" caption="ADMISSIONS" />
+    <StartScreen pageHeading="ADMISSION AND FEES" caption="ADMISSIONS" />
     <v-container class="pt-0 mt-0" v-if="$vuetify.breakpoint.smAndDown">
       <v-row>
         <v-col

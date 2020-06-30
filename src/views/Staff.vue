@@ -1,6 +1,6 @@
 <template>
   <div>
-    <StartScreen pageHeading="Certified Professor" caption="PROFESSOR" />
+    <StartScreen pageHeading="CERTIFIED PROFESSOR" caption="PROFESSOR" />
     <v-container>
       <v-row id="screen2" class="mx-auto mt-10">
         <v-col v-for="index2 in courses.length" :key="index2" cols="12" md="3">

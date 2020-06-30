@@ -14,10 +14,7 @@
     </v-container>
     <v-row v-else id="screen1" class="pb-0" app>
       <v-col id="screen1-content" cols="12" sm="12">
-        <h1
-          id="mainHeading"
-          class="display-1 text-center animate__animated animate__bounce"
-        >
+        <h1 id="mainHeading" class="display-1 text-center">
           EDUCATION NEEDS COMPLETE SOLUTION
         </h1>
         <v-btn x-large color="primary" class="mt-5">
@@ -46,9 +43,7 @@
                 {{ item.icon }}
               </v-icon>
             </div>
-            <h3 class="text-center screen2Heading">
-              {{ item.title }}
-            </h3>
+            <h3 class="text-center screen2Heading">{{ item.title }}</h3>
             <p class="text-center screen2Text px-3">
               Even the all-powerful Pointing has no control about the blind
               texts it is an almost unorthographic.
@@ -65,10 +60,18 @@
         v-for="item in screen2Data"
         :key="item.title"
       >
+        <!-- :color="item.id % 2 === 0 ? 'primary' : 'secondary'" -->
         <v-card
-          class="mx-auto d-flex flex-colum cardClass mb-0 text-center"
+          v-intersect.once="{
+            handler: onIntersect,
+            options: {
+              threshold: [0, 0.5, 1.0]
+            }
+          }"
+          class="mx-auto d-flex flex-colum animate__animated cardClass mb-0 text-center"
+          :class="isIntersecting ? 'animate__backInLeft' : ''"
           height="300"
-          :color="item.id % 2 === 0 ? 'primary' : 'secondary'"
+          :color="isIntersecting ? 'green lighten-1' : 'red darken-2'"
           dark
           tile
         >
@@ -77,7 +80,7 @@
               {{ item.icon }}
             </v-icon>
           </div>
-          <h3 class="screen2Heading">
+          <h3 class="screen2heading">
             {{ item.title }}
           </h3>
           <p class="screen2Text px-3">
@@ -147,7 +150,7 @@
       <v-overlay opacity="0.7" absolute style="max-width: 100vw">
         <v-container style="max-width: 100vw">
           <v-row align="center" justify="center">
-            <v-col class="text-center pa-0" cols="12" md="5">
+            <v-col class="" cols="12" md="5">
               <!-- <LazyYoutubeVideo
                 src="https://www.youtube.com/embed/xmCWXOO1XNA"
               /> -->
@@ -242,20 +245,42 @@
         <v-col cols="12" md="8">
           <div class="text-center">
             <h1 class="mainHeading mb-5">
-              Recent Blog
+              Gallery
             </h1>
             <p>
-              Separated they live in. A small river named Duden flows by their
-              place and supplies it with the necessary regelialia. It is a
-              paradisematic country
+              Even though all of the programs provided by LIGS University are
+              100 % online and the students don't have to visit the campus of
+              the university in Hawaii, our campus in Prague, Czech Republic
+              often organizes events such as the annual LIGS AWARDS. We would
+              like to share a few photos from these wonderful events with you.
             </p>
           </div>
         </v-col>
         <v-col cols="2"></v-col>
       </v-row>
       <v-row id="screen2" class="mx-auto mt-10">
-        <v-col v-for="index2 in blogs.length" :key="index2" cols="12" md="4">
-          <BlogPost :blogInfo="blogs[index2 - 1]" />
+        <v-col
+          v-for="photoCard in photoGallery"
+          :key="photoCard.name"
+          cols="12"
+          md="4"
+        >
+          <v-card class="mx-auto" max-width="400">
+            <v-img
+              class="white--text align-end"
+              height="300px"
+              :src="photoCard.image"
+            >
+            </v-img>
+            <v-card-title>
+              {{ photoCard.name }}
+            </v-card-title>
+            <v-card-text class="text--primary">
+              Have a look at the most captivating moments from our Graduation
+              Ceremony, where we handed out diplomas to our successful
+              graduates.
+            </v-card-text>
+          </v-card>
         </v-col>
       </v-row>
     </v-container>
@@ -315,7 +340,7 @@
 <script>
 // @ is an alias to /src
 import EndScreen from '@/components/EndScreen.vue'
-import BlogPost from '@/components/BlogPost.vue'
+// import BlogPost from '@/components/BlogPost.vue'
 import CourseCard from '@/components/CourseCard.vue'
 import Teacher from '@/components/Teacher.vue'
 import 'vue-lazy-youtube-video/dist/style.css'
@@ -325,7 +350,6 @@ export default {
   name: 'Home',
   components: {
     EndScreen,
-    BlogPost,
     CourseCard,
     Teacher
     // LazyYoutubeVideo
@@ -484,7 +508,32 @@ export default {
           description:
             'American British Graduate University has rekindled my enthusiasm to achieve my academic dreams with rigorous academic programs and the highest standards of academic excellence.'
         }
-      ]
+      ],
+      photoGallery: [
+        {
+          image: require('../assets/photo-gallery-1.jpg'),
+          name: 'Graduation Ceremony 2019',
+          description: ''
+        },
+        {
+          image: require('../assets/photo-gallery-2.jpg'),
+          name: 'Hawaii: Oahu',
+          description: ''
+        },
+        {
+          image: require('../assets/photo-gallery-4.jpg'),
+          name: 'LIGS Awards 2017',
+          description: ''
+        }
+      ],
+      isIntersecting: false
+    }
+  },
+  methods: {
+    onIntersect(entries) {
+      // More information about these options
+      // is located here: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+      this.isIntersecting = entries[0].intersectionRatio >= 0.1
     }
   }
 }

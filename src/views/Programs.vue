@@ -1,6 +1,6 @@
 <template>
   <div>
-    <StartScreen pageHeading="OUR COURSES" caption="COURSES" />
+    <StartScreen pageHeading="OUR PROGRAMS" caption="PROGRAMS" />
     <v-row class="mb-5">
       <v-col cols="1"></v-col>
       <v-col cols="10">

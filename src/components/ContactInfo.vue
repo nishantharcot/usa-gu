@@ -34,11 +34,11 @@ export default {
       },
       {
         title: 'Email Address',
-        label: 'info@yoursite.com'
+        label: 'info@abguniversity.org'
       },
       {
         title: 'Website',
-        label: 'yoursite.com'
+        label: 'abguniversity.com'
       }
     ]
   })

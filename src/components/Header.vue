@@ -19,7 +19,7 @@
           <div class="d-flex flex-column pl-3">
             <strong>Email</strong>
             <p>
-              youremail@email.com
+              info@abguniversity.org
             </p>
           </div>
         </div>

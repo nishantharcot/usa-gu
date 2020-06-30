@@ -68,7 +68,7 @@ export default {
       },
       {
         icon: 'fas fa-envelope',
-        text: 'info@yourdomain.com'
+        text: 'info@abguniversity.org'
       },
       {
         icon: 'fas fa-map-marker-alt',

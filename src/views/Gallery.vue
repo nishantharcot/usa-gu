@@ -1,6 +1,6 @@
 <template>
   <div>
-    <StartScreen pageHeading="Gallery" caption="GALLERY" />
+    <StartScreen pageHeading="GALLERY" caption="GALLERY" />
     <v-container>
       <v-row>
         <v-col class="order-2" cols="12" md="6">

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <StartScreen pageHeading="Contact Us" caption="CONTACT" />
+    <StartScreen pageHeading="CONTACT US" caption="CONTACT" />
     <!-- use container for propper padding -->
     <ContactInfo />
     <v-row>
