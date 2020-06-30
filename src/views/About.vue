@@ -3,7 +3,7 @@
     <StartScreen pageHeading="ABOUT US" caption="ABOUT" />
     <v-container>
       <v-row class="justify-center text-center">
-        <v-col class="mt-15" cols="8">
+        <v-col class="mt-15" cols="12" md="8">
           <p class="text-h6">
             USA GU’s formula has proven a great success over the years. It is
             efficient, student-oriented, and can be transmitted from any
