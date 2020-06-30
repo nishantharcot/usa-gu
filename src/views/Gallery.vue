@@ -28,7 +28,7 @@
           cols="12"
           md="6"
         >
-          <v-img src="../assets/gallery-screen1.jpg"></v-img>
+          <v-img src="../assets/gallery-new-1.jpg"></v-img>
         </v-col>
       </v-row>
       <v-row>

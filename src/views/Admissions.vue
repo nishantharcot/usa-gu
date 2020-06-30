@@ -117,7 +117,7 @@
           cols="12"
           md="4"
         >
-          <v-img src="../assets/admission-screen2.png"></v-img>
+          <v-img src="../assets/admission-new-1.jpg"></v-img>
         </v-col>
       </v-row>
       <v-row class="screen-2">
@@ -126,7 +126,7 @@
           cols="12"
           md="4"
         >
-          <v-img src="../assets/Graduation-Fee.png"></v-img>
+          <v-img src="../assets/admission-new-2.jpg"></v-img>
         </v-col>
         <v-col class="order-2" cols="12" md="8">
           <h1 class="display-1">
@@ -193,7 +193,7 @@
           cols="12"
           md="4"
         >
-          <v-img src="../assets/Second-Degree-Fees.png"></v-img>
+          <v-img src="../assets/admission-new-3.jpg"></v-img>
         </v-col>
       </v-row>
       <v-row class="screen-3">
@@ -227,7 +227,7 @@
           cols="12"
           md="4"
         >
-          <v-img src="../assets/Fee-Refund-Policy.png"></v-img>
+          <v-img src="../assets/admission-new-4.jpg"></v-img>
         </v-col>
       </v-row>
       <v-row class="screen-2 achievements-screen justify-center">
