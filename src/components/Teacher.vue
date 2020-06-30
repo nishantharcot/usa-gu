@@ -3,17 +3,14 @@
     <v-img class="white--text align-end" height="300px" :src="teacher.image">
     </v-img>
 
-    <v-card-title class="pb-0 mb-4 justify-center">
+    <v-card-title class="justify-center">
       {{ teacher.name }}
     </v-card-title>
-    <v-card-subtitle class="pb-0">
-      {{ teacher.title }}
+    <v-card-subtitle class="text--primary">
+      {{ teacher.qualification }}
     </v-card-subtitle>
-
-    <v-card-text class="text--primary">
-      <div>
-        I am an ambitious workaholic, but apart from that, pretty simple person.
-      </div>
+    <v-card-text class="pb-0 text-body-1 justify-center">
+      {{ teacher.title }}
     </v-card-text>
   </v-card>
 </template>

@@ -2,7 +2,7 @@
   <div>
     <StartScreen pageHeading="CERTIFIED PROFESSOR" caption="PROFESSOR" />
     <v-container>
-      <v-row id="screen2" class="mx-auto mt-10">
+      <v-row class="mx-auto mt-10">
         <v-col v-for="index2 in courses.length" :key="index2" cols="12" md="3">
           <Teacher :teacher="courses[index2 - 1]" />
         </v-col>

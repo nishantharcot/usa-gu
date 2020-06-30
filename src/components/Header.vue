@@ -98,28 +98,28 @@ export default {
         url: '/about'
       },
       {
-        label: 'Programs',
+        label: 'Programmes',
         url: '/programs'
-      },
-      {
-        label: 'Staff',
-        url: '/staff'
-      },
-      {
-        label: 'Gallery',
-        url: '/gallery'
-      },
-      {
-        label: 'Awards',
-        url: '/awards'
       },
       {
         label: 'Admissions & Fees',
         url: '/admissions'
       },
       {
-        label: 'Contact us',
+        label: 'Award Verification',
+        url: '/awards'
+      },
+      {
+        label: 'Gallery',
+        url: '/gallery'
+      },
+      {
+        label: 'Contact',
         url: '/contact'
+      },
+      {
+        label: 'Apply Now',
+        url: '/application'
       }
     ]
   })

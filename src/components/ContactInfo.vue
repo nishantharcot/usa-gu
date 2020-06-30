@@ -1,23 +1,25 @@
 <template>
-  <v-row class="d-flex justify-space-around align-stretch theme--dark mt-10">
-    <v-col
-      cols="12"
-      md="2"
-      sm="12"
-      v-for="item in collegeStatistics"
-      :key="item.title"
-    >
-      <div class="d-flex flex-column">
-        <h3 class="text-center">{{ item.title }}</h3>
-        <hr
-          role="separator"
-          aria-orientation="horizontal"
-          class="v-divider lineAdjust"
-        />
-        <h4 class="text-center pt-2">{{ item.label }}</h4>
-      </div>
-    </v-col>
-  </v-row>
+  <v-container>
+    <v-row class="d-flex justify-space-around align-stretch theme--dark mt-10">
+      <v-col
+        cols="12"
+        md="2"
+        sm="12"
+        v-for="item in collegeStatistics"
+        :key="item.title"
+      >
+        <div class="d-flex flex-column">
+          <h3 class="text-center">{{ item.title }}</h3>
+          <hr
+            role="separator"
+            aria-orientation="horizontal"
+            class="v-divider lineAdjust"
+          />
+          <h4 class="text-center pt-2">{{ item.label }}</h4>
+        </div>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>

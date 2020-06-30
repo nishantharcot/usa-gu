@@ -3,11 +3,11 @@
     <StartScreen pageHeading="CONTACT US" caption="CONTACT" />
     <!-- use container for propper padding -->
     <ContactInfo />
-    <v-row>
+    <v-container>
       <v-col cols="12" class="pb-0">
         <v-img src="../assets/contactPhoto.jpg"></v-img>
       </v-col>
-    </v-row>
+    </v-container>
   </div>
 </template>
 

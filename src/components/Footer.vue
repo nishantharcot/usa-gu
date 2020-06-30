@@ -15,26 +15,24 @@
             </v-col>
           </v-main>
         </v-col>
+        <v-spacer></v-spacer>
         <v-col
           cols="12"
-          md="2"
+          md="3"
           v-for="item in footerResources"
           :key="item.heading"
         >
           <div>
             <h3 class="display pl-2">{{ item.heading }}</h3>
-            <v-col v-for="data in item.data" :key="data">{{ data }}</v-col>
+            <v-col v-for="data in item.data" :key="data.label">
+              <v-icon>
+                fas fa-angle-double-right
+              </v-icon>
+              <v-btn text>
+                {{ data.label }}
+              </v-btn>
+            </v-col>
           </div>
-        </v-col>
-        <v-col cols="12" md="3">
-          <v-main>
-            <h3 class="display">
-              Subscribe Us!
-            </h3>
-            <v-text-field label="Name" type="text"></v-text-field>
-            <v-text-field label="Email" type="email"></v-text-field>
-            <v-btn color="primary" x-large block>Subscribe</v-btn>
-          </v-main>
         </v-col>
       </v-row>
       <v-card
@@ -77,19 +75,50 @@ export default {
     ],
     footerResources: [
       {
-        heading: 'FEATURES',
-        data: ['Pricing', 'Education', 'Refer a Friend', 'Updates', 'Beta']
-      },
-      {
-        heading: 'COMPANY',
-        data: ['Design', 'Prototype', 'Colloborate', 'Sketch', 'Photoshop']
-      },
-      {
         heading: 'Links',
-        data: ['Home', 'About', 'Services', 'Departments', 'Contact']
+        data: [
+          {
+            label: 'Home',
+            url: '/'
+          },
+          {
+            label: 'About us',
+            url: '/about'
+          },
+          {
+            label: 'Programmes',
+            url: '/programs'
+          },
+          {
+            label: 'Admissions & Fees',
+            url: '/admissions'
+          },
+          {
+            label: 'Award Verification',
+            url: '/awards'
+          },
+          {
+            label: 'Gallery',
+            url: '/gallery'
+          },
+          {
+            label: 'Contact',
+            url: '/contact'
+          },
+          {
+            label: 'Apply Now',
+            url: '/application'
+          }
+        ]
       }
     ],
-    icons: ['fab fa-facebook', 'fab fa-twitter', 'fab fa-linkedin']
+    icons: [
+      'fab fa-facebook',
+      'fab fa-twitter',
+      'fab fa-linkedin',
+      'fab fa-quora',
+      'fab fa-youtube'
+    ]
   })
 }
 </script>

@@ -25,12 +25,16 @@ import {
   faCaretDown,
   faSquare,
   faCheckSquare,
-  faChevronDown
+  faChevronDown,
+  faGraduationCap,
+  faAngleDoubleRight
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faTwitter,
   faFacebook,
-  faLinkedin
+  faLinkedin,
+  faYoutube,
+  faQuora
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import App from './App.vue'
@@ -64,13 +68,17 @@ library.add(
   faFacebook,
   faBars,
   faLinkedin,
+  faYoutube,
+  faQuora,
   faTrophy,
   faUserGraduate,
-  faChalkboardTeacher,
   faCaretDown,
   faSquare,
   faCheckSquare,
-  faChevronDown
+  faChevronDown,
+  faGraduationCap,
+  faTrophy,
+  faAngleDoubleRight
 )
 Vue.config.productionTip = false
 

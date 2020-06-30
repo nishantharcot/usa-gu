@@ -71,7 +71,7 @@
           class="mx-auto d-flex flex-colum animate__animated cardClass mb-0 text-center"
           :class="isIntersecting ? 'animate__backInLeft' : ''"
           height="300"
-          :color="isIntersecting ? 'green lighten-1' : 'red darken-2'"
+          :color="item.id % 2 === 0 ? 'primary' : 'secondary'"
           dark
           tile
         >
@@ -91,38 +91,39 @@
       </v-col>
     </v-row>
     <v-container class="home">
-      <v-row class="mt-3">
-        <v-col class="about2" cols="12" sm="12" md="7">
-          <h2 class="mb-5 display-1">
-            What We Offer
+      <v-row class="mt-3 align-center justify-center">
+        <v-col class="about2 align-center justify-center" cols="12" md="8">
+          <h2 class="mb-5 display-1 text-center">
+            Our Achievement
           </h2>
-          <p class="flexStart">
-            On her way she met a copy. The copy warned the Little Blind Text,
-            that where it came from it would have been rewritten a thousand
-            times and everything that was left from its origin would be the
-            word.
+          <p class="flexStart text-center">
+            USA GU University: Experience the benefits of a global education
+            community and interact with students in countries around the world.
           </p>
-          <v-row align="stretch">
+          <v-row class="align-center justify-center">
             <v-col
               v-for="item in screen3Data"
-              :key="item.title"
+              :key="item.text"
               cols="12"
               md="6"
             >
+              <!-- for card class="d-flex flex-column justify-center align-center" -->
               <v-card height="100%" flat>
-                <v-list-item three-line>
-                  <v-list-item-avatar size="60" tile>
+                <v-list-item>
+                  <!-- <v-list-item-avatar size="60" tile>
                     <v-icon color="primary">
                       {{ item.icon }}
                     </v-icon>
-                  </v-list-item-avatar>
-                  <v-list-item-content>
-                    <div class="overline mb-4">
+                  </v-list-item-avatar> -->
+                  <v-list-item-content class="mx-auto text-center">
+                    <!-- <div class="overline mb-4">
                       {{ item.title }}
-                    </div>
-                    <p>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia.
+                    </div> -->
+                    <v-icon size="60" color="primary">
+                      {{ item.icon }}
+                    </v-icon>
+                    <p class="mt-3">
+                      {{ item.text }}
                     </p>
                   </v-list-item-content>
                 </v-list-item>
@@ -130,16 +131,30 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col
-          class="pt-0 pb-0 mt-0"
-          v-if="$vuetify.breakpoint.mdAndUp"
-          cols="12"
-          sm="12"
-          md="5"
-        >
-          <div>
-            <v-img src="../assets/about.jpg"></v-img>
-          </div>
+      </v-row>
+      <v-row class="mb-10">
+        <v-col v-for="item in foo1Data" :key="item.text" cols="12" md="3">
+          <v-card class="mx-auto" max-width="400">
+            <v-img
+              class="dark--text align-end"
+              height="200px"
+              :src="item.image"
+            >
+              <v-overlay absolute opacity="0.6" class="align-end">
+                <!-- <v-card-title class="justify-center" color="black"
+                  >Our Courses</v-card-title
+                > -->
+                <v-card-actions>
+                  <v-btn color="white" text :to="item.link">
+                    {{ item.text }}
+                    <v-icon>
+                      fas fa-angle-double-right
+                    </v-icon>
+                  </v-btn>
+                </v-card-actions>
+              </v-overlay>
+            </v-img>
+          </v-card>
         </v-col>
       </v-row>
     </v-container>
@@ -149,44 +164,38 @@
     >
       <v-overlay opacity="0.7" absolute style="max-width: 100vw">
         <v-container style="max-width: 100vw">
-          <v-row align="center" justify="center">
+          <v-row align="stretch" justify="center">
             <v-col class="" cols="12" md="5">
               <!-- <LazyYoutubeVideo
                 src="https://www.youtube.com/embed/xmCWXOO1XNA"
               /> -->
               <v-img src="../assets/bg_2.jpg"></v-img>
             </v-col>
-            <v-col cols="12" md="5" class="text-center">
-              <h1 class="display-1 font-weight-thin mb-4">USA GU University</h1>
-              <p>
-                Separated they live in. A small river named Duden flows by their
-                place and supplies it with the necessary regelialia. It is a
-                paradisematic country. A small river named Duden flows by their
-                place and supplies it with the necessary regelialia. It is a
-                paradisematic country, in which roasted parts of sentences fly
-                into your mouth.
+            <v-col cols="12" md="5" class="" align="stretch">
+              <h1 class="text-h5 mb-4">
+                MORE ABOUT OUR UNIVERSITY
+              </h1>
+              <p class="text-body-1">
+                Online and distance learning is the future of education. Even
+                though we live in a global village the concept of a global
+                university – not rooted in a particular country – such as Global
+                Tamil University – is occasionally misunderstood by the
+                dinosaurs of brick and mortar education especially in countries
+                where online education is still a novelty.
               </p>
-              <p>
-                A small river named Duden flows by their place and supplies it
-                with the necessary regelialia. It is a paradisematic country, in
-                which roasted parts of sentences fly into your mouth.
+              <p class="text-body-1">
+                USA GU's formula has proven a great success over the years. It
+                is efficient, student-oriented, and can be transmitted from any
+                computer terminal anywhere in the world. That is why this
+                formula is now being championed by numerous online educational
+                institutions around the world.
               </p>
-            </v-col>
-          </v-row>
-          <v-row justify="center" class="theme--dark">
-            <v-col
-              cols="6"
-              md="2"
-              xs="6"
-              v-for="item in collegeStatistics"
-              :key="item.title"
-            >
-              <v-card width="100%" class="justify-center text-center">
-                <v-card-title class="d-flex flex-column text-center">
-                  <h3>{{ item.title }}</h3>
-                  <p>{{ item.label }}</p>
-                </v-card-title>
-              </v-card>
+              <v-btn class="info">
+                <v-icon>
+                  fas fa-angle-double-right
+                </v-icon>
+                Read More
+              </v-btn>
             </v-col>
           </v-row>
         </v-container>
@@ -197,40 +206,14 @@
         <v-col cols="2"></v-col>
         <v-col cols="12" md="8">
           <div class="text-center">
-            <h1 class="mainHeading mb-5">
-              Our Courses
+            <h1 class="mainHeading">
+              USA GU TEAM
             </h1>
-            <p>
-              Separated they live in. A small river named Duden flows by their
-              place and supplies it with the necessary regelialia. It is a
-              paradisematic country
-            </p>
           </div>
         </v-col>
         <v-col cols="2"></v-col>
       </v-row>
-      <v-row id="screen2" class="mx-auto mt-10 mb-10">
-        <v-col v-for="index2 in courses.length" :key="index2" cols="12" md="3">
-          <CourseCard :courseInfo="courses[index2 - 1]" />
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col cols="2"></v-col>
-        <v-col cols="12" md="8">
-          <div class="text-center">
-            <h1 class="mainHeading mb-5">
-              Certified Professors
-            </h1>
-            <p>
-              Separated they live in. A small river named Duden flows by their
-              place and supplies it with the necessary regelialia. It is a
-              paradisematic country
-            </p>
-          </div>
-        </v-col>
-        <v-col cols="2"></v-col>
-      </v-row>
-      <v-row id="screen2" class="mx-auto mt-10 mb-10">
+      <v-row class="mx-auto mt-10">
         <v-col
           v-for="index2 in courseteachers.length"
           :key="index2"
@@ -244,8 +227,8 @@
         <v-col cols="2"></v-col>
         <v-col cols="12" md="8">
           <div class="text-center">
-            <h1 class="mainHeading mb-5">
-              Gallery
+            <h1 class="mainHeading">
+              LATEST EVENTS
             </h1>
             <p>
               Even though all of the programs provided by LIGS University are
@@ -258,7 +241,7 @@
         </v-col>
         <v-col cols="2"></v-col>
       </v-row>
-      <v-row id="screen2" class="mx-auto mt-10">
+      <v-row id="screen2" class="mx-auto mb-">
         <v-col
           v-for="photoCard in photoGallery"
           :key="photoCard.name"
@@ -282,9 +265,99 @@
             </v-card-text>
           </v-card>
         </v-col>
+        <v-col>
+          <v-btn class="info" to="/photogallery">
+            <v-icon>
+              fas fa-angle-double-right
+            </v-icon>
+            See All Events
+          </v-btn>
+        </v-col>
+      </v-row>
+      <v-parallax
+        dark
+        src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+      >
+        <v-row align="center" justify="center">
+          <v-col class="text-center" cols="12" md="8">
+            <h1 class="display-1 font-weight-thin mb-4">
+              STUDYING AT USA GU
+            </h1>
+            <h4 class="subheading">
+              USA GU University’s formula has proven a great success over the
+              years. It is efficient, student-oriented, and can be transmitted
+              from any computer terminal anywhere in the world. That is why this
+              formula is now being championed by numerous online educational
+              institutions around the world.
+            </h4>
+            <v-btn class="mt-3" to="/about">
+              Read More
+            </v-btn>
+          </v-col>
+        </v-row>
+      </v-parallax>
+      <v-row class="mt-10">
+        <v-col cols="12" md="5">
+          <h1 class="text-h4">
+            <strong>
+              WHY CHOOSE
+            </strong>
+          </h1>
+          <h1 class="text-h5 mt-15">
+            <strong>
+              RESEARCH AND TEACHING
+            </strong>
+          </h1>
+          <p class="mt-5">
+            The University‘s academic staff are highly qualified and
+            experienced. They are accustomed to working with executives,
+            managers and consultants employed in both the private and public
+            sectors.
+          </p>
+          <h1 class="text-h5 mt-15">
+            <strong>
+              CAREERS & OFFERS
+            </strong>
+          </h1>
+          <p class="mt-5">
+            This exciting alternative in higher education holds for you the
+            promise of professional and personal growth without any limits or
+            boundaries.
+          </p>
+        </v-col>
+        <v-col cols="12" md="7">
+          <h1 class="text-h4">
+            <strong>
+              FEATURES
+            </strong>
+          </h1>
+          <v-expansion-panels class="mt-15" popout>
+            <v-expansion-panel v-for="(item, i) in lastScreenData" :key="i">
+              <v-expansion-panel-header>
+                {{ item.title }}
+              </v-expansion-panel-header>
+              <v-expansion-panel-content>
+                {{ item.text }}
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
+        </v-col>
+      </v-row>
+      <v-row class="justify-center" justify="center" align="center">
+        <v-col cols="12">
+          <h1 class="text-h4 text-center mb-10">
+            <strong>
+              OUR ACCREDITATION AND PARTNERS
+            </strong>
+          </h1>
+        </v-col>
+        <v-col cols="6" md="4" v-for="(item, i) in accreditionData" :key="i">
+          <v-img class="mx-auto" :src="item" width="200" height="100" contain>
+          </v-img>
+        </v-col>
       </v-row>
     </v-container>
-    <EndScreen />
+    <!-- <EndScreen /> -->
   </div>
 </template>
 
@@ -298,6 +371,13 @@
   background-size: cover;
   background-position: center;
   color: white;
+}
+
+v-list-item {
+  display: flex !important;
+  justify-content: center !important;
+  align-content: center !important;
+  align-self: center !important;
 }
 #screen1-content {
   min-height: 90vh;
@@ -339,20 +419,21 @@
 
 <script>
 // @ is an alias to /src
-import EndScreen from '@/components/EndScreen.vue'
+// import EndScreen from '@/components/EndScreen.vue'
 // import BlogPost from '@/components/BlogPost.vue'
-import CourseCard from '@/components/CourseCard.vue'
+// import CourseCard from '@/components/CourseCard.vue'
 import Teacher from '@/components/Teacher.vue'
+// import Staff from '@/views/Staff.vue'
 import 'vue-lazy-youtube-video/dist/style.css'
 // import LazyYoutubeVideo from 'vue-lazy-youtube-video'
 
 export default {
   name: 'Home',
   components: {
-    EndScreen,
-    CourseCard,
+    // EndScreen,
+    // CourseCard,
     Teacher
-    // LazyYoutubeVideo
+    // LazyYouubeVideo
   },
   data() {
     return {
@@ -398,34 +479,24 @@ export default {
       ],
       screen3Data: [
         {
-          title: 'Safety First',
-          icon: 'fas fa-shield-alt',
-          text: ''
+          title: '',
+          icon: 'fas fa-book-reader',
+          text: '890+ STUDENTS'
         },
         {
-          title: 'Regular Classes',
+          title: '',
+          icon: 'fas fa-graduation-cap',
+          text: '670+ GRADUATE'
+        },
+        {
+          title: '',
+          icon: 'fas fa-trophy',
+          text: '160+ AWARD WINNING'
+        },
+        {
+          title: '',
           icon: 'fas fa-chalkboard-teacher',
-          text: ''
-        },
-        {
-          title: 'Certified teachers',
-          icon: 'fas fa-certificate',
-          text: ''
-        },
-        {
-          title: 'Sufficient Classrooms',
-          icon: 'fas fa-school',
-          text: ''
-        },
-        {
-          title: 'Creative Lessons',
-          icon: 'fas fa-plus',
-          text: ''
-        },
-        {
-          title: 'Sports Facilities',
-          icon: 'fas fa-running',
-          text: ''
+          text: '200+ FACULTIES'
         }
       ],
       courses: [
@@ -446,26 +517,76 @@ export default {
           title: 'Mechanical Engineering'
         }
       ],
+      foo1Data: [
+        {
+          image: require('../assets/home-screen-1.jpg'),
+          text: '200+ Prestigious Faculty',
+          link: '/about'
+        },
+        {
+          image: require('../assets/home-screen-2.jpg'),
+          text: '800+ Scholars',
+          link: '/admissions'
+        },
+        {
+          image: require('../assets/home-screen-3.jpg'),
+          text: '40+ Elite Programs',
+          link: '/programs'
+        },
+        {
+          image: require('../assets/home-screen-4.jpg'),
+          text: '270+ Championships',
+          link: '/gallery'
+        }
+      ],
       courseteachers: [
         {
           image: require('../assets/teacher-1.jpg'),
-          title: 'English Professor',
+          title: 'Chancellor',
+          qualification: 'MA. MBA. PhD. DBA.DCD',
           name: 'Bianca Wilson'
         },
         {
           image: require('../assets/teacher-2.jpg'),
-          title: 'Art Professor',
+          title: 'Vice Chancellor',
+          qualification: 'MBA. PhD.',
           name: 'Mitch Parker'
         },
         {
           image: require('../assets/teacher-3.jpg'),
-          title: 'Science Professor',
+          title: 'USA GU-Head',
+          qualification: 'MA. PhD',
           name: 'Stella Smith'
         },
         {
           image: require('../assets/teacher-4.jpg'),
-          title: 'Maths Professor',
+          title: 'Assosciate Manager',
+          qualification: 'BA. BSc. PGD. MBA',
           name: 'Monshe Henderson'
+        },
+        {
+          image: require('../assets/teacher-5.jpg'),
+          title: 'Chief Technology Officer',
+          qualification: 'BA. PGD. MA',
+          name: 'Will Sentence'
+        },
+        {
+          image: require('../assets/teacher-6.jpg'),
+          title: 'Social Media Officer',
+          qualification: 'BSc. BA. PGD',
+          name: 'Olivia Baker'
+        },
+        {
+          image: require('../assets/teacher-7.jpg'),
+          title: 'General Administrator',
+          qualification: 'BA. PGD',
+          name: 'Ellyse Perry'
+        },
+        {
+          image: require('../assets/teacher-8.jpg'),
+          title: 'Admin Officer',
+          qualification: 'BA. PGD',
+          name: 'Veronica Donowan'
         }
       ],
       collegeStatistics: [
@@ -525,6 +646,34 @@ export default {
           name: 'LIGS Awards 2017',
           description: ''
         }
+      ],
+      lastScreenData: [
+        {
+          title: 'Student learning oppurtunites',
+          text:
+            'Online and distance learning is the future of education. Even though we live in a global village the concept of a global university – not rooted in a particular country – such as Global Tamil University – is occasionally misunderstood by the dinosaurs of brick and mortar education especially in countries where online education is still a novelty.'
+        },
+        {
+          title: 'Student stories',
+          text:
+            'I believe you will find the story of Global Tamil University inspiring and become a part of it - because thanks to YOU we have the chance to grow and continue to make a difference!'
+        },
+        {
+          title: 'New Course',
+          text:
+            'With our unique, world-leading style of distance learning, Global Tamil University enables you to study from home, work or even on the move, at a time that suits you. With a wide choice of qualifications, at undergraduate and postgraduate level, Global Tamil University offers the choice and flexibility you need.'
+        }
+      ],
+      accreditionData: [
+        require('../assets/logo1.jpeg'),
+        require('../assets/logo2.png'),
+        require('../assets/logo3.png'),
+        require('../assets/logo4.png'),
+        require('../assets/logo5.jpeg'),
+        require('../assets/logo6.jpeg'),
+        require('../assets/logo7.png'),
+        require('../assets/logo8.jpg'),
+        require('../assets/logo9.jpeg')
       ],
       isIntersecting: false
     }
