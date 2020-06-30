@@ -2,7 +2,10 @@
   <!-- Sizes your content based upon application components -->
   <!-- Provides the application the proper gutter -->
   <div>
-    <StartScreen pageHeading="AWARDS" caption="AWARDS" />
+    <StartScreen
+      pageHeading="AWARD VERIFICATION"
+      caption="AWARD VERIFICATION"
+    />
     <v-container>
       <!-- If using vue-router -->
       <v-row class="test" justify="center" align="center">

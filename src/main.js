@@ -27,7 +27,11 @@ import {
   faCheckSquare,
   faChevronDown,
   faGraduationCap,
-  faAngleDoubleRight
+  faAngleDoubleRight,
+  faHandHoldingUsd,
+  faUsers,
+  faAward,
+  faGlobe
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faTwitter,
@@ -78,7 +82,11 @@ library.add(
   faChevronDown,
   faGraduationCap,
   faTrophy,
-  faAngleDoubleRight
+  faAngleDoubleRight,
+  faHandHoldingUsd,
+  faUsers,
+  faAward,
+  faGlobe
 )
 Vue.config.productionTip = false
 

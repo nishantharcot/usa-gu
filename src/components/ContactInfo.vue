@@ -36,11 +36,11 @@ export default {
       },
       {
         title: 'Email Address',
-        label: 'info@abguniversity.org'
+        label: 'info@usaguuniversity.org'
       },
       {
         title: 'Website',
-        label: 'abguniversity.com'
+        label: 'usaguuniversity.com'
       }
     ]
   })

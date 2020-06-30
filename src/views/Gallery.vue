@@ -32,6 +32,13 @@
         </v-col>
       </v-row>
       <v-row>
+        <v-col
+          :class="$vuetify.breakpoint.smAndDown ? 'order-1' : 'order-2'"
+          cols="12"
+          md="6"
+        >
+          <LazyYoutubeVideo src="https://www.youtube.com/embed/xmCWXOO1XNA" />
+        </v-col>
         <v-col class="order-2" cols="12" md="6">
           <h1 class="display-1">
             <strong>Video gallery</strong>
@@ -43,13 +50,6 @@
           <v-btn x-large color="primary" class="align-self-center jus">
             View All
           </v-btn>
-        </v-col>
-        <v-col
-          :class="$vuetify.breakpoint.smAndDown ? 'order-1' : 'order-2'"
-          cols="12"
-          md="6"
-        >
-          <LazyYoutubeVideo src="https://www.youtube.com/embed/xmCWXOO1XNA" />
         </v-col>
       </v-row>
     </v-container>

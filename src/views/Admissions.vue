@@ -143,7 +143,7 @@
             <strong>
               The American British Graduate University
             </strong>
-            Studentship Award (ABGUSA)
+            Studentship Award (usaguUSA)
           </h1>
           <p class="mt-5">
             The American British University offers a $1000 scholarship, off the
@@ -152,7 +152,7 @@
             students:
           </p>
           <p class="mt-5">
-            Applications for ABG University bursaries should be made upon
+            Applications for usagu University bursaries should be made upon
             receipt of an offer from the university. No award of a bursary will
             be considered until then.
           </p>
@@ -172,9 +172,9 @@
             Discount
           </h1>
           <p class="mt-5">
-            ABG University offers a 20% discount off the total tuition/programme
-            fees for students who choose to pay in full at the time of
-            registration.
+            usagu University offers a 20% discount off the total
+            tuition/programme fees for students who choose to pay in full at the
+            time of registration.
           </p>
           <h1 class="display-1">
             <strong>
@@ -183,8 +183,8 @@
             Fees
           </h1>
           <p class="mt-5">
-            Graduates of ABG University who register for a second degree at the
-            University will benefit from the University’s 25% discount if
+            Graduates of usagu University who register for a second degree at
+            the University will benefit from the University’s 25% discount if
             programme fees are paid in full at the time of registration.
           </p>
         </v-col>

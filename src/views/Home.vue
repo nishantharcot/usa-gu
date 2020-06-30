@@ -241,7 +241,7 @@
         </v-col>
         <v-col cols="2"></v-col>
       </v-row>
-      <v-row id="screen2" class="mx-auto mb-">
+      <v-row id="screen2" class="mx-auto mb-10">
         <v-col
           v-for="photoCard in photoGallery"
           :key="photoCard.name"
@@ -651,17 +651,17 @@ export default {
         {
           title: 'Student learning oppurtunites',
           text:
-            'Online and distance learning is the future of education. Even though we live in a global village the concept of a global university – not rooted in a particular country – such as Global Tamil University – is occasionally misunderstood by the dinosaurs of brick and mortar education especially in countries where online education is still a novelty.'
+            'Online and distance learning is the future of education. Even though we live in a global village the concept of a global university – not rooted in a particular country – such as USA GU – is occasionally misunderstood by the dinosaurs of brick and mortar education especially in countries where online education is still a novelty.'
         },
         {
           title: 'Student stories',
           text:
-            'I believe you will find the story of Global Tamil University inspiring and become a part of it - because thanks to YOU we have the chance to grow and continue to make a difference!'
+            'I believe you will find the story of USA GU inspiring and become a part of it - because thanks to YOU we have the chance to grow and continue to make a difference!'
         },
         {
           title: 'New Course',
           text:
-            'With our unique, world-leading style of distance learning, Global Tamil University enables you to study from home, work or even on the move, at a time that suits you. With a wide choice of qualifications, at undergraduate and postgraduate level, Global Tamil University offers the choice and flexibility you need.'
+            'With our unique, world-leading style of distance learning, USA GU enables you to study from home, work or even on the move, at a time that suits you. With a wide choice of qualifications, at undergraduate and postgraduate level, USA GU offers the choice and flexibility you need.'
         }
       ],
       accreditionData: [

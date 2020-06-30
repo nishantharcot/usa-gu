@@ -1,57 +1,505 @@
 <template>
   <div class="about">
     <StartScreen pageHeading="ABOUT US" caption="ABOUT" />
-    <v-row class="mt-15" id="screen2">
-      <v-col cols="1"></v-col>
-      <v-col cols="12" md="10">
-        <v-card>
-          <!-- <v-card-title class="text-center justify-center py-6">
-            <h1 class="font-weight-bold display-3 basil--text">BASiL</h1>
-          </v-card-title>-->
-          <v-tabs v-model="tab" background-color="transparent" grow>
-            <v-tab v-for="item in items" :key="item">{{ item }}</v-tab>
-          </v-tabs>
-
-          <v-tabs-items v-model="tab">
-            <v-tab-item v-for="item in items" :key="item">
-              <v-card flat>
-                <v-card-text v-if="item === 'ABOUT USA-GU'">
-                  <div class="about-content">
-                    <h2>About</h2>
-                    <p v-for="item in aboutLctContent" :key="item">
-                      {{ item }}
-                    </p>
-                  </div>
-                </v-card-text>
-                <v-card-text v-if="item === 'WHY USA-GU'">
-                  <div class="about-content">
-                    <h2 class="mb-5">
-                      Why choose USA-GU?
-                    </h2>
-                    <h3 class="mb-3">
-                      The College’s mission is to be open to people, places,
-                      methods and ideas.
-                    </h3>
-                    <p v-for="item in whyLctContent" :key="item">{{ item }}</p>
-                  </div>
-                </v-card-text>
-                <v-card-text v-if="item === 'LIFE AT USA-GU'">
-                  <div class="about-content">
-                    <h2 class="mb-5">
-                      USA-GU
-                    </h2>
-                    <p v-for="item in lifeAtLctContent" :key="item">
-                      {{ item }}
-                    </p>
-                  </div>
-                </v-card-text>
-              </v-card>
-            </v-tab-item>
-          </v-tabs-items>
-        </v-card>
+    <v-container>
+      <v-row class="justify-center text-center">
+        <v-col class="mt-15" cols="8">
+          <p class="text-h6">
+            USA GU’s formula has proven a great success over the years. It is
+            efficient, student-oriented, and can be transmitted from any
+            computer terminal anywhere in the world. That is why this formula is
+            now being championed by numerous online educational institutions
+            around the world.
+          </p>
+        </v-col>
+      </v-row>
+      <v-row class="justify-center text-center">
+        <v-col
+          class="mt-10"
+          v-for="item in screen1Data"
+          :key="item.text"
+          cols="12"
+          md="4"
+        >
+          <v-card height="100%" flat>
+            <v-list-item>
+              <!-- <v-list-item-avatar size="60" tile>
+                    <v-icon color="primary">
+                      {{ item.icon }}
+                    </v-icon>
+                  </v-list-item-avatar> -->
+              <v-list-item-content class="mx-auto text-center">
+                <!-- <div class="overline mb-4">
+                      {{ item.title }}
+                    </div> -->
+                <v-icon size="60" color="primary">
+                  {{ item.icon }}
+                </v-icon>
+                <p class="text-h5 mt-3">
+                  {{ item.number }}
+                </p>
+                <p class="text-h5 mt-3">
+                  {{ item.title }}
+                </p>
+                <p class="mt-3">
+                  {{ item.description }}
+                </p>
+              </v-list-item-content>
+            </v-list-item>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+    <!-- For full width, must change later -->
+    <v-container v-if="$vuetify.breakpoint.smAndDown">
+      <v-row class="justify-center text-center backgroundColor white--text">
+        <v-col cols="10">
+          <h4 class="text-h4 mb-4">
+            USA GU
+          </h4>
+          <p class="text-body-1">
+            Online and distance learning is the future of education. Even though
+            we live in a global village the concept of a global university – not
+            rooted in a particular country – such as USA GU – is occasionally
+            misunderstood by the dinosaurs of brick and mortar education
+            especially in countries where online education is still a novelty.
+          </p>
+          <p class="text-body-1">
+            USA GU’s formula has proven a great success over the years. It is
+            efficient, student-oriented, and can be transmitted from any
+            computer terminal anywhere in the world. That is why this formula is
+            now being championed by numerous online educational institutions
+            around the world.
+          </p>
+          <v-btn color="primary" x-large to="/apply">
+            Apply Now
+          </v-btn>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-row
+      v-else
+      class="justify-center text-center backgroundColor white--text"
+    >
+      <v-col cols="10">
+        <h4 class="text-h4 mb-4">
+          USA GU
+        </h4>
+        <p class="text-body-1">
+          Online and distance learning is the future of education. Even though
+          we live in a global village the concept of a global university – not
+          rooted in a particular country – such as USA GU – is occasionally
+          misunderstood by the dinosaurs of brick and mortar education
+          especially in countries where online education is still a novelty.
+        </p>
+        <p class="text-body-1">
+          USA GU’s formula has proven a great success over the years. It is
+          efficient, student-oriented, and can be transmitted from any computer
+          terminal anywhere in the world. That is why this formula is now being
+          championed by numerous online educational institutions around the
+          world.
+        </p>
+        <v-btn color="primary" x-large to="/apply">
+          Apply Now
+        </v-btn>
       </v-col>
-      <v-col cols="1"></v-col>
     </v-row>
+    <!-- For full width, must change later -->
+    <v-container>
+      <v-row class="mt-10">
+        <v-col cols="12" md="4">
+          <v-img src="../assets/about-screen3.jpg" height="500"></v-img>
+        </v-col>
+        <v-col cols="12" md="8">
+          <h4 class="text-h4">
+            <strong>
+              Why Distance Learning?
+            </strong>
+          </h4>
+          <p class="mt-10">
+            Very few people can afford to give up work to start studying, and
+            with university fees at an all-time high, learning via traditional
+            methods is beyond reach for many.
+          </p>
+          <p class="mt-5">
+            This exciting alternative in higher education holds for you the
+            promise of professional and personal growth without any limits or
+            boundaries.
+          </p>
+          <h4 class="text-h4">
+            <strong>
+              USA GU
+            </strong>
+          </h4>
+          <p class="mt-10">
+            USA GU, the international distance learning centre, which was
+            subsequently incorporated as an independent Online and Distance
+            Learning University in Delaware, America.
+          </p>
+          <p class="mt-5">
+            USA GU is a private international institution. American British
+            Graduate University Online is specialized in Distance Learning
+            education our international learning arm is London College of Media
+            (www.londoncollegeofmedia.com).
+          </p>
+          <p class="mt-5">
+            Distance learning is rapidly becoming the preferred alternative, and
+            USA GU has quickly become established as one of the pioneers in the
+            field.
+          </p>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-container v-if="$vuetify.breakpoint.smAndDown">
+      <v-row class="mt-10 backgroundColor white--text">
+        <v-col cols="12" md="8" class="order-2">
+          <h4 class="text-h4">
+            <strong>
+              Faculty
+            </strong>
+          </h4>
+          <p class="mt-10">
+            The University‘s academic staff are highly qualified and
+            experienced. They are accustomed to working with executives,
+            managers and consultants employed in both the private and public
+            sectors.
+          </p>
+          <p class="mt-5">
+            This exciting alternative in higher education holds for you the
+            promise of professional and personal growth without any limits or
+            boundaries.
+          </p>
+          <h4 class="text-h4">
+            <strong>
+              Affiliates
+            </strong>
+          </h4>
+          <p class="mt-10">
+            Affiliates are at the centre of our educational formula. Most of the
+            degree programs offered are taught by our affiliates. To give but
+            one example, as soon as an enquiry is received at the university it
+            is passed on to the relevant affiliate in the applicant’s country.
+            Affiliates’ study programs are based on the university’s recommended
+            curricula. Affiliates operate under the auspices of their region’s
+            head office.
+          </p>
+          <p class="mt-5">
+            USA GU is a private international institution. USA GU Online is
+            specialized in Distance Learning education our international
+            learning arm is London College of Media
+            (www.londoncollegeofmedia.com).
+          </p>
+          <p class="mt-5">
+            USA GU Online is licensed by E-Learning International LLC
+            (California).
+          </p>
+        </v-col>
+        <v-col cols="12" md="4">
+          <v-img src="../assets/about-screen4.jpg" height="500"></v-img>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-row v-else class="mt-10 backgroundColor white--text justify-center">
+      <v-col cols="12" md="7" class="mt-10">
+        <h4 class="text-h4">
+          <strong>
+            Faculty
+          </strong>
+        </h4>
+        <p class="mt-10">
+          The University‘s academic staff are highly qualified and experienced.
+          They are accustomed to working with executives, managers and
+          consultants employed in both the private and public sectors.
+        </p>
+        <p class="mt-5">
+          This exciting alternative in higher education holds for you the
+          promise of professional and personal growth without any limits or
+          boundaries.
+        </p>
+        <h4 class="text-h4">
+          <strong>
+            Affiliates
+          </strong>
+        </h4>
+        <p class="mt-10">
+          Affiliates are at the centre of our educational formula. Most of the
+          degree programs offered are taught by our affiliates. To give but one
+          example, as soon as an enquiry is received at the university it is
+          passed on to the relevant affiliate in the applicant’s country.
+          Affiliates’ study programs are based on the university’s recommended
+          curricula. Affiliates operate under the auspices of their region’s
+          head office.
+        </p>
+        <p class="mt-5">
+          USA GU is a private international institution. USA GU Online is
+          specialized in Distance Learning education our international learning
+          arm is London College of Media (www.londoncollegeofmedia.com).
+        </p>
+        <p class="mt-5">
+          USA GU Online is licensed by E-Learning International LLC
+          (California).
+        </p>
+      </v-col>
+      <v-col cols="12" md="4" class="mt-10">
+        <v-img src="../assets/about-screen4.jpg" height="500"></v-img>
+      </v-col>
+    </v-row>
+    <v-container>
+      <v-row class="mt-10">
+        <v-col cols="12" md="4">
+          <v-img src="../assets/about-screen5.jpg" height="750"></v-img>
+        </v-col>
+        <v-col cols="12" md="8">
+          <h4 class="text-h4">
+            <strong>
+              Modules
+            </strong>
+          </h4>
+          <p class="mt-10">
+            All of our distance learning courses have been designed to the most
+            exacting standards, in accordance with the most stringent criteria,
+            in order to provide outstanding education at an affordable price
+            while ensuring that individual needs are met and that your distance
+            learning experience is both enjoyable and beneficial. Our modules
+            are your own personal tutor at home.
+          </p>
+          <p class="mt-5">
+            USA GU’s unique, style of distance learning is called directed
+            coursework study . This means that you study on your own, either at
+            home or wherever suits you with regular ongoing support from your
+            designated supervisor.
+          </p>
+          <p class="mt-5">
+            You will be taught through printed modules – study materials,
+            specially written textbooks or workbooks, audio CDs and video DVDs.
+          </p>
+          <p class="mt-5">
+            When your program starts, you’ll receive your modules by post.
+            /courier .Effective 1st of January 2020, the USA GU modules have
+            been available to students in e-format and may be sent to you as PDF
+            attachments to your emails.
+          </p>
+          <p class="mt-5">
+            You will purchase the modules at $50.00 per module and they are
+            yours to keep and to refer to whenever you wish.
+          </p>
+          <p class="mt-5">
+            All modules will direct you to the relevant websites where
+            additional resources will be available. Sometime there will be books
+            you have to buy yourself or borrow from a local library. If required
+            we are happy to do this on your behalf. You’ll get a study timetable
+            that will help you plan your reading, and assignments due dates.
+          </p>
+          <p class="mt-5">
+            With our unique, world-leading style of distance learning, Global
+            Tamil University enables you to study from home, work or even on the
+            move, at a time that suits you. With a wide choice of
+            qualifications, at undergraduate and postgraduate level, Global
+            Tamil University offers the choice and flexibility you need.
+          </p>
+          <p class="mt-5">
+            “The level of support is fantastic and the modules are brilliant.
+            It’s such a wonderful learning experience”
+          </p>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-container v-if="$vuetify.breakpoint.smAndDown">
+      <v-row class="mt-10 backgroundColor white--text">
+        <v-col cols="12" md="8" class="order-2">
+          <h4 class="text-h4">
+            <strong>
+              Will You Need A Computer?
+            </strong>
+          </h4>
+          <p class="mt-10">
+            You’ll need a computer for regular and reliable access to the
+            internet so that you can have easy communication with your personal
+            supervisor. Having an email is essential as it is your means of
+            communicating with your supervisor and so that we can send you
+            important information relevant to your studies.
+          </p>
+          <h4 class="text-h4">
+            <strong>
+              Assignments & Examinations
+            </strong>
+          </h4>
+          <p class="mt-10">
+            An assignment is a piece of written work or answers to a set of
+            questions, covering material from your module. Completing
+            assignments helps you to consolidate and use what you have learned.
+            All assignments are sent directly to your tutor for appraisal and
+            grading.
+          </p>
+        </v-col>
+        <v-col cols="12" md="4">
+          <v-img src="../assets/about-screen6.jpg" height="500"></v-img>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-row v-else class="mt-10 backgroundColor white--text justify-center">
+      <v-col cols="12" md="7" class="mt-10">
+        <h4 class="text-h4">
+          <strong>
+            Will You Need A Computer?
+          </strong>
+        </h4>
+        <p class="mt-10">
+          You’ll need a computer for regular and reliable access to the internet
+          so that you can have easy communication with your personal supervisor.
+          Having an email is essential as it is your means of communicating with
+          your supervisor and so that we can send you important information
+          relevant to your studies.
+        </p>
+        <h4 class="text-h4">
+          <strong>
+            Assignments & Examinations
+          </strong>
+        </h4>
+        <p class="mt-10">
+          An assignment is a piece of written work or answers to a set of
+          questions, covering material from your module. Completing assignments
+          helps you to consolidate and use what you have learned. All
+          assignments are sent directly to your tutor for appraisal and grading.
+        </p>
+      </v-col>
+      <v-col cols="12" md="4" class="mt-10">
+        <v-img src="../assets/about-screen6.jpg" height="500"></v-img>
+      </v-col>
+    </v-row>
+    <v-container>
+      <v-row class="mt-10">
+        <v-col cols="12" md="4">
+          <v-img src="../assets/dean.jpg" height="500"></v-img>
+        </v-col>
+        <v-col cols="12" md="8">
+          <h4 class="text-h4">
+            <strong>
+              President's Message
+            </strong>
+          </h4>
+          <p class="mt-10">
+            USA GU is a high quality progressive modern e learning university.
+            Our aim is to create a friendly environment for people who decide to
+            work hard on their professional and personal development. Nothing
+            makes us happier and more satisfied than our students, lecturers,
+            and employees being proud to be a part of USA GU.
+          </p>
+          <p class="mt-5">
+            I am very honored to be the President of USA GU. The University as
+            it is today is the result of the dedication that called for lots of
+            energy, diligence, and enthusiasm of students and graduates;
+            excellent support, care, and effort of staff and employees; passion
+            and active involvement of many of our lecturers, partners, and other
+            coworkers.
+          </p>
+          <p class="mt-5">
+            Currently students from all over the world study in our interactive
+            online diploma and degree programs provided in the English and Tamil
+            languages. In the upcoming years, our plan is to expand and launch
+            new specializations and languages of instruction to make it possible
+            to study in a university of high quality at a reasonable price for
+            anyone who wants to learn, develop and work on their future.
+          </p>
+          <p class="mt-5">
+            We know that to achieve our goals, visions, and plans, we need to
+            work hard, and we need to continually look for new methods and
+            solutions, we need to follow current trends in education and
+            information technology and not be afraid to take risks. That is why
+            we support creative minds, ideas and commitment to others, and
+            invest our profits to the development of new systems and study
+            materials.
+          </p>
+          <p class="mt-5">
+            Take the opportunity to explore what USA GU has to offer and what
+            makes it unique. Do not hesitate to contact us with any questions -
+            we will be happy to answer all your inquiries!
+          </p>
+          <p class="mt-5">
+            I believe you will find the story of USA GU inspiring and become a
+            part of it - because thanks to YOU we have the chance to grow and
+            continue to make a difference!
+          </p>
+          <div class="d-flex flex-column">
+            <span>
+              <strong>
+                Sincerely,
+              </strong>
+            </span>
+            <span>
+              <strong>
+                Dr Larry Adams
+              </strong>
+            </span>
+            <span>
+              <strong>
+                President of USA GU
+              </strong>
+            </span>
+          </div>
+        </v-col>
+      </v-row>
+      <v-row class="mt-10">
+        <v-col cols="12" md="5">
+          <h1 class="text-h4">
+            <strong>
+              WHY CHOOSE
+            </strong>
+          </h1>
+          <h1 class="text-h5 mt-15">
+            <strong>
+              RESEARCH AND TEACHING
+            </strong>
+          </h1>
+          <p class="mt-5">
+            The University‘s academic staff are highly qualified and
+            experienced. They are accustomed to working with executives,
+            managers and consultants employed in both the private and public
+            sectors.
+          </p>
+          <h1 class="text-h5 mt-15">
+            <strong>
+              CAREERS & OFFERS
+            </strong>
+          </h1>
+          <p class="mt-5">
+            This exciting alternative in higher education holds for you the
+            promise of professional and personal growth without any limits or
+            boundaries.
+          </p>
+        </v-col>
+        <v-col cols="12" md="7">
+          <h1 class="text-h4">
+            <strong>
+              FEATURES
+            </strong>
+          </h1>
+          <v-expansion-panels class="mt-15" popout>
+            <v-expansion-panel v-for="(item, i) in lastScreenData" :key="i">
+              <v-expansion-panel-header>
+                {{ item.title }}
+              </v-expansion-panel-header>
+              <v-expansion-panel-content>
+                {{ item.text }}
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
+        </v-col>
+      </v-row>
+      <v-row class="justify-center" justify="center" align="center">
+        <v-col cols="12">
+          <h1 class="text-h4 text-center mb-10">
+            <strong>
+              OUR ACCREDITATION AND PARTNERS
+            </strong>
+          </h1>
+        </v-col>
+        <v-col cols="6" md="4" v-for="(item, i) in accreditionData" :key="i">
+          <v-img class="mx-auto" :src="item" width="200" height="100" contain>
+          </v-img>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
@@ -59,90 +507,75 @@
 import StartScreen from '@/components/StartScreen.vue'
 export default {
   data: () => ({
-    tab: null,
-    aboutItems: [
+    screen1Data: [
       {
-        title: 'ABOUT USA-GU',
-        content: [
-          'Our vision is to promote educational opportunity and social justice by providing high-quality education and trainings to all who wish to realise their ambitions and fulfil their potential.',
-
-          'We are committed to promoting equal opportunities for all and we monitor ourselves to make sure we live up to our ideals.',
-
-          ' USA-GU is a Community employment and training support providers.',
-
-          'We are committed to enriching the lives of all members of the community and to creating new opportunities for them. We have links to a range of community based services and we are experienced at introducing the people we support to a full range of community programmes.',
-
-          'The institution caters for all walks of life i.e. from refugees, unemployed and professional of all ages, gender, race and colour. We implement an excellent equal opportunity policy and cater for the social and cultural needs of the local and international population.'
-        ]
+        icon: 'fas fa-hand-holding-usd',
+        number: '£1.5K',
+        title: 'Low Fee',
+        description:
+          'Pay fee in easy (Interest free) instalments. You can choose from UK online education payments options.'
       },
       {
-        title: 'WHY USA-GU',
-        content: [
-          'Nearly all of our courses have no formal entry requirements, either prior qualifications or experience. We allow people who have missed out on education to fulfil their potential and achieve qualification that will see them succeed forward in their career',
-
-          'We believe that it is the qualifications and practical experience with which our students leave, rather than those with which they enter, that count.',
-
-          'We have students of all ages and backgrounds including overseas: school leavers who choose to begin their careers while they study, people wanting to develop or update their skills, or change career entirely, and retired people wanting to explore new interests and keep mentally active.',
-
-          'Learners at USA-GU have at least one thing in common: they are all learning for success. The College is committed to promoting equality and valuing diversity, as we have students of all ages, backgrounds and beliefs.',
-
-          'In our College there will be opportunities to make new friends, take part in national competitions, gain work experience, be involved with work experience and visit new and exciting places, amongst other activities, ensuring your time here is enjoyable and rewarding.'
-        ]
+        icon: 'fas fa-globe',
+        number: '50+',
+        title: 'Online and flexible',
+        description:
+          "Study anytime, anywhere - You don't have to attend a College campus, so you can study from anywhere in the world. You can download & submit assignments - 100% online."
       },
       {
-        title: 'LIFE AT USA-GU',
-        content: [
-          'USA-GU provides a warm and vibrant environment for students from all walks of life. The student will find the learning experience relaxed and enjoyable and that it will stimulate and stretch mental ability. Leicester is an exciting and diverse city with its many shopping areas including the High cross and Haymarket shopping centres, Leicester has something for all tastes.',
-
-          'There is a vast choice of bars and restaurants to enjoy and plenty of entertainment available at the various cinemas and theatres around the city. Because the city has such a diverse culture it hosts events such as the Caribbean Carnival, Diwali lights and the Summer Sundae music festival. It is also home to the National Space Centre.',
-
-          'Known officially as the The Golden Mile comprising Belgrave Road and Melton Road, it is home to the largest selection of Indian jewellery shops outside of India. If you’re looking for true Indian restaurants, sweetmarts and shops which sell items from the Indian culture this is the place to be.',
-
-          'The classrooms at USA-GU are modern, spacious, well lit and impressive with all the latest technology. You’ll feel warmth with our staff and tutors, who are all friendly and welcoming.',
-
-          'USA-GU makes sure that all students feel at home in the multi-cultural and multi-lingual atmosphere provided by the College.',
-
-          'We look forward to welcoming you and helping you to achieve your learning objectives.'
-        ]
+        icon: 'fas fa-certificate',
+        number: '15+',
+        title: 'UK Diploma Online Professional Education',
+        description:
+          'Assignments based - no exams for UK diploma All modules are assessed via submission of assignments - there are no exams.'
+      },
+      {
+        icon: 'fas fa-certificate',
+        number: '50+',
+        title: 'UK Accredited Diploma',
+        description:
+          'GTU Universities Bachelor and Master Affordable, Accredited and 100% Online Education'
+      },
+      {
+        icon: 'fas fa-award',
+        number: '270+',
+        title: 'Athletic Championships',
+        description: 'USA GU 270+ Athletic Championships'
+      },
+      {
+        icon: 'fas fa-users',
+        number: '500+',
+        title: 'Thousand Alumni',
+        description: 'USA GU 500+ Thousand Alumni'
       }
     ],
-    items: ['ABOUT USA-GU', 'WHY USA-GU', 'LIFE AT USA-GU'],
-    text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    lifeAtLctContent: [
-      'USA-GU provides a warm and vibrant environment for students from all walks of life. The student will find the learning experience relaxed and enjoyable and that it will stimulate and stretch mental ability. Leicester is an exciting and diverse city with its many shopping areas including the High cross and Haymarket shopping centres, Leicester has something for all tastes.',
-
-      'There is a vast choice of bars and restaurants to enjoy and plenty of entertainment available at the various cinemas and theatres around the city. Because the city has such a diverse culture it hosts events such as the Caribbean Carnival, Diwali lights and the Summer Sundae music festival. It is also home to the National Space Centre.',
-
-      'Known officially as the The Golden Mile comprising Belgrave Road and Melton Road, it is home to the largest selection of Indian jewellery shops outside of India. If you’re looking for true Indian restaurants, sweetmarts and shops which sell items from the Indian culture this is the place to be.',
-
-      'The classrooms at USA-GU are modern, spacious, well lit and impressive with all the latest technology. You’ll feel warmth with our staff and tutors, who are all friendly and welcoming.',
-
-      'USA-GU makes sure that all students feel at home in the multi-cultural and multi-lingual atmosphere provided by the College.',
-
-      'We look forward to welcoming you and helping you to achieve your learning objectives.'
+    lastScreenData: [
+      {
+        title: 'Student learning oppurtunites',
+        text:
+          'Online and distance learning is the future of education. Even though we live in a global village the concept of a global university – not rooted in a particular country – such as USA GU – is occasionally misunderstood by the dinosaurs of brick and mortar education especially in countries where online education is still a novelty.'
+      },
+      {
+        title: 'Student stories',
+        text:
+          'I believe you will find the story of USA GU inspiring and become a part of it - because thanks to YOU we have the chance to grow and continue to make a difference!'
+      },
+      {
+        title: 'New Course',
+        text:
+          'With our unique, world-leading style of distance learning, USA GU enables you to study from home, work or even on the move, at a time that suits you. With a wide choice of qualifications, at undergraduate and postgraduate level, USA GU offers the choice and flexibility you need.'
+      }
     ],
-    whyLctContent: [
-      'Nearly all of our courses have no formal entry requirements, either prior qualifications or experience. We allow people who have missed out on education to fulfil their potential and achieve qualification that will see them succeed forward in their career',
-
-      'We believe that it is the qualifications and practical experience with which our students leave, rather than those with which they enter, that count.',
-
-      'We have students of all ages and backgrounds including overseas: school leavers who choose to begin their careers while they study, people wanting to develop or update their skills, or change career entirely, and retired people wanting to explore new interests and keep mentally active.',
-
-      'Learners at USA-GU have at least one thing in common: they are all learning for success. The College is committed to promoting equality and valuing diversity, as we have students of all ages, backgrounds and beliefs.',
-
-      'In our College there will be opportunities to make new friends, take part in national competitions, gain work experience, be involved with work experience and visit new and exciting places, amongst other activities, ensuring your time here is enjoyable and rewarding.'
-    ],
-    aboutLctContent: [
-      'Our vision is to promote educational opportunity and social justice by providing high-quality education and trainings to all who wish to realise their ambitions and fulfil their potential.',
-
-      'We are committed to promoting equal opportunities for all and we monitor ourselves to make sure we live up to our ideals.',
-
-      ' USA-GU is a Community employment and training support providers.',
-
-      'We are committed to enriching the lives of all members of the community and to creating new opportunities for them. We have links to a range of community based services and we are experienced at introducing the people we support to a full range of community programmes.',
-
-      'The institution caters for all walks of life i.e. from refugees, unemployed and professional of all ages, gender, race and colour. We implement an excellent equal opportunity policy and cater for the social and cultural needs of the local and international population.'
+    accreditionData: [
+      require('../assets/logo1.jpeg'),
+      require('../assets/logo2.png'),
+      require('../assets/logo3.png'),
+      require('../assets/logo4.png'),
+      require('../assets/logo5.jpeg'),
+      require('../assets/logo6.jpeg'),
+      require('../assets/logo7.png'),
+      require('../assets/logo8.jpg'),
+      require('../assets/logo9.jpeg')
     ]
   }),
   components: {
@@ -160,25 +593,10 @@ h5,
 h6 {
   font-family: 'Roboto Slab', serif !important;
 }
-.about-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  min-height: 70vh;
-}
 .screen1 {
   background-image: url('../assets/about-2.jpg');
 }
-
-#screen2 {
-  min-height: 100vh;
-}
-
-#screen3 {
-  min-height: 30vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #536dfe;
+.backgroundColor {
+  background-color: #b22234;
 }
 </style>
