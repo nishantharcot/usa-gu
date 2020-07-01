@@ -23,15 +23,7 @@
         >
           <v-card height="100%" flat>
             <v-list-item>
-              <!-- <v-list-item-avatar size="60" tile>
-                    <v-icon color="primary">
-                      {{ item.icon }}
-                    </v-icon>
-                  </v-list-item-avatar> -->
               <v-list-item-content class="mx-auto text-center">
-                <!-- <div class="overline mb-4">
-                      {{ item.title }}
-                    </div> -->
                 <v-icon size="60" color="primary">
                   {{ item.icon }}
                 </v-icon>
