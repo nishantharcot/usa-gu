@@ -416,11 +416,7 @@ v-list-item {
 
 <script>
 // @ is an alias to /src
-// import EndScreen from '@/components/EndScreen.vue'
-// import BlogPost from '@/components/BlogPost.vue'
-// import CourseCard from '@/components/CourseCard.vue'
 import Teacher from '@/components/Teacher.vue'
-// import Staff from '@/views/Staff.vue'
 import 'vue-lazy-youtube-video/dist/style.css'
 // import LazyYoutubeVideo from 'vue-lazy-youtube-video'
 
@@ -434,20 +430,6 @@ export default {
   },
   data() {
     return {
-      blogs: [
-        {
-          image: require('../assets/image_1.jpg'),
-          title: 'Electrical Engineering'
-        },
-        {
-          image: require('../assets/image_2.jpg'),
-          title: 'Electrical Engineering'
-        },
-        {
-          image: require('../assets/image_3.jpg'),
-          title: 'Electrical Engineering'
-        }
-      ],
       screen2Data: [
         {
           id: 1,
@@ -494,24 +476,6 @@ export default {
           title: '',
           icon: 'fas fa-chalkboard-teacher',
           text: '200+ FACULTIES'
-        }
-      ],
-      courses: [
-        {
-          image: require('../assets/course-1.jpg'),
-          title: 'Computer Engineering'
-        },
-        {
-          image: require('../assets/course-2.jpg'),
-          title: 'Electrical Engineering'
-        },
-        {
-          image: require('../assets/course-3.jpg'),
-          title: 'Civil Engineering'
-        },
-        {
-          image: require('../assets/course-4.jpg'),
-          title: 'Mechanical Engineering'
         }
       ],
       foo1Data: [

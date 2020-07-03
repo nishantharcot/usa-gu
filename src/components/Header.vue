@@ -3,7 +3,7 @@
     <v-row class="mt-5" v-if="$vuetify.breakpoint.mdAndUp">
       <v-col v-if="$vuetify.breakpoint.mdAndUp" cols="12" md="3">
         <h1 class="text-center">
-          USA-GU
+          <v-img src="../assets/USA-GU.png" height="90" contain></v-img>
         </h1>
       </v-col>
       <v-col v-else class="d-flex flex-column" cols="12" md="3">
@@ -11,7 +11,7 @@
           USA-GU
         </h1>
       </v-col>
-      <v-col cols="12" md="3">
+      <v-col cols="12" md="3" class="d-flex flex-column justify-center">
         <div class="d-flex flex-row">
           <v-icon color="primary" class="mt-3">
             fas fa-paper-plane
@@ -24,7 +24,7 @@
           </div>
         </div>
       </v-col>
-      <v-col cols="12" md="3">
+      <v-col cols="12" md="3" class="d-flex flex-column justify-center">
         <div class="d-flex flex-row">
           <v-icon color="primary" class="mt-3">
             fas fa-phone-alt
@@ -37,7 +37,7 @@
           </div>
         </div>
       </v-col>
-      <v-col cols="12" md="2">
+      <v-col cols="12" md="2" class="d-flex flex-column justify-center">
         <v-btn class="mt-2" color="primary" to="/application">
           Apply Now
         </v-btn>
