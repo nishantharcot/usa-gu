@@ -283,11 +283,11 @@
             that will help you plan your reading, and assignments due dates.
           </p>
           <p class="mt-5">
-            With our unique, world-leading style of distance learning, Global
-            Tamil University enables you to study from home, work or even on the
-            move, at a time that suits you. With a wide choice of
-            qualifications, at undergraduate and postgraduate level, Global
-            Tamil University offers the choice and flexibility you need.
+            With our unique, world-leading style of distance learning, USA GU
+            enables you to study from home, work or even on the move, at a time
+            that suits you. With a wide choice of qualifications, at
+            undergraduate and postgraduate level, USA GU offers the choice and
+            flexibility you need.
           </p>
           <p class="mt-5">
             “The level of support is fantastic and the modules are brilliant.

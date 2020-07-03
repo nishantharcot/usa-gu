@@ -178,10 +178,10 @@
               <p class="text-body-1">
                 Online and distance learning is the future of education. Even
                 though we live in a global village the concept of a global
-                university – not rooted in a particular country – such as Global
-                Tamil University – is occasionally misunderstood by the
-                dinosaurs of brick and mortar education especially in countries
-                where online education is still a novelty.
+                university – not rooted in a particular country – such as USA GU
+                – is occasionally misunderstood by the dinosaurs of brick and
+                mortar education especially in countries where online education
+                is still a novelty.
               </p>
               <p class="text-body-1">
                 USA GU's formula has proven a great success over the years. It
