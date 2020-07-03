@@ -49,6 +49,15 @@
       "
       dark
     >
+      <v-toolbar-title v-if="$vuetify.breakpoint.smAndDown">
+        <v-img
+          src="../assets/USA-GU.png"
+          height="50"
+          width="50"
+          contain
+        ></v-img>
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
       <v-app-bar-nav-icon
         v-if="$vuetify.breakpoint.smAndDown"
         color="white"
@@ -69,10 +78,7 @@
           </v-list>
         </v-menu>
       </v-app-bar-nav-icon>
-      <v-toolbar-title v-if="$vuetify.breakpoint.smAndDown">
-        <v-img src="../assets/USA-GU.png" height="50" contain></v-img>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
+      <!-- <v-spacer></v-spacer> -->
       <template v-for="link in links">
         <v-btn
           v-if="$vuetify.breakpoint.mdAndUp"
@@ -84,7 +90,7 @@
           >{{ link.label }}
         </v-btn>
       </template>
-      <v-spacer></v-spacer>
+      <v-spacer v-if="$vuetify.breakpoint.mdAndUp"></v-spacer>
     </v-app-bar>
   </v-container>
 </template>
