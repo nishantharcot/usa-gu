@@ -28,7 +28,7 @@
               <v-icon>
                 fas fa-angle-double-right
               </v-icon>
-              <v-btn text>
+              <v-btn text :to="data.url">
                 {{ data.label }}
               </v-btn>
             </v-col>
