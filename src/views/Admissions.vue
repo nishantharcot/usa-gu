@@ -151,7 +151,7 @@
             students from a number of national and international students:
           </p>
           <p class="mt-5">
-            Applications for usagu University bursaries should be made upon
+            Applications for USAG University bursaries should be made upon
             receipt of an offer from the university. No award of a bursary will
             be considered until then.
           </p>
@@ -171,7 +171,7 @@
             Discount
           </h1>
           <p class="mt-5">
-            usagu University offers a 20% discount off the total
+            USAG University offers a 20% discount off the total
             tuition/programme fees for students who choose to pay in full at the
             time of registration.
           </p>
@@ -182,8 +182,8 @@
             Fees
           </h1>
           <p class="mt-5">
-            Graduates of usagu University who register for a second degree at
-            the University will benefit from the University’s 25% discount if
+            Graduates of USAG University who register for a second degree at the
+            University will benefit from the University’s 25% discount if
             programme fees are paid in full at the time of registration.
           </p>
         </v-col>
@@ -384,14 +384,14 @@ export default {
         },
         {
           name: 'BIANCA C, UNITED STATES',
-          image: require('../assets/people-new1.jpg'),
+          image: require('../assets/people-new3.jpg'),
           branch: 'Business Administration, PG Degree',
           description:
             'I am glad to be a part of USAG University because it stands for the standardization of higher education that should be provided globally to all mankind'
         },
         {
-          name: 'MOHAMMED RIZWAN, PAKISTAN',
-          image: require('../assets/people3.jpg'),
+          name: 'CHRISTINE VONE, BRAZIL',
+          image: require('../assets/people-new4.jpg'),
           branch: 'Computer Science, Master Degree',
           description:
             'USAG University has rekindled my enthusiasm to achieve my academic dreams with rigorous programs and the highest standards of academic excellence.'

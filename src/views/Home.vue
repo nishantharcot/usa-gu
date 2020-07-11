@@ -1,36 +1,24 @@
 <template>
   <div>
-    <v-container v-if="$vuetify.breakpoint.smAndDown" class="pt-0 pb-0">
-      <v-row id="screen1" app>
-        <v-col id="screen1-content" cols="12" sm="12">
-          <h1 id="mainHeading" class="display-1 text-center">
-            EDUCATION NEEDS COMPLETE SOLUTION
-          </h1>
-          <v-btn x-large color="primary" class="mt-5">
-            CONTACT US
-          </v-btn>
-        </v-col>
-      </v-row>
-    </v-container>
-    <v-row v-else id="screen1" class="pb-0" app>
-      <v-col id="screen1-content" cols="12" sm="12">
-        <h1 id="mainHeading" class="display-1 text-center">
-          EDUCATION NEEDS COMPLETE SOLUTION
-        </h1>
-        <v-btn x-large color="primary" class="mt-5">
-          CONTACT US
-        </v-btn>
-      </v-col>
-    </v-row>
-    <!-- <video-background
-      src="../assets/new-video.mp4"
+    <video-background
+      src="/video.mp4"
       style="max-height: 400px; height: 100vh;"
     >
-      <h1 style="color: black;">Hello welcome!</h1>
-    </video-background> -->
-    <!-- <video-bg :sources="['../assets/new-video.mp4']" img="demo/assets/bg.jpg">
-      If you want to add content here, a slot is waiting!
-    </video-bg> -->
+      <!-- <h1 style="color: black;">Hello welcome!</h1>
+       -->
+      <v-overlay absolute opacity="0.8">
+        <v-row class="pb-0" app>
+          <v-col cols="12" sm="12" class="text-center">
+            <h1 id="mainHeading" class="display-1 text-center">
+              EDUCATION NEEDS COMPLETE SOLUTION
+            </h1>
+            <v-btn x-large color="primary" class="mt-5">
+              CONTACT US
+            </v-btn>
+          </v-col>
+        </v-row>
+      </v-overlay>
+    </video-background>
     <v-container class="pt-0 mt-0" v-if="$vuetify.breakpoint.smAndDown">
       <v-row class="pt-0 mt-0">
         <v-col
@@ -428,6 +416,9 @@ v-list-item {
 // @ is an alias to /src
 import Teacher from '@/components/Teacher.vue'
 import 'vue-lazy-youtube-video/dist/style.css'
+// import VideoBg from 'vue-videobg'
+import VideoBackground from 'vue-responsive-video-background-player'
+
 // import LazyYoutubeVideo from 'vue-lazy-youtube-video'
 
 export default {
@@ -435,7 +426,8 @@ export default {
   components: {
     // EndScreen,
     // CourseCard,
-    Teacher
+    Teacher,
+    VideoBackground
     // LazyYouubeVideo
   },
   data() {
@@ -604,7 +596,7 @@ export default {
       photoGallery: [
         {
           image: require('../assets/photo-gallery-1.jpg'),
-          name: 'Graduation Ceremony 2019',
+          name: 'Graduation Ceremony 2020',
           description: ''
         },
         {
@@ -614,7 +606,7 @@ export default {
         },
         {
           image: require('../assets/photo-gallery-4.jpg'),
-          name: 'USAG Awards 2017',
+          name: 'USAG Awards 2020',
           description: ''
         }
       ],

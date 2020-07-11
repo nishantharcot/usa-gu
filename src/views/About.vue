@@ -530,7 +530,7 @@ export default {
         number: '50+',
         title: 'UK Accredited Diploma',
         description:
-          'GTU Universities Bachelor and Master Affordable, Accredited and 100% Online Education'
+          'USAG Universities Bachelor and Master Affordable, Accredited and 100% Online Education'
       },
       {
         icon: 'fas fa-award',
