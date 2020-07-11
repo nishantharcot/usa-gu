@@ -69,12 +69,143 @@
                 <div v-if="$vuetify.breakpoint.smAndDown">
                   <h3 class="display mb-3">Overview</h3>
                   <p>This is the overview of course {{ course.title }}</p>
+                  <div>
+                    <v-dialog v-model="dialog" width="500">
+                      <template v-slot:activator="{ on, attrs }">
+                        <v-btn color="primary" dark v-bind="attrs" v-on="on">
+                          Learn More
+                        </v-btn>
+                      </template>
+
+                      <v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Overview
+                          </v-card-title>
+                          <v-card-text>
+                            The objective of Level 3 Certificate in Business
+                            Studies qualification is to provide learners with an
+                            in depth understanding of the operations and
+                            structure of businesses. Successful completion of
+                            this qualification will equip learners with some of
+                            the underpinning knowledge and skills required to
+                            succeed in employment or further studies.
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Description
+                          </v-card-title>
+                          <v-card-text>
+                            This qualification enables learners to develop the
+                            knowledge, understanding and skills in business
+                            including the sources which will develop while
+                            studying the business course,easily understand the
+                            business system.
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Duration
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                The programme is available in 2 duration modes:
+                              </p>
+                              <p>6 Month</p>
+                              <p>9 Month</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Course Delivery
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                The programme is available in 2 delivery modes:
+                              </p>
+                              <ul>
+                                <li>Online</li>
+                                <li>In Class</li>
+                              </ul>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Entry Requirements
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                In order to apply you should have either:
+                              </p>
+                              <ul>
+                                <li>
+                                  This qualification is designed for learners
+                                  aged 16 and above.
+                                </li>
+                                <li>
+                                  5 or more GCSEs and above or other related
+                                  level 2 subjects or other equivalent
+                                  international qualifications
+                                </li>
+                              </ul>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Assessment
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>Assessment is via assignment submission</p>
+                              <p>No Exams</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Accreditation
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                This programme is accredited by Ofqual Awarding
+                                body (Othm)
+                              </p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Fees
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>Single Payment £950</p>
+                              <p>Registration fees £ 180</p>
+                              <h4 class="mb-5">
+                                Monthly Payment breakdown
+                              </h4>
+                              <p>Admininstration charges £ 50</p>
+                              <p>
+                                Intial Deposit ( including registration) £ 230
+                              </p>
+                              <p>6 Monthly instalments £ 165</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                      </v-card>
+                    </v-dialog>
+                  </div>
                 </div>
                 <div v-if="$vuetify.breakpoint.mdAndUp">
                   <Program :course="course" />
-                </div>
-                <div v-if="$vuetify.breakpoint.smAndDown">
-                  <v-btn color="primary">Learn More</v-btn>
                 </div>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -94,12 +225,143 @@
                 <div v-if="$vuetify.breakpoint.smAndDown">
                   <h3 class="display mb-3">Overview</h3>
                   <p>This is the overview of course {{ course.title }}</p>
+                  <div>
+                    <v-dialog v-model="dialog" width="500">
+                      <template v-slot:activator="{ on, attrs }">
+                        <v-btn color="primary" dark v-bind="attrs" v-on="on">
+                          Learn More
+                        </v-btn>
+                      </template>
+
+                      <v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Overview
+                          </v-card-title>
+                          <v-card-text>
+                            The objective of Level 3 Certificate in Business
+                            Studies qualification is to provide learners with an
+                            in depth understanding of the operations and
+                            structure of businesses. Successful completion of
+                            this qualification will equip learners with some of
+                            the underpinning knowledge and skills required to
+                            succeed in employment or further studies.
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Description
+                          </v-card-title>
+                          <v-card-text>
+                            This qualification enables learners to develop the
+                            knowledge, understanding and skills in business
+                            including the sources which will develop while
+                            studying the business course,easily understand the
+                            business system.
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Duration
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                The programme is available in 2 duration modes:
+                              </p>
+                              <p>6 Month</p>
+                              <p>9 Month</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Course Delivery
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                The programme is available in 2 delivery modes:
+                              </p>
+                              <ul>
+                                <li>Online</li>
+                                <li>In Class</li>
+                              </ul>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Entry Requirements
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                In order to apply you should have either:
+                              </p>
+                              <ul>
+                                <li>
+                                  This qualification is designed for learners
+                                  aged 16 and above.
+                                </li>
+                                <li>
+                                  5 or more GCSEs and above or other related
+                                  level 2 subjects or other equivalent
+                                  international qualifications
+                                </li>
+                              </ul>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Assessment
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>Assessment is via assignment submission</p>
+                              <p>No Exams</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Accreditation
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                This programme is accredited by Ofqual Awarding
+                                body (Othm)
+                              </p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Fees
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>Single Payment £950</p>
+                              <p>Registration fees £ 180</p>
+                              <h4 class="mb-5">
+                                Monthly Payment breakdown
+                              </h4>
+                              <p>Admininstration charges £ 50</p>
+                              <p>
+                                Intial Deposit ( including registration) £ 230
+                              </p>
+                              <p>6 Monthly instalments £ 165</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                      </v-card>
+                    </v-dialog>
+                  </div>
                 </div>
                 <div v-if="$vuetify.breakpoint.mdAndUp">
                   <Program :course="course" />
-                </div>
-                <div v-if="$vuetify.breakpoint.smAndDown">
-                  <v-btn color="primary">Learn More</v-btn>
                 </div>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -118,12 +380,143 @@
                 <div v-if="$vuetify.breakpoint.smAndDown">
                   <h3 class="display mb-3">Overview</h3>
                   <p>This is the overview of course {{ course.title }}</p>
+                  <div>
+                    <v-dialog v-model="dialog" width="500">
+                      <template v-slot:activator="{ on, attrs }">
+                        <v-btn color="primary" dark v-bind="attrs" v-on="on">
+                          Learn More
+                        </v-btn>
+                      </template>
+
+                      <v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Overview
+                          </v-card-title>
+                          <v-card-text>
+                            The objective of Level 3 Certificate in Business
+                            Studies qualification is to provide learners with an
+                            in depth understanding of the operations and
+                            structure of businesses. Successful completion of
+                            this qualification will equip learners with some of
+                            the underpinning knowledge and skills required to
+                            succeed in employment or further studies.
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Description
+                          </v-card-title>
+                          <v-card-text>
+                            This qualification enables learners to develop the
+                            knowledge, understanding and skills in business
+                            including the sources which will develop while
+                            studying the business course,easily understand the
+                            business system.
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Duration
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                The programme is available in 2 duration modes:
+                              </p>
+                              <p>6 Month</p>
+                              <p>9 Month</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Course Delivery
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                The programme is available in 2 delivery modes:
+                              </p>
+                              <ul>
+                                <li>Online</li>
+                                <li>In Class</li>
+                              </ul>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Entry Requirements
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                In order to apply you should have either:
+                              </p>
+                              <ul>
+                                <li>
+                                  This qualification is designed for learners
+                                  aged 16 and above.
+                                </li>
+                                <li>
+                                  5 or more GCSEs and above or other related
+                                  level 2 subjects or other equivalent
+                                  international qualifications
+                                </li>
+                              </ul>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Assessment
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>Assessment is via assignment submission</p>
+                              <p>No Exams</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Accreditation
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                This programme is accredited by Ofqual Awarding
+                                body (Othm)
+                              </p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Fees
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>Single Payment £950</p>
+                              <p>Registration fees £ 180</p>
+                              <h4 class="mb-5">
+                                Monthly Payment breakdown
+                              </h4>
+                              <p>Admininstration charges £ 50</p>
+                              <p>
+                                Intial Deposit ( including registration) £ 230
+                              </p>
+                              <p>6 Monthly instalments £ 165</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                      </v-card>
+                    </v-dialog>
+                  </div>
                 </div>
                 <div v-if="$vuetify.breakpoint.mdAndUp">
                   <Program :course="course" />
-                </div>
-                <div v-if="$vuetify.breakpoint.smAndDown">
-                  <v-btn color="primary">Learn More</v-btn>
                 </div>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -143,12 +536,143 @@
                 <div v-if="$vuetify.breakpoint.smAndDown">
                   <h3 class="display mb-3">Overview</h3>
                   <p>This is overview of the course {{ course.title }}</p>
+                  <div>
+                    <v-dialog v-model="dialog" width="500">
+                      <template v-slot:activator="{ on, attrs }">
+                        <v-btn color="primary" dark v-bind="attrs" v-on="on">
+                          Learn More
+                        </v-btn>
+                      </template>
+
+                      <v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Overview
+                          </v-card-title>
+                          <v-card-text>
+                            The objective of Level 3 Certificate in Business
+                            Studies qualification is to provide learners with an
+                            in depth understanding of the operations and
+                            structure of businesses. Successful completion of
+                            this qualification will equip learners with some of
+                            the underpinning knowledge and skills required to
+                            succeed in employment or further studies.
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Description
+                          </v-card-title>
+                          <v-card-text>
+                            This qualification enables learners to develop the
+                            knowledge, understanding and skills in business
+                            including the sources which will develop while
+                            studying the business course,easily understand the
+                            business system.
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Duration
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                The programme is available in 2 duration modes:
+                              </p>
+                              <p>6 Month</p>
+                              <p>9 Month</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Course Delivery
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                The programme is available in 2 delivery modes:
+                              </p>
+                              <ul>
+                                <li>Online</li>
+                                <li>In Class</li>
+                              </ul>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Entry Requirements
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                In order to apply you should have either:
+                              </p>
+                              <ul>
+                                <li>
+                                  This qualification is designed for learners
+                                  aged 16 and above.
+                                </li>
+                                <li>
+                                  5 or more GCSEs and above or other related
+                                  level 2 subjects or other equivalent
+                                  international qualifications
+                                </li>
+                              </ul>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Assessment
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>Assessment is via assignment submission</p>
+                              <p>No Exams</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Accreditation
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                This programme is accredited by Ofqual Awarding
+                                body (Othm)
+                              </p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Fees
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>Single Payment £950</p>
+                              <p>Registration fees £ 180</p>
+                              <h4 class="mb-5">
+                                Monthly Payment breakdown
+                              </h4>
+                              <p>Admininstration charges £ 50</p>
+                              <p>
+                                Intial Deposit ( including registration) £ 230
+                              </p>
+                              <p>6 Monthly instalments £ 165</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                      </v-card>
+                    </v-dialog>
+                  </div>
                 </div>
                 <div v-if="$vuetify.breakpoint.mdAndUp">
                   <Program :course="course" />
-                </div>
-                <div v-if="$vuetify.breakpoint.smAndDown">
-                  <v-btn color="primary">Learn More</v-btn>
                 </div>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -167,12 +691,143 @@
                 <div v-if="$vuetify.breakpoint.smAndDown">
                   <h3 class="display mb-3">Overview</h3>
                   <p>This is the overview of course {{ course.title }}</p>
+                  <div>
+                    <v-dialog v-model="dialog" width="500">
+                      <template v-slot:activator="{ on, attrs }">
+                        <v-btn color="primary" dark v-bind="attrs" v-on="on">
+                          Learn More
+                        </v-btn>
+                      </template>
+
+                      <v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Overview
+                          </v-card-title>
+                          <v-card-text>
+                            The objective of Level 3 Certificate in Business
+                            Studies qualification is to provide learners with an
+                            in depth understanding of the operations and
+                            structure of businesses. Successful completion of
+                            this qualification will equip learners with some of
+                            the underpinning knowledge and skills required to
+                            succeed in employment or further studies.
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Description
+                          </v-card-title>
+                          <v-card-text>
+                            This qualification enables learners to develop the
+                            knowledge, understanding and skills in business
+                            including the sources which will develop while
+                            studying the business course,easily understand the
+                            business system.
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Duration
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                The programme is available in 2 duration modes:
+                              </p>
+                              <p>6 Month</p>
+                              <p>9 Month</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Course Delivery
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                The programme is available in 2 delivery modes:
+                              </p>
+                              <ul>
+                                <li>Online</li>
+                                <li>In Class</li>
+                              </ul>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Entry Requirements
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                In order to apply you should have either:
+                              </p>
+                              <ul>
+                                <li>
+                                  This qualification is designed for learners
+                                  aged 16 and above.
+                                </li>
+                                <li>
+                                  5 or more GCSEs and above or other related
+                                  level 2 subjects or other equivalent
+                                  international qualifications
+                                </li>
+                              </ul>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Assessment
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>Assessment is via assignment submission</p>
+                              <p>No Exams</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Accreditation
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                This programme is accredited by Ofqual Awarding
+                                body (Othm)
+                              </p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Fees
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>Single Payment £950</p>
+                              <p>Registration fees £ 180</p>
+                              <h4 class="mb-5">
+                                Monthly Payment breakdown
+                              </h4>
+                              <p>Admininstration charges £ 50</p>
+                              <p>
+                                Intial Deposit ( including registration) £ 230
+                              </p>
+                              <p>6 Monthly instalments £ 165</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                      </v-card>
+                    </v-dialog>
+                  </div>
                 </div>
                 <div v-if="$vuetify.breakpoint.mdAndUp">
                   <Program :course="course" />
-                </div>
-                <div v-if="$vuetify.breakpoint.smAndDown">
-                  <v-btn color="primary">Learn More</v-btn>
                 </div>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -191,12 +846,143 @@
                 <div v-if="$vuetify.breakpoint.smAndDown">
                   <h3 class="display mb-3">Overview</h3>
                   <p>This is the overview of course {{ course.title }}</p>
+                  <div>
+                    <v-dialog v-model="dialog" width="500">
+                      <template v-slot:activator="{ on, attrs }">
+                        <v-btn color="primary" dark v-bind="attrs" v-on="on">
+                          Learn More
+                        </v-btn>
+                      </template>
+
+                      <v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Overview
+                          </v-card-title>
+                          <v-card-text>
+                            The objective of Level 3 Certificate in Business
+                            Studies qualification is to provide learners with an
+                            in depth understanding of the operations and
+                            structure of businesses. Successful completion of
+                            this qualification will equip learners with some of
+                            the underpinning knowledge and skills required to
+                            succeed in employment or further studies.
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Description
+                          </v-card-title>
+                          <v-card-text>
+                            This qualification enables learners to develop the
+                            knowledge, understanding and skills in business
+                            including the sources which will develop while
+                            studying the business course,easily understand the
+                            business system.
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Duration
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                The programme is available in 2 duration modes:
+                              </p>
+                              <p>6 Month</p>
+                              <p>9 Month</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Course Delivery
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                The programme is available in 2 delivery modes:
+                              </p>
+                              <ul>
+                                <li>Online</li>
+                                <li>In Class</li>
+                              </ul>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Entry Requirements
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                In order to apply you should have either:
+                              </p>
+                              <ul>
+                                <li>
+                                  This qualification is designed for learners
+                                  aged 16 and above.
+                                </li>
+                                <li>
+                                  5 or more GCSEs and above or other related
+                                  level 2 subjects or other equivalent
+                                  international qualifications
+                                </li>
+                              </ul>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Assessment
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>Assessment is via assignment submission</p>
+                              <p>No Exams</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Accreditation
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                This programme is accredited by Ofqual Awarding
+                                body (Othm)
+                              </p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Fees
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>Single Payment £950</p>
+                              <p>Registration fees £ 180</p>
+                              <h4 class="mb-5">
+                                Monthly Payment breakdown
+                              </h4>
+                              <p>Admininstration charges £ 50</p>
+                              <p>
+                                Intial Deposit ( including registration) £ 230
+                              </p>
+                              <p>6 Monthly instalments £ 165</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                      </v-card>
+                    </v-dialog>
+                  </div>
                 </div>
                 <div v-if="$vuetify.breakpoint.mdAndUp">
                   <Program :course="course" />
-                </div>
-                <div v-if="$vuetify.breakpoint.smAndDown">
-                  <v-btn color="primary">Learn More</v-btn>
                 </div>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -215,12 +1001,143 @@
                 <div v-if="$vuetify.breakpoint.smAndDown">
                   <h3 class="display mb-3">Overview</h3>
                   <p>This is the overview of course {{ course.title }}</p>
+                  <div>
+                    <v-dialog v-model="dialog" width="500">
+                      <template v-slot:activator="{ on, attrs }">
+                        <v-btn color="primary" dark v-bind="attrs" v-on="on">
+                          Learn More
+                        </v-btn>
+                      </template>
+
+                      <v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Overview
+                          </v-card-title>
+                          <v-card-text>
+                            The objective of Level 3 Certificate in Business
+                            Studies qualification is to provide learners with an
+                            in depth understanding of the operations and
+                            structure of businesses. Successful completion of
+                            this qualification will equip learners with some of
+                            the underpinning knowledge and skills required to
+                            succeed in employment or further studies.
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Description
+                          </v-card-title>
+                          <v-card-text>
+                            This qualification enables learners to develop the
+                            knowledge, understanding and skills in business
+                            including the sources which will develop while
+                            studying the business course,easily understand the
+                            business system.
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Duration
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                The programme is available in 2 duration modes:
+                              </p>
+                              <p>6 Month</p>
+                              <p>9 Month</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Course Delivery
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                The programme is available in 2 delivery modes:
+                              </p>
+                              <ul>
+                                <li>Online</li>
+                                <li>In Class</li>
+                              </ul>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Entry Requirements
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                In order to apply you should have either:
+                              </p>
+                              <ul>
+                                <li>
+                                  This qualification is designed for learners
+                                  aged 16 and above.
+                                </li>
+                                <li>
+                                  5 or more GCSEs and above or other related
+                                  level 2 subjects or other equivalent
+                                  international qualifications
+                                </li>
+                              </ul>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Assessment
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>Assessment is via assignment submission</p>
+                              <p>No Exams</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Accreditation
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                This programme is accredited by Ofqual Awarding
+                                body (Othm)
+                              </p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Fees
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>Single Payment £950</p>
+                              <p>Registration fees £ 180</p>
+                              <h4 class="mb-5">
+                                Monthly Payment breakdown
+                              </h4>
+                              <p>Admininstration charges £ 50</p>
+                              <p>
+                                Intial Deposit ( including registration) £ 230
+                              </p>
+                              <p>6 Monthly instalments £ 165</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                      </v-card>
+                    </v-dialog>
+                  </div>
                 </div>
                 <div v-if="$vuetify.breakpoint.mdAndUp">
                   <Program :course="course" />
-                </div>
-                <div v-if="$vuetify.breakpoint.smAndDown">
-                  <v-btn color="primary">Learn More</v-btn>
                 </div>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -240,12 +1157,143 @@
                 <div v-if="$vuetify.breakpoint.smAndDown">
                   <h3 class="display mb-3">Overview</h3>
                   <p>This is the overview of course {{ course.title }}</p>
+                  <div>
+                    <v-dialog v-model="dialog" width="500">
+                      <template v-slot:activator="{ on, attrs }">
+                        <v-btn color="primary" dark v-bind="attrs" v-on="on">
+                          Learn More
+                        </v-btn>
+                      </template>
+
+                      <v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Overview
+                          </v-card-title>
+                          <v-card-text>
+                            The objective of Level 3 Certificate in Business
+                            Studies qualification is to provide learners with an
+                            in depth understanding of the operations and
+                            structure of businesses. Successful completion of
+                            this qualification will equip learners with some of
+                            the underpinning knowledge and skills required to
+                            succeed in employment or further studies.
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Description
+                          </v-card-title>
+                          <v-card-text>
+                            This qualification enables learners to develop the
+                            knowledge, understanding and skills in business
+                            including the sources which will develop while
+                            studying the business course,easily understand the
+                            business system.
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Duration
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                The programme is available in 2 duration modes:
+                              </p>
+                              <p>6 Month</p>
+                              <p>9 Month</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Course Delivery
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                The programme is available in 2 delivery modes:
+                              </p>
+                              <ul>
+                                <li>Online</li>
+                                <li>In Class</li>
+                              </ul>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Entry Requirements
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                In order to apply you should have either:
+                              </p>
+                              <ul>
+                                <li>
+                                  This qualification is designed for learners
+                                  aged 16 and above.
+                                </li>
+                                <li>
+                                  5 or more GCSEs and above or other related
+                                  level 2 subjects or other equivalent
+                                  international qualifications
+                                </li>
+                              </ul>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Assessment
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>Assessment is via assignment submission</p>
+                              <p>No Exams</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Accreditation
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                This programme is accredited by Ofqual Awarding
+                                body (Othm)
+                              </p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Fees
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>Single Payment £950</p>
+                              <p>Registration fees £ 180</p>
+                              <h4 class="mb-5">
+                                Monthly Payment breakdown
+                              </h4>
+                              <p>Admininstration charges £ 50</p>
+                              <p>
+                                Intial Deposit ( including registration) £ 230
+                              </p>
+                              <p>6 Monthly instalments £ 165</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                      </v-card>
+                    </v-dialog>
+                  </div>
                 </div>
                 <div v-if="$vuetify.breakpoint.mdAndUp">
                   <Program :course="course" />
-                </div>
-                <div v-if="$vuetify.breakpoint.smAndDown">
-                  <v-btn color="primary">Learn More</v-btn>
                 </div>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -264,12 +1312,143 @@
                 <div v-if="$vuetify.breakpoint.smAndDown">
                   <h3 class="display mb-3">Overview</h3>
                   <p>This is the overview of course {{ course.title }}</p>
+                  <div>
+                    <v-dialog v-model="dialog" width="500">
+                      <template v-slot:activator="{ on, attrs }">
+                        <v-btn color="primary" dark v-bind="attrs" v-on="on">
+                          Learn More
+                        </v-btn>
+                      </template>
+
+                      <v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Overview
+                          </v-card-title>
+                          <v-card-text>
+                            The objective of Level 3 Certificate in Business
+                            Studies qualification is to provide learners with an
+                            in depth understanding of the operations and
+                            structure of businesses. Successful completion of
+                            this qualification will equip learners with some of
+                            the underpinning knowledge and skills required to
+                            succeed in employment or further studies.
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Description
+                          </v-card-title>
+                          <v-card-text>
+                            This qualification enables learners to develop the
+                            knowledge, understanding and skills in business
+                            including the sources which will develop while
+                            studying the business course,easily understand the
+                            business system.
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Duration
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                The programme is available in 2 duration modes:
+                              </p>
+                              <p>6 Month</p>
+                              <p>9 Month</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Course Delivery
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                The programme is available in 2 delivery modes:
+                              </p>
+                              <ul>
+                                <li>Online</li>
+                                <li>In Class</li>
+                              </ul>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Entry Requirements
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                In order to apply you should have either:
+                              </p>
+                              <ul>
+                                <li>
+                                  This qualification is designed for learners
+                                  aged 16 and above.
+                                </li>
+                                <li>
+                                  5 or more GCSEs and above or other related
+                                  level 2 subjects or other equivalent
+                                  international qualifications
+                                </li>
+                              </ul>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Assessment
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>Assessment is via assignment submission</p>
+                              <p>No Exams</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Accreditation
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                This programme is accredited by Ofqual Awarding
+                                body (Othm)
+                              </p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Fees
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>Single Payment £950</p>
+                              <p>Registration fees £ 180</p>
+                              <h4 class="mb-5">
+                                Monthly Payment breakdown
+                              </h4>
+                              <p>Admininstration charges £ 50</p>
+                              <p>
+                                Intial Deposit ( including registration) £ 230
+                              </p>
+                              <p>6 Monthly instalments £ 165</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                      </v-card>
+                    </v-dialog>
+                  </div>
                 </div>
                 <div v-if="$vuetify.breakpoint.mdAndUp">
                   <Program :course="course" />
-                </div>
-                <div v-if="$vuetify.breakpoint.smAndDown">
-                  <v-btn color="primary">Learn More</v-btn>
                 </div>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -288,12 +1467,143 @@
                 <div v-if="$vuetify.breakpoint.smAndDown">
                   <h3 class="display mb-3">Overview</h3>
                   <p>This is the overview of course {{ course.title }}</p>
+                  <div>
+                    <v-dialog v-model="dialog" width="500">
+                      <template v-slot:activator="{ on, attrs }">
+                        <v-btn color="primary" dark v-bind="attrs" v-on="on">
+                          Learn More
+                        </v-btn>
+                      </template>
+
+                      <v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Overview
+                          </v-card-title>
+                          <v-card-text>
+                            The objective of Level 3 Certificate in Business
+                            Studies qualification is to provide learners with an
+                            in depth understanding of the operations and
+                            structure of businesses. Successful completion of
+                            this qualification will equip learners with some of
+                            the underpinning knowledge and skills required to
+                            succeed in employment or further studies.
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Description
+                          </v-card-title>
+                          <v-card-text>
+                            This qualification enables learners to develop the
+                            knowledge, understanding and skills in business
+                            including the sources which will develop while
+                            studying the business course,easily understand the
+                            business system.
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Duration
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                The programme is available in 2 duration modes:
+                              </p>
+                              <p>6 Month</p>
+                              <p>9 Month</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Course Delivery
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                The programme is available in 2 delivery modes:
+                              </p>
+                              <ul>
+                                <li>Online</li>
+                                <li>In Class</li>
+                              </ul>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Entry Requirements
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                In order to apply you should have either:
+                              </p>
+                              <ul>
+                                <li>
+                                  This qualification is designed for learners
+                                  aged 16 and above.
+                                </li>
+                                <li>
+                                  5 or more GCSEs and above or other related
+                                  level 2 subjects or other equivalent
+                                  international qualifications
+                                </li>
+                              </ul>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Assessment
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>Assessment is via assignment submission</p>
+                              <p>No Exams</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Accreditation
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>
+                                This programme is accredited by Ofqual Awarding
+                                body (Othm)
+                              </p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                        <v-card flat>
+                          <v-card-title>
+                            Fees
+                          </v-card-title>
+                          <v-card-text>
+                            <div class="columnFlex">
+                              <p>Single Payment £950</p>
+                              <p>Registration fees £ 180</p>
+                              <h4 class="mb-5">
+                                Monthly Payment breakdown
+                              </h4>
+                              <p>Admininstration charges £ 50</p>
+                              <p>
+                                Intial Deposit ( including registration) £ 230
+                              </p>
+                              <p>6 Monthly instalments £ 165</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                      </v-card>
+                    </v-dialog>
+                  </div>
                 </div>
                 <div v-if="$vuetify.breakpoint.mdAndUp">
                   <Program :course="course" />
-                </div>
-                <div v-if="$vuetify.breakpoint.smAndDown">
-                  <v-btn color="primary">Learn More</v-btn>
                 </div>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -311,6 +1621,17 @@ import CourseBanner from '@/components/CourseBanner.vue'
 
 export default {
   data: () => ({
+    dialog: false,
+    sideBarHeadings: [
+      'Overview',
+      'Description',
+      'Duration',
+      'Course Delivery',
+      'Entry Requirements',
+      'Assessment',
+      'Accreditation',
+      'Fees'
+    ],
     diplomaPrograms: [
       {
         title: 'Diploma in Business Management',
