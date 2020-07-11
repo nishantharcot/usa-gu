@@ -595,17 +595,17 @@ export default {
       ],
       photoGallery: [
         {
-          image: require('../assets/photo-gallery-1.jpg'),
+          image: require('../assets/new-gallery-1.jpg'),
           name: 'Graduation Ceremony 2020',
           description: ''
         },
         {
-          image: require('../assets/photo-gallery-2.jpg'),
+          image: require('../assets/hawaii.jpg'),
           name: 'Hawaii: Oahu',
           description: ''
         },
         {
-          image: require('../assets/photo-gallery-4.jpg'),
+          image: require('../assets/new-gallery-3.jpg'),
           name: 'USAG Awards 2020',
           description: ''
         }

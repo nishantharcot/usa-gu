@@ -192,7 +192,7 @@
           cols="12"
           md="4"
         >
-          <v-img src="../assets/admission-new-3.jpg"></v-img>
+          <v-img src="../assets/advanced-payment.jpg"></v-img>
         </v-col>
       </v-row>
       <v-row class="screen-3">
@@ -201,7 +201,7 @@
           cols="12"
           md="4"
         >
-          <v-img src="../assets/admission-new-4.jpg"></v-img>
+          <v-img src="../assets/withdrawal.jpg"></v-img>
         </v-col>
         <v-col class="order-2" cols="12" md="8">
           <h1 class="display-1">
@@ -433,6 +433,7 @@ hr {
 }
 
 .screen1 {
-  background-image: url('../assets/admissions.jpg');
+  background-image: url('../assets/admission-banner.jpg');
+  background-position: top;
 }
 </style>

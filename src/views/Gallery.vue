@@ -5,7 +5,7 @@
       <v-row>
         <v-col class="order-2" cols="12" md="6">
           <h1 class="display-1">
-            <strong>Photo gallery</strong>
+            <strong>Photo Gallery</strong>
           </h1>
           <p class="mt-5">
             Even though all of the programs provided by USAG University are 100
@@ -37,17 +37,23 @@
           cols="12"
           md="6"
         >
-          <LazyYoutubeVideo src="https://www.youtube.com/embed/xmCWXOO1XNA" />
+          <!-- <LazyYoutubeVideo src="https://www.youtube.com/embed/xmCWXOO1XNA" /> -->
+          <v-img src="../assets/event-image.jpg"></v-img>
         </v-col>
         <v-col class="order-2" cols="12" md="6">
           <h1 class="display-1">
-            <strong>Events gallery</strong>
+            <strong>Events Gallery</strong>
           </h1>
           <p class="mt-5">
             This section contains various events that help introduce USAG
-            University. We hope you enjoy watching!
+            University. We hope you enjoy!
           </p>
-          <v-btn x-large color="primary" class="align-self-center jus">
+          <v-btn
+            to="/eventgallery"
+            x-large
+            color="primary"
+            class="align-self-center jus"
+          >
             View All
           </v-btn>
         </v-col>
@@ -58,12 +64,12 @@
 
 <script>
 import StartScreen from '@/components/StartScreen.vue'
-import LazyYoutubeVideo from 'vue-lazy-youtube-video'
+// import LazyYoutubeVideo from 'vue-lazy-youtube-video'
 
 export default {
   components: {
-    StartScreen,
-    LazyYoutubeVideo
+    StartScreen
+    // LazyYoutubeVideo
   }
 }
 </script>
