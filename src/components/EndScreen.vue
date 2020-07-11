@@ -131,21 +131,21 @@ export default {
         image: require('../assets/admission-last-screen-2.jpg'),
         branch: 'Computer Science, Bachelor Degree',
         description:
-          'American British Graduate University is amazing because it lets me pursue my dream of working in computer science alongside my demanding full-time job.'
+          'USAG University is amazing because it lets me pursue my dream of working in computer science alongside my demanding full-time job.'
       },
       {
         name: 'AMANDA C, UNITED STATES',
         image: require('../assets/admission-last-screen-1.jpg'),
         branch: 'Business Administration, Bachelor Degree',
         description:
-          'I am glad to be a part of American British Graduate University because it stands for the standardization of higher education that should be provided globally to all mankind'
+          'I am glad to be a part of USAG University because it stands for the standardization of higher education that should be provided globally to all mankind'
       },
       {
         name: 'ELIZAVETA K. UKRAINE',
         image: require('../assets/admission-last-screen-3.jpg'),
         branch: 'Computer Science, Master Degree',
         description:
-          'American British Graduate University has rekindled my enthusiasm to achieve my academic dreams with rigorous academic programs and the highest standards of academic excellence.'
+          'USAG University has rekindled my enthusiasm to achieve my academic dreams with rigorous academic programs and the highest standards of academic excellence.'
       }
     ]
   })

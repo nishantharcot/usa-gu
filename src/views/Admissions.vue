@@ -56,7 +56,7 @@
             dark
             tile
           >
-            <v-card-title>
+            <v-card-title class="text-center">
               {{ item.heading }}
             </v-card-title>
             <h2 class="display-1">
@@ -117,7 +117,7 @@
           cols="12"
           md="4"
         >
-          <v-img src="../assets/admission-new-1.jpg"></v-img>
+          <v-img src="../assets/admission-new-1.jpeg"></v-img>
         </v-col>
       </v-row>
       <v-row class="screen-2">
@@ -141,15 +141,14 @@
           </p>
           <h1 class="display-1">
             <strong>
-              The American British Graduate University
+              USAG University
             </strong>
             Studentship Award (usaguUSA)
           </h1>
           <p class="mt-5">
-            The American British University offers a $1000 scholarship, off the
-            total program fee to financially deserving, and academically
-            qualified students from a number of national and international
-            students:
+            The USAG University offers a $1000 scholarship, off the total
+            program fee to financially deserving, and academically qualified
+            students from a number of national and international students:
           </p>
           <p class="mt-5">
             Applications for usagu University bursaries should be made upon
@@ -197,6 +196,13 @@
         </v-col>
       </v-row>
       <v-row class="screen-3">
+        <v-col
+          :class="$vuetify.breakpoint.smAndDown ? 'order-1' : 'order-2'"
+          cols="12"
+          md="4"
+        >
+          <v-img src="../assets/admission-new-4.jpg"></v-img>
+        </v-col>
         <v-col class="order-2" cols="12" md="8">
           <h1 class="display-1">
             <strong>
@@ -222,13 +228,6 @@
             Application fee non-refundable
           </p>
         </v-col>
-        <v-col
-          :class="$vuetify.breakpoint.smAndDown ? 'order-1' : 'order-2'"
-          cols="12"
-          md="4"
-        >
-          <v-img src="../assets/admission-new-4.jpg"></v-img>
-        </v-col>
       </v-row>
       <v-row class="screen-2 achievements-screen justify-center">
         <v-col cols="2"></v-col>
@@ -240,9 +239,8 @@
             </strong>
           </h1>
           <p class="white--text text-center mt-5">
-            The American British Graduate University: Experience the benefits of
-            a global education community and interact with students in countries
-            around the world.
+            USAG University: Experience the benefits of a global education
+            community and interact with students in countries around the world.
           </p>
           <hr />
         </v-col>
@@ -324,7 +322,7 @@ export default {
         },
         {
           id: 2,
-          heading: 'Bachelor and all Bachelor programs',
+          heading: 'PG and all PG programs',
           cost: '$6000*',
           description:
             '$4000.00* for the full diploma programme regardless of duration (programme fees $4500.00 USD plus $1500.00 USD supervisor’s professional fees)',
@@ -379,23 +377,23 @@ export default {
         {
           name: 'WILSON E. POLAND',
           image: require('../assets/admission-last-screen-2.jpg'),
-          branch: 'Computer Science, Bachelor Degree',
+          branch: 'Computer Science, PG Degree',
           description:
-            'American British Graduate University is amazing because it lets me pursue my dream of working in computer science alongside my demanding full-time job.'
+            'USAG University is amazing because it lets me pursue my dream of working in computer science alongside my demanding full-time job.'
         },
         {
           name: 'AMANDA C, UNITED STATES',
           image: require('../assets/admission-last-screen-1.jpg'),
-          branch: 'Business Administration, Bachelor Degree',
+          branch: 'Business Administration, PG Degree',
           description:
-            'I am glad to be a part of American British Graduate University because it stands for the standardization of higher education that should be provided globally to all mankind'
+            'I am glad to be a part of USAG University because it stands for the standardization of higher education that should be provided globally to all mankind'
         },
         {
           name: 'ELIZAVETA K. UKRAINE',
           image: require('../assets/admission-last-screen-3.jpg'),
           branch: 'Computer Science, Master Degree',
           description:
-            'American British Graduate University has rekindled my enthusiasm to achieve my academic dreams with rigorous academic programs and the highest standards of academic excellence.'
+            'USAG University has rekindled my enthusiasm to achieve my academic dreams with rigorous programs and the highest standards of academic excellence.'
         }
       ]
     }

@@ -5,8 +5,8 @@
       <v-row class="justify-center text-center">
         <v-col class="mt-15" cols="12" md="8">
           <p class="text-h6">
-            USA GU’s formula has proven a great success over the years. It is
-            efficient, student-oriented, and can be transmitted from any
+            USAG University’s formula has proven a great success over the years.
+            It is efficient, student-oriented, and can be transmitted from any
             computer terminal anywhere in the world. That is why this formula is
             now being championed by numerous online educational institutions
             around the world.
@@ -47,18 +47,19 @@
       <v-row class="justify-center text-center backgroundColor white--text">
         <v-col cols="10">
           <h4 class="text-h4 mb-4">
-            USA GU
+            USAG University
           </h4>
           <p class="text-body-1">
             Online and distance learning is the future of education. Even though
             we live in a global village the concept of a global university – not
-            rooted in a particular country – such as USA GU – is occasionally
-            misunderstood by the dinosaurs of brick and mortar education
-            especially in countries where online education is still a novelty.
+            rooted in a particular country – such as USAG University – is
+            occasionally misunderstood by the dinosaurs of brick and mortar
+            education especially in countries where online education is still a
+            novelty.
           </p>
           <p class="text-body-1">
-            USA GU’s formula has proven a great success over the years. It is
-            efficient, student-oriented, and can be transmitted from any
+            USAG University’s formula has proven a great success over the years.
+            It is efficient, student-oriented, and can be transmitted from any
             computer terminal anywhere in the world. That is why this formula is
             now being championed by numerous online educational institutions
             around the world.
@@ -75,21 +76,22 @@
     >
       <v-col cols="10">
         <h4 class="text-h4 mb-4">
-          USA GU
+          USAG University- Online and distance Learning
         </h4>
         <p class="text-body-1">
           Online and distance learning is the future of education. Even though
           we live in a global village the concept of a global university – not
-          rooted in a particular country – such as USA GU – is occasionally
-          misunderstood by the dinosaurs of brick and mortar education
-          especially in countries where online education is still a novelty.
+          rooted in a particular country – such as USAG University – is
+          occasionally misunderstood by the dinosaurs of brick and mortar
+          education especially in countries where online education is still a
+          novelty.
         </p>
         <p class="text-body-1">
-          USA GU’s formula has proven a great success over the years. It is
-          efficient, student-oriented, and can be transmitted from any computer
-          terminal anywhere in the world. That is why this formula is now being
-          championed by numerous online educational institutions around the
-          world.
+          USAG University’s formula has proven a great success over the years.
+          It is efficient, student-oriented, and can be transmitted from any
+          computer terminal anywhere in the world. That is why this formula is
+          now being championed by numerous online educational institutions
+          around the world.
         </p>
         <v-btn color="primary" x-large to="/apply">
           Apply Now
@@ -120,24 +122,24 @@
           </p>
           <h4 class="text-h4">
             <strong>
-              USA GU
+              USAG University
             </strong>
           </h4>
           <p class="mt-10">
-            USA GU, the international distance learning centre, which was
-            subsequently incorporated as an independent Online and Distance
+            USAG University, the international distance learning centre, which
+            was subsequently incorporated as an independent Online and Distance
             Learning University in Delaware, America.
           </p>
           <p class="mt-5">
-            USA GU is a private international institution. American British
-            Graduate University Online is specialized in Distance Learning
-            education our international learning arm is London College of Media
-            (www.londoncollegeofmedia.com).
+            USAG University is a private international institution. USAG
+            University Online is specialized in Distance Learning education our
+            international learning arm is London College of Media
+            (www.usagumedia.com).
           </p>
           <p class="mt-5">
             Distance learning is rapidly becoming the preferred alternative, and
-            USA GU has quickly become established as one of the pioneers in the
-            field.
+            USAG University has quickly become established as one of the
+            pioneers in the field.
           </p>
         </v-col>
       </v-row>
@@ -176,18 +178,18 @@
             head office.
           </p>
           <p class="mt-5">
-            USA GU is a private international institution. USA GU Online is
-            specialized in Distance Learning education our international
-            learning arm is London College of Media
+            USAG University is a private international institution. USAG
+            University Online is specialized in Distance Learning education our
+            international learning arm is London College of Media
             (www.londoncollegeofmedia.com).
           </p>
           <p class="mt-5">
-            USA GU Online is licensed by E-Learning International LLC
+            USAG University Online is licensed by E-Learning International LLC
             (California).
           </p>
         </v-col>
         <v-col cols="12" md="4">
-          <v-img src="../assets/about-screen4.jpg" height="500"></v-img>
+          <v-img src="../assets/oldman-replace.jpg"></v-img>
         </v-col>
       </v-row>
     </v-container>
@@ -223,17 +225,18 @@
           head office.
         </p>
         <p class="mt-5">
-          USA GU is a private international institution. USA GU Online is
-          specialized in Distance Learning education our international learning
-          arm is London College of Media (www.londoncollegeofmedia.com).
+          USAG University is a private international institution. USAG
+          University Online is specialized in Distance Learning education our
+          international learning arm is London College of Media
+          (www.londoncollegeofmedia.com).
         </p>
         <p class="mt-5">
-          USA GU Online is licensed by E-Learning International LLC
+          USAG University Online is licensed by E-Learning International LLC
           (California).
         </p>
       </v-col>
       <v-col cols="12" md="4" class="mt-10">
-        <v-img src="../assets/about-screen4.jpg" height="500"></v-img>
+        <v-img src="../assets/oldman-replace.jpg"></v-img>
       </v-col>
     </v-row>
     <v-container>
@@ -256,10 +259,10 @@
             are your own personal tutor at home.
           </p>
           <p class="mt-5">
-            USA GU’s unique, style of distance learning is called directed
-            coursework study . This means that you study on your own, either at
-            home or wherever suits you with regular ongoing support from your
-            designated supervisor.
+            USAG University’s unique, style of distance learning is called
+            directed coursework study . This means that you study on your own,
+            either at home or wherever suits you with regular ongoing support
+            from your designated supervisor.
           </p>
           <p class="mt-5">
             You will be taught through printed modules – study materials,
@@ -267,9 +270,9 @@
           </p>
           <p class="mt-5">
             When your program starts, you’ll receive your modules by post.
-            /courier .Effective 1st of January 2020, the USA GU modules have
-            been available to students in e-format and may be sent to you as PDF
-            attachments to your emails.
+            /courier .Effective 1st of January 2020, the USAG University modules
+            have been available to students in e-format and may be sent to you
+            as PDF attachments to your emails.
           </p>
           <p class="mt-5">
             You will purchase the modules at $50.00 per module and they are
@@ -283,11 +286,11 @@
             that will help you plan your reading, and assignments due dates.
           </p>
           <p class="mt-5">
-            With our unique, world-leading style of distance learning, USA GU
-            enables you to study from home, work or even on the move, at a time
-            that suits you. With a wide choice of qualifications, at
-            undergraduate and postgraduate level, USA GU offers the choice and
-            flexibility you need.
+            With our unique, world-leading style of distance learning, USAG
+            University enables you to study from home, work or even on the move,
+            at a time that suits you. With a wide choice of qualifications, at
+            undergraduate and postgraduate level, USAG University offers the
+            choice and flexibility you need.
           </p>
           <p class="mt-5">
             “The level of support is fantastic and the modules are brilliant.
@@ -362,7 +365,7 @@
     <v-container>
       <v-row class="mt-10">
         <v-col cols="12" md="4">
-          <v-img src="../assets/dean.jpg" height="500"></v-img>
+          <v-img src="../assets/president.jpg" height="500"></v-img>
         </v-col>
         <v-col cols="12" md="8">
           <h4 class="text-h4">
@@ -371,19 +374,20 @@
             </strong>
           </h4>
           <p class="mt-10">
-            USA GU is a high quality progressive modern e learning university.
-            Our aim is to create a friendly environment for people who decide to
-            work hard on their professional and personal development. Nothing
-            makes us happier and more satisfied than our students, lecturers,
-            and employees being proud to be a part of USA GU.
+            USAG University is a high quality progressive modern e learning
+            university. Our aim is to create a friendly environment for people
+            who decide to work hard on their professional and personal
+            development. Nothing makes us happier and more satisfied than our
+            students, lecturers, and employees being proud to be a part of USAG
+            University.
           </p>
           <p class="mt-5">
-            I am very honored to be the President of USA GU. The University as
-            it is today is the result of the dedication that called for lots of
-            energy, diligence, and enthusiasm of students and graduates;
-            excellent support, care, and effort of staff and employees; passion
-            and active involvement of many of our lecturers, partners, and other
-            coworkers.
+            I am very honored to be the President of USAG University. The
+            University as it is today is the result of the dedication that
+            called for lots of energy, diligence, and enthusiasm of students and
+            graduates; excellent support, care, and effort of staff and
+            employees; passion and active involvement of many of our lecturers,
+            partners, and other coworkers.
           </p>
           <p class="mt-5">
             Currently students from all over the world study in our interactive
@@ -403,14 +407,14 @@
             materials.
           </p>
           <p class="mt-5">
-            Take the opportunity to explore what USA GU has to offer and what
-            makes it unique. Do not hesitate to contact us with any questions -
-            we will be happy to answer all your inquiries!
+            Take the opportunity to explore what USAG University has to offer
+            and what makes it unique. Do not hesitate to contact us with any
+            questions - we will be happy to answer all your inquiries!
           </p>
           <p class="mt-5">
-            I believe you will find the story of USA GU inspiring and become a
-            part of it - because thanks to YOU we have the chance to grow and
-            continue to make a difference!
+            I believe you will find the story of USAG University inspiring and
+            become a part of it - because thanks to YOU we have the chance to
+            grow and continue to make a difference!
           </p>
           <div class="d-flex flex-column">
             <span>
@@ -425,7 +429,7 @@
             </span>
             <span>
               <strong>
-                President of USA GU
+                President of USAG University
               </strong>
             </span>
           </div>
@@ -502,7 +506,7 @@ export default {
     screen1Data: [
       {
         icon: 'fas fa-hand-holding-usd',
-        number: '£1.5K',
+        number: '$1.5K',
         title: 'Low Fee',
         description:
           'Pay fee in easy (Interest free) instalments. You can choose from UK online education payments options.'
@@ -532,30 +536,30 @@ export default {
         icon: 'fas fa-award',
         number: '270+',
         title: 'Athletic Championships',
-        description: 'USA GU 270+ Athletic Championships'
+        description: 'USAG University 270+ Athletic Championships'
       },
       {
         icon: 'fas fa-users',
         number: '500+',
         title: 'Thousand Alumni',
-        description: 'USA GU 500+ Thousand Alumni'
+        description: 'USAG University 500+ Thousand Alumni'
       }
     ],
     lastScreenData: [
       {
         title: 'Student learning oppurtunites',
         text:
-          'Online and distance learning is the future of education. Even though we live in a global village the concept of a global university – not rooted in a particular country – such as USA GU – is occasionally misunderstood by the dinosaurs of brick and mortar education especially in countries where online education is still a novelty.'
+          'Online and distance learning is the future of education. Even though we live in a global village the concept of a global university – not rooted in a particular country – such as USAG University – is occasionally misunderstood by the dinosaurs of brick and mortar education especially in countries where online education is still a novelty.'
       },
       {
         title: 'Student stories',
         text:
-          'I believe you will find the story of USA GU inspiring and become a part of it - because thanks to YOU we have the chance to grow and continue to make a difference!'
+          'I believe you will find the story of USAG University inspiring and become a part of it - because thanks to YOU we have the chance to grow and continue to make a difference!'
       },
       {
         title: 'New Course',
         text:
-          'With our unique, world-leading style of distance learning, USA GU enables you to study from home, work or even on the move, at a time that suits you. With a wide choice of qualifications, at undergraduate and postgraduate level, USA GU offers the choice and flexibility you need.'
+          'With our unique, world-leading style of distance learning, USAG University enables you to study from home, work or even on the move, at a time that suits you. With a wide choice of qualifications, at undergraduate and postgraduate level, USAG University offers the choice and flexibility you need.'
       }
     ],
     accreditionData: [

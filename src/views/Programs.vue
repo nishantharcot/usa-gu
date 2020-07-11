@@ -4,7 +4,7 @@
     <v-container>
       <v-row class="mt-10">
         <v-col cols="12" md="4">
-          <v-img src="../assets/about-screen3.jpg" height="725"></v-img>
+          <v-img src="../assets/programs.jpeg" height="725"></v-img>
         </v-col>
         <v-col cols="12" md="8">
           <h4 class="text-h4">
@@ -13,17 +13,18 @@
             </strong>
           </h4>
           <p class="mt-10">
-            USA GU is a modern university that combines practical methods and
-            innovative approaches to the American and European system of
-            education. The school came into existence as a result of a merger of
-            what were the USA GU and the European USA GU, both of which have had
-            a long tradition of providing interactive online education.
+            USAG University is a modern university that combines practical
+            methods and innovative approaches to the American and European
+            system of education. The school came into existence as a result of a
+            merger of what were the USAG University and the European USAG
+            University, both of which have had a long tradition of providing
+            interactive online education.
           </p>
           <p class="mt-5">
-            The mission of USA GU is to provide high-quality MBA, MSc, DBA and
-            Ph.D. programs in multiple languages. Based on modern and efficient
-            methods of education, which enable graduates to apply the acquired
-            knowledge immediately into their professional life.
+            The mission of USAG University is to provide high-quality MBA, MSc,
+            DBA and Ph.D. programs in multiple languages. Based on modern and
+            efficient methods of education, which enable graduates to apply the
+            acquired knowledge immediately into their professional life.
           </p>
           <p class="mt-5">
             Thanks to having interactive online education, Global Tamil
@@ -35,7 +36,7 @@
           </p>
           <h4 class="text-h4">
             <strong>
-              How is studying at USA GU going to enrich me?
+              How is studying at USAG University going to enrich me?
             </strong>
           </h4>
           <div class="d-flex flex-column mt-10">

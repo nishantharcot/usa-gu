@@ -10,10 +10,10 @@
             </strong>
           </h1>
           <p class="mt-5">
-            Even though all of the programs provided by LIGS University are 100
+            Even though all of the programs provided by USAG University are 100
             % online and the students don't have to visit the campus of the
             university in Hawaii, our campus in Prague, Czech Republic often
-            organizes events such as the annual LIGS AWARDS. We would like to
+            organizes events such as the annual USAG AWARDS. We would like to
             share a few photos from these wonderful events with you.
           </p>
         </v-col>
@@ -72,7 +72,7 @@ export default {
         },
         {
           image: require('../assets/photo-gallery-4.jpg'),
-          name: 'LIGS Awards 2017',
+          name: 'USAG Awards 2017',
           description: ''
         },
         {
@@ -82,7 +82,7 @@ export default {
         },
         {
           image: require('../assets/photo-gallery-6.jpg'),
-          name: 'LIGS Awards 2016',
+          name: 'USAG Awards 2016',
           description: ''
         },
         {
@@ -92,12 +92,12 @@ export default {
         },
         {
           image: require('../assets/photo-gallery-8.jpg'),
-          name: 'LIGS Awards 2014',
+          name: 'USAG Awards 2014',
           description: ''
         },
         {
           image: require('../assets/photo-gallery-9.jpg'),
-          name: 'LIGS Awards 2013',
+          name: 'USAG Awards 2013',
           description: ''
         }
       ]

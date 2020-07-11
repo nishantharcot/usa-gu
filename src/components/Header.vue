@@ -3,7 +3,7 @@
     <v-row class="mt-5" v-if="$vuetify.breakpoint.mdAndUp">
       <v-col v-if="$vuetify.breakpoint.mdAndUp" cols="12" md="3">
         <h1 class="text-center">
-          <v-img src="../assets/USA-GU.png" height="90" contain></v-img>
+          <v-img src="../assets/USA-GU2.png" height="120" contain></v-img>
         </h1>
       </v-col>
       <v-col v-else class="d-flex flex-column" cols="12" md="3">
@@ -19,7 +19,7 @@
           <div class="d-flex flex-column pl-3">
             <strong>Email</strong>
             <p>
-              info@usaguuniversity.org
+              info@usaguniversity.org
             </p>
           </div>
         </div>
@@ -51,7 +51,7 @@
     >
       <v-toolbar-title v-if="$vuetify.breakpoint.smAndDown">
         <v-img
-          src="../assets/USA-GU.png"
+          src="../assets/USA-GU2.png"
           height="50"
           width="50"
           contain

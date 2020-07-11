@@ -66,7 +66,7 @@ export default {
       },
       {
         icon: 'fas fa-envelope',
-        text: 'info@usaguuniversity.org'
+        text: 'info@usaguniversity.org'
       },
       {
         icon: 'fas fa-map-marker-alt',

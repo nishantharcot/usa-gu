@@ -97,8 +97,9 @@
             Our Achievement
           </h2>
           <p class="flexStart text-center">
-            USA GU University: Experience the benefits of a global education
-            community and interact with students in countries around the world.
+            USAG University University: Experience the benefits of a global
+            education community and interact with students in countries around
+            the world.
           </p>
           <v-row class="align-center justify-center">
             <v-col
@@ -178,17 +179,17 @@
               <p class="text-body-1">
                 Online and distance learning is the future of education. Even
                 though we live in a global village the concept of a global
-                university – not rooted in a particular country – such as USA GU
-                – is occasionally misunderstood by the dinosaurs of brick and
-                mortar education especially in countries where online education
-                is still a novelty.
+                university – not rooted in a particular country – such as USAG
+                University – is occasionally misunderstood by the dinosaurs of
+                brick and mortar education especially in countries where online
+                education is still a novelty.
               </p>
               <p class="text-body-1">
-                USA GU's formula has proven a great success over the years. It
-                is efficient, student-oriented, and can be transmitted from any
-                computer terminal anywhere in the world. That is why this
-                formula is now being championed by numerous online educational
-                institutions around the world.
+                USAG University's formula has proven a great success over the
+                years. It is efficient, student-oriented, and can be transmitted
+                from any computer terminal anywhere in the world. That is why
+                this formula is now being championed by numerous online
+                educational institutions around the world.
               </p>
               <v-btn class="info">
                 <v-icon>
@@ -207,7 +208,7 @@
         <v-col cols="12" md="8">
           <div class="text-center">
             <h1 class="mainHeading">
-              USA GU TEAM
+              USAG University TEAM
             </h1>
           </div>
         </v-col>
@@ -231,10 +232,10 @@
               LATEST EVENTS
             </h1>
             <p>
-              Even though all of the programs provided by LIGS University are
+              Even though all of the programs provided by USAG University are
               100 % online and the students don't have to visit the campus of
               the university in Hawaii, our campus in Prague, Czech Republic
-              often organizes events such as the annual LIGS AWARDS. We would
+              often organizes events such as the annual USAG AWARDS. We would
               like to share a few photos from these wonderful events with you.
             </p>
           </div>
@@ -278,14 +279,14 @@
         <v-row align="center" justify="center">
           <v-col class="text-center" cols="12" md="8">
             <h1 class="display-1 font-weight-thin mb-4">
-              STUDYING AT USA GU
+              STUDYING AT USAG University
             </h1>
             <h4 class="subheading">
-              USA GU University’s formula has proven a great success over the
-              years. It is efficient, student-oriented, and can be transmitted
-              from any computer terminal anywhere in the world. That is why this
-              formula is now being championed by numerous online educational
-              institutions around the world.
+              USAG University University’s formula has proven a great success
+              over the years. It is efficient, student-oriented, and can be
+              transmitted from any computer terminal anywhere in the world. That
+              is why this formula is now being championed by numerous online
+              educational institutions around the world.
             </h4>
             <v-btn class="mt-3" to="/about">
               Read More
@@ -515,7 +516,7 @@ export default {
         },
         {
           image: require('../assets/teacher-3.jpg'),
-          title: 'USA GU-Head',
+          title: 'USAG University-Head',
           qualification: 'MA. PhD',
           name: 'Stella Smith'
         },
@@ -574,21 +575,21 @@ export default {
           image: require('../assets/admission-last-screen-2.jpg'),
           branch: 'Computer Science, Bachelor Degree',
           description:
-            'American British Graduate University is amazing because it lets me pursue my dream of working in computer science alongside my demanding full-time job.'
+            'USAG University is amazing because it lets me pursue my dream of working in computer science alongside my demanding full-time job.'
         },
         {
           name: 'AMANDA C, UNITED STATES',
           image: require('../assets/admission-last-screen-1.jpg'),
           branch: 'Business Administration, Bachelor Degree',
           description:
-            'I am glad to be a part of American British Graduate University because it stands for the standardization of higher education that should be provided globally to all mankind'
+            'I am glad to be a part of USAG University because it stands for the standardization of higher education that should be provided globally to all mankind'
         },
         {
           name: 'ELIZAVETA K. UKRAINE',
           image: require('../assets/admission-last-screen-3.jpg'),
           branch: 'Computer Science, Master Degree',
           description:
-            'American British Graduate University has rekindled my enthusiasm to achieve my academic dreams with rigorous academic programs and the highest standards of academic excellence.'
+            'USAG University has rekindled my enthusiasm to achieve my academic dreams with rigorous academic programs and the highest standards of academic excellence.'
         }
       ],
       photoGallery: [
@@ -604,7 +605,7 @@ export default {
         },
         {
           image: require('../assets/photo-gallery-4.jpg'),
-          name: 'LIGS Awards 2017',
+          name: 'USAG Awards 2017',
           description: ''
         }
       ],
@@ -612,17 +613,17 @@ export default {
         {
           title: 'Student learning oppurtunites',
           text:
-            'Online and distance learning is the future of education. Even though we live in a global village the concept of a global university – not rooted in a particular country – such as USA GU – is occasionally misunderstood by the dinosaurs of brick and mortar education especially in countries where online education is still a novelty.'
+            'Online and distance learning is the future of education. Even though we live in a global village the concept of a global university – not rooted in a particular country – such as USAG University – is occasionally misunderstood by the dinosaurs of brick and mortar education especially in countries where online education is still a novelty.'
         },
         {
           title: 'Student stories',
           text:
-            'I believe you will find the story of USA GU inspiring and become a part of it - because thanks to YOU we have the chance to grow and continue to make a difference!'
+            'I believe you will find the story of USAG University inspiring and become a part of it - because thanks to YOU we have the chance to grow and continue to make a difference!'
         },
         {
           title: 'New Course',
           text:
-            'With our unique, world-leading style of distance learning, USA GU enables you to study from home, work or even on the move, at a time that suits you. With a wide choice of qualifications, at undergraduate and postgraduate level, USA GU offers the choice and flexibility you need.'
+            'With our unique, world-leading style of distance learning, USAG University enables you to study from home, work or even on the move, at a time that suits you. With a wide choice of qualifications, at undergraduate and postgraduate level, USAG University offers the choice and flexibility you need.'
         }
       ],
       accreditionData: [
