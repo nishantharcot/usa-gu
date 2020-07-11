@@ -47,6 +47,8 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
 import VueYoutube from 'vue-youtube'
+import VideoBackground from 'vue-responsive-video-background-player'
+import VideoBg from 'vue-videobg'
 import 'leaflet/dist/leaflet.css'
 
 library.add(
@@ -92,6 +94,8 @@ Vue.config.productionTip = false
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(VueYoutube)
+Vue.component('video-background', VideoBackground)
+Vue.component('video-bg', VideoBg)
 
 new Vue({
   router,

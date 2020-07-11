@@ -52,8 +52,8 @@
       <v-toolbar-title v-if="$vuetify.breakpoint.smAndDown">
         <v-img
           src="../assets/USA-GU2.png"
-          height="50"
-          width="50"
+          height="55"
+          width="55"
           contain
         ></v-img>
       </v-toolbar-title>

@@ -27,12 +27,12 @@
             acquired knowledge immediately into their professional life.
           </p>
           <p class="mt-5">
-            Thanks to having interactive online education, Global Tamil
-            University can truly be international. Students from all over the
-            world are welcome to enroll in our programs! Moreover, the faculty
-            is also an international one with lecturers coming from and living
-            in the U.S., Europe, Australia and Asia. Come and join our
-            international community!
+            Thanks to having interactive online education, USAG University can
+            truly be international. Students from all over the world are welcome
+            to enroll in our programs! Moreover, the faculty is also an
+            international one with lecturers coming from and living in the U.S.,
+            Europe, Australia and Asia. Come and join our international
+            community!
           </p>
           <h4 class="text-h4">
             <strong>

@@ -283,6 +283,7 @@
               class="white--text align-end"
               height="300px"
               :src="testimonial.image"
+              position="top"
             >
             </v-img>
             <v-card-text class="text--primary">
@@ -375,22 +376,22 @@ export default {
       ],
       studentTestimonials: [
         {
-          name: 'WILSON E. POLAND',
-          image: require('../assets/admission-last-screen-2.jpg'),
+          name: 'CLAYTON E. CARTINELLI, UK',
+          image: require('../assets/people-new2.jpg'),
           branch: 'Computer Science, PG Degree',
           description:
             'USAG University is amazing because it lets me pursue my dream of working in computer science alongside my demanding full-time job.'
         },
         {
-          name: 'AMANDA C, UNITED STATES',
-          image: require('../assets/admission-last-screen-1.jpg'),
+          name: 'BIANCA C, UNITED STATES',
+          image: require('../assets/people-new1.jpg'),
           branch: 'Business Administration, PG Degree',
           description:
             'I am glad to be a part of USAG University because it stands for the standardization of higher education that should be provided globally to all mankind'
         },
         {
-          name: 'ELIZAVETA K. UKRAINE',
-          image: require('../assets/admission-last-screen-3.jpg'),
+          name: 'MOHAMMED RIZWAN, PAKISTAN',
+          image: require('../assets/people3.jpg'),
           branch: 'Computer Science, Master Degree',
           description:
             'USAG University has rekindled my enthusiasm to achieve my academic dreams with rigorous programs and the highest standards of academic excellence.'

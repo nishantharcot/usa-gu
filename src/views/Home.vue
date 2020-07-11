@@ -22,6 +22,15 @@
         </v-btn>
       </v-col>
     </v-row>
+    <!-- <video-background
+      src="../assets/new-video.mp4"
+      style="max-height: 400px; height: 100vh;"
+    >
+      <h1 style="color: black;">Hello welcome!</h1>
+    </video-background> -->
+    <!-- <video-bg :sources="['../assets/new-video.mp4']" img="demo/assets/bg.jpg">
+      If you want to add content here, a slot is waiting!
+    </video-bg> -->
     <v-container class="pt-0 mt-0" v-if="$vuetify.breakpoint.smAndDown">
       <v-row class="pt-0 mt-0">
         <v-col
