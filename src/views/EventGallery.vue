@@ -1,6 +1,6 @@
 <template>
   <div>
-    <StartScreen pageHeading="Gallery" caption="GALLERY" />
+    <StartScreen pageHeading="EVENT GALLERY" caption="EVENT GALLERY" />
     <v-container>
       <v-row class="mt-15">
         <v-col cols="12">
