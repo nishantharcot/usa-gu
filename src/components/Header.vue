@@ -44,10 +44,7 @@
       </v-col>
     </v-row>
     <v-app-bar
-      :class="
-        $vuetify.breakpoint.smAndDown ? 'whiteBackground' : 'darkBackground'
-      "
-      dark
+      :class="$vuetify.breakpoint.smAndDown ? 'whiteBackground' : 'primary'"
     >
       <v-toolbar-title v-if="$vuetify.breakpoint.smAndDown">
         <v-img
@@ -69,7 +66,7 @@
               <v-icon>fas fa-bars</v-icon>
             </v-btn>
           </template>
-          <v-list no-action color="white">
+          <v-list no-action>
             <v-list-item v-for="link in links" :key="link.label" :to="link.url">
               <v-list-item-content>
                 <v-list-item-title>{{ link.label }}</v-list-item-title>
@@ -86,7 +83,6 @@
           active-class="secondary"
           :to="link.url"
           text
-          color="white"
           >{{ link.label }}
         </v-btn>
       </template>
@@ -141,10 +137,6 @@ export default {
 .full-width {
   width: 100vw !important;
   max-width: 100vw !important;
-}
-
-.darkBackground {
-  background-color: #18214d !important;
 }
 
 .whiteBackground {

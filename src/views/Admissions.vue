@@ -17,10 +17,12 @@
             dark
             tile
           >
-            <v-card-title class="justify-center pb-0">
+            <v-card-title class="justify-center pb-0 font-weight-bold">
               {{ item.heading }}
             </v-card-title>
-            <v-card-title class="justify-center pt-0">
+            <v-card-title
+              class="justify-center pt-0 text-subtitle-1 font-weight-bold"
+            >
               {{ item.heading2 }}
             </v-card-title>
             <h2 class="display-1">
@@ -30,7 +32,10 @@
               {{ item.description }}
             </p>
             <v-card-actions class="justify-center">
-              <v-btn x-large color="dark">
+              <v-btn
+                x-large
+                :color="item.id % 2 === 0 ? 'secondary' : 'primary'"
+              >
                 Apply Now
               </v-btn>
             </v-card-actions>
@@ -59,10 +64,12 @@
             dark
             tile
           >
-            <v-card-title class="justify-center pb-0">
+            <v-card-title class="justify-center pb-0 font-weight-bold">
               {{ item.heading }}
             </v-card-title>
-            <v-card-title class="justify-center pt-0">
+            <v-card-title
+              class="justify-center pt-0 text-subtitle-1 font-weight-bold"
+            >
               {{ item.heading2 }}
             </v-card-title>
             <h2 class="display-1">
@@ -72,7 +79,10 @@
               {{ item.description }}
             </p>
             <v-card-actions class="justify-center">
-              <v-btn x-large color="dark">
+              <v-btn
+                x-large
+                :color="item.id % 2 === 0 ? 'secondary' : 'primary'"
+              >
                 Apply Now
               </v-btn>
             </v-card-actions>
@@ -86,7 +96,7 @@
     </v-container>
 
     <v-container>
-      <v-row class="screen-2">
+      <v-row>
         <v-col class="order-2" cols="12" md="8">
           <h1 class="display-1">
             Installment schemes and Scholarships (Terms & Conditions apply)
@@ -123,10 +133,14 @@
           cols="12"
           md="4"
         >
-          <v-img src="../assets/admission-new-1.jpeg"></v-img>
+          <v-img
+            src="../assets/admission-new-1.jpeg"
+            height="400"
+            contain
+          ></v-img>
         </v-col>
       </v-row>
-      <v-row class="screen-2">
+      <v-row>
         <v-col
           :class="$vuetify.breakpoint.smAndDown ? 'order-1' : 'order-2'"
           cols="12"
@@ -168,7 +182,7 @@
           </p>
         </v-col>
       </v-row>
-      <v-row class="screen-3">
+      <v-row class="mt-10">
         <v-col class="order-2" cols="12" md="8">
           <h1 class="display-1">
             <strong>
@@ -201,7 +215,7 @@
           <v-img src="../assets/advanced-payment.jpg"></v-img>
         </v-col>
       </v-row>
-      <v-row class="screen-3">
+      <v-row class="mt-10">
         <v-col
           :class="$vuetify.breakpoint.smAndDown ? 'order-1' : 'order-2'"
           cols="12"
@@ -221,21 +235,21 @@
             a refund of tuition fees already paid in accordance with the
             following schedule:
           </p>
-          <p class="mt-10">
+          <p class="mt-5">
             During the first week of enrollment 40%
           </p>
-          <p class="mt-10">
+          <p class="mt-5">
             During the second, third and fourth week of enrollment 25%
           </p>
-          <p class="mt-10">
+          <p class="mt-5">
             After the fourth week of enrollment 0%
           </p>
-          <p class="mt-10">
+          <p class="mt-5">
             Application fee non-refundable
           </p>
         </v-col>
       </v-row>
-      <v-row class="screen-2 secondary justify-center">
+      <v-row class="secondary justify-center mt-10">
         <v-col cols="2"></v-col>
         <v-col cols="8" class="d-flex flex-column justify-center align-center">
           <h1 class="display-2 white--text text-center">
@@ -419,18 +433,10 @@ export default {
   justify-content: space-evenly;
 }
 
-.screen-3 {
-  min-height: 50vh;
-}
-
 hr {
   width: 10%;
   margin: 0 auto;
   border-top: 3px solid white;
-}
-
-.screen-2 {
-  min-height: 85vh;
 }
 
 .v-card__text,

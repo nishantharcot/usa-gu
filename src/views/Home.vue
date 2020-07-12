@@ -246,7 +246,7 @@
           cols="12"
           md="4"
         >
-          <v-card class="mx-auto" max-width="400">
+          <v-card max-width="400">
             <v-img
               class="white--text align-end"
               height="300px"
