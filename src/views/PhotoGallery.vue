@@ -57,17 +57,17 @@ export default {
       photoGallery: [
         {
           image: require('../assets/new-gallery-1.jpg'),
-          name: 'Graduation Ceremony 2019',
+          name: 'Graduation Ceremony 2020',
           description: ''
         },
         {
           image: require('../assets/new-gallery-2.jpg'),
-          name: 'Graduation Ceremony 2018',
+          name: 'Graduation Ceremony 2020',
           description: ''
         },
         {
           image: require('../assets/new-gallery-5.jpg'),
-          name: 'Graduation Ceremony 2017',
+          name: 'Graduation Ceremony 2020',
           description: ''
         }
       ]

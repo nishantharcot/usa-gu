@@ -9,7 +9,7 @@
       <v-overlay absolute opacity="0.8">
         <v-row class="pb-0" app>
           <v-col cols="12" sm="12" class="text-center">
-            <h1 id="mainHeading" class="display-1 text-center">
+            <h1 class="display-1 text-center">
               EDUCATION NEEDS COMPLETE SOLUTION
             </h1>
             <v-btn x-large color="primary" class="mt-5">
@@ -188,7 +188,7 @@
                 this formula is now being championed by numerous online
                 educational institutions around the world.
               </p>
-              <v-btn class="info">
+              <v-btn class="info" to="/about">
                 <v-icon>
                   fas fa-angle-double-right
                 </v-icon>

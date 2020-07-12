@@ -1,7 +1,10 @@
 <template>
   <div>
     <v-container v-if="$vuetify.breakpoint.smAndDown">
-      <v-row class="justify-center course-banner mt-10" align="center">
+      <v-row
+        class="justify-center course-banner secondary mt-10"
+        align="center"
+      >
         <v-col cols="12">
           <h1 class="text-h4 white--text text-center">
             {{ courseName }}
@@ -9,7 +12,11 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-row v-else class="justify-center course-banner mt-10" align="center">
+    <v-row
+      v-else
+      class="justify-center course-banner secondary mt-10"
+      align="center"
+    >
       <v-col cols="12">
         <h1 class="text-h4 white--text text-center">
           {{ courseName }}
@@ -33,6 +40,6 @@ export default {
 <style lang="scss" scoped>
 .course-banner {
   min-height: 25vh;
-  background-color: #b22234;
+  // background-color: #b22234;
 }
 </style>

@@ -51,6 +51,6 @@ export default {
 hr {
   width: 20%;
   margin: 0 auto;
-  border-top: 5px solid #b22234;
+  border-top: 5px solid #f15a24;
 }
 </style>

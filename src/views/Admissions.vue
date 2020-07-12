@@ -17,8 +17,11 @@
             dark
             tile
           >
-            <v-card-title>
+            <v-card-title class="justify-center pb-0">
               {{ item.heading }}
+            </v-card-title>
+            <v-card-title class="justify-center pt-0">
+              {{ item.heading2 }}
             </v-card-title>
             <h2 class="display-1">
               {{ item.cost }}
@@ -56,8 +59,11 @@
             dark
             tile
           >
-            <v-card-title class="text-center">
+            <v-card-title class="justify-center pb-0">
               {{ item.heading }}
+            </v-card-title>
+            <v-card-title class="justify-center pt-0">
+              {{ item.heading2 }}
             </v-card-title>
             <h2 class="display-1">
               {{ item.cost }}
@@ -229,7 +235,7 @@
           </p>
         </v-col>
       </v-row>
-      <v-row class="screen-2 achievements-screen justify-center">
+      <v-row class="screen-2 secondary justify-center">
         <v-col cols="2"></v-col>
         <v-col cols="8" class="d-flex flex-column justify-center align-center">
           <h1 class="display-2 white--text text-center">
@@ -313,7 +319,8 @@ export default {
       screen2Data: [
         {
           id: 1,
-          heading: 'Diploma and all Diploma programs',
+          heading: 'Diploma',
+          heading2: 'and all Diploma programs',
           icon: 'fas fa-user-check',
           cost: '$4000*',
           description:
@@ -323,7 +330,8 @@ export default {
         },
         {
           id: 2,
-          heading: 'PG and all PG programs',
+          heading: 'PG',
+          heading2: 'and all PG programs',
           cost: '$6000*',
           description:
             '$4000.00* for the full diploma programme regardless of duration (programme fees $4500.00 USD plus $1500.00 USD supervisor’s professional fees)',
@@ -333,7 +341,8 @@ export default {
         },
         {
           id: 3,
-          heading: 'MBA, MSC, MA and all Master programs',
+          heading: 'MBA, MSC, MA',
+          heading2: 'and all Master programs',
           cost: '$8000*',
           description:
             '$6000.00* for the full degree programme regardless of duration (programme fees $5500.00 USD plus $2500.00 USD supervisor’s professional fees)',
@@ -343,7 +352,8 @@ export default {
         },
         {
           id: 4,
-          heading: 'PHD, DBA and all Doctorate programs',
+          heading: 'PHD, DBA',
+          heading2: 'and all Doctorate programs',
           cost: '$10000*',
           description:
             '$4000.00* for the full diploma programme regardless of duration (programme fees $6500.00 USD plus $3500.00 USD supervisor’s professional fees)',
@@ -426,10 +436,6 @@ hr {
 .v-card__text,
 .v-card__title {
   word-break: normal;
-}
-
-.achievements-screen {
-  background-color: #b22234;
 }
 
 .screen1 {

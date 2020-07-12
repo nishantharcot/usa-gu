@@ -44,10 +44,10 @@
     </v-container>
     <!-- For full width, must change later -->
     <v-container v-if="$vuetify.breakpoint.smAndDown">
-      <v-row class="justify-center text-center backgroundColor white--text">
+      <v-row class="justify-center text-center secondary white--text">
         <v-col cols="10">
           <h4 class="text-h4 mb-4">
-            USAG University
+            USAG University- Online and distance Learning
           </h4>
           <p class="text-body-1">
             Online and distance learning is the future of education. Even though
@@ -70,10 +70,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-row
-      v-else
-      class="justify-center text-center backgroundColor white--text"
-    >
+    <v-row v-else class="justify-center text-center secondary white--text">
       <v-col cols="10">
         <h4 class="text-h4 mb-4">
           USAG University- Online and distance Learning
@@ -145,7 +142,7 @@
       </v-row>
     </v-container>
     <v-container v-if="$vuetify.breakpoint.smAndDown">
-      <v-row class="mt-10 backgroundColor white--text">
+      <v-row class="mt-10 secondary white--text">
         <v-col cols="12" md="8" class="order-2">
           <h4 class="text-h4">
             <strong>
@@ -193,7 +190,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-row v-else class="mt-10 backgroundColor white--text justify-center">
+    <v-row v-else class="mt-10 secondary white--text justify-center">
       <v-col cols="12" md="7" class="mt-10">
         <h4 class="text-h4">
           <strong>
@@ -300,7 +297,7 @@
       </v-row>
     </v-container>
     <v-container v-if="$vuetify.breakpoint.smAndDown">
-      <v-row class="mt-10 backgroundColor white--text">
+      <v-row class="mt-10 secondary white--text">
         <v-col cols="12" md="8" class="order-2">
           <h4 class="text-h4">
             <strong>
@@ -332,7 +329,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-row v-else class="mt-10 backgroundColor white--text justify-center">
+    <v-row v-else class="mt-10 secondary white--text justify-center">
       <v-col cols="12" md="7" class="mt-10">
         <h4 class="text-h4">
           <strong>
@@ -586,13 +583,10 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+USAG University- Online and distance Learning h6 {
   font-family: 'Roboto Slab', serif !important;
 }
 .screen1 {
   background-image: url('../assets/about-2.jpg');
-}
-.backgroundColor {
-  background-color: #b22234;
 }
 </style>

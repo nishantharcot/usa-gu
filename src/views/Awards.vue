@@ -173,7 +173,7 @@
         </v-col>
         <v-col cols="12" md="6">
           <p>
-            USA-GU Universities' qualifications will help to build your career.
+            USAG Universities' qualifications will help to build your career.
             E-commerce, Public Relations and many more. To find out more about
             our individual module awards email::: info@usagu.org
           </p>
