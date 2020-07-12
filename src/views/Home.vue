@@ -264,7 +264,7 @@
           </v-card>
         </v-col>
         <v-col>
-          <v-btn class="info" to="/photogallery">
+          <v-btn class="info" to="/eventgallery">
             <v-icon>
               fas fa-angle-double-right
             </v-icon>

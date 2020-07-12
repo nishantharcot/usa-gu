@@ -6,7 +6,7 @@
         <v-col cols="12">
           <h1 class="display-1">
             <strong>
-              Photo Gallery
+              Events Gallery
             </strong>
           </h1>
           <p class="mt-5">
