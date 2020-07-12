@@ -99,7 +99,7 @@
     <v-container>
       <v-row class="mt-10">
         <v-col cols="12" md="4">
-          <v-img src="../assets/about-screen3.jpg" height="500"></v-img>
+          <v-img src="../assets/about-screen3.jpg" height="500" contain></v-img>
         </v-col>
         <v-col cols="12" md="8">
           <h4 class="text-h4">
@@ -141,6 +141,7 @@
         </v-col>
       </v-row>
     </v-container>
+
     <v-container v-if="$vuetify.breakpoint.smAndDown">
       <v-row class="mt-10 secondary white--text">
         <v-col cols="12" md="8" class="order-2">
@@ -233,9 +234,10 @@
         </p>
       </v-col>
       <v-col cols="12" md="4" class="mt-10">
-        <v-img src="../assets/oldman-replace.jpg"></v-img>
+        <v-img src="../assets/oldman-replace.jpg" height="500" contain></v-img>
       </v-col>
     </v-row>
+
     <v-container>
       <v-row class="mt-10">
         <v-col cols="12" md="4">
@@ -296,6 +298,7 @@
         </v-col>
       </v-row>
     </v-container>
+
     <v-container v-if="$vuetify.breakpoint.smAndDown">
       <v-row class="mt-10 secondary white--text">
         <v-col cols="12" md="8" class="order-2">
@@ -356,7 +359,7 @@
         </p>
       </v-col>
       <v-col cols="12" md="4" class="mt-10">
-        <v-img src="../assets/about-screen6.jpg" height="500"></v-img>
+        <v-img src="../assets/about-screen6.jpg" height="400"></v-img>
       </v-col>
     </v-row>
     <v-container>
