@@ -1,21 +1,16 @@
 <template>
-  <v-container class="pa-0 mx-0 full-width">
+  <v-container class="pa-0 full-width">
     <v-row class="mt-5" v-if="$vuetify.breakpoint.mdAndUp">
-      <v-col v-if="$vuetify.breakpoint.mdAndUp" cols="12" md="3">
-        <h1 class="text-center">
-          <v-img src="../assets/USA-GU2.png" height="120" contain></v-img>
-        </h1>
+      <v-col cols="12" md="3">
+        <v-img src="../assets/USA-GU2.png" height="120" contain></v-img>
       </v-col>
-      <v-col v-else class="d-flex flex-column" cols="12" md="3">
-        <h1>
-          USA-GU
-        </h1>
-      </v-col>
-      <v-col cols="12" md="3" class="d-flex flex-column justify-center">
-        <div class="d-flex flex-row">
-          <v-icon color="primary" class="mt-3">
-            fas fa-paper-plane
-          </v-icon>
+      <v-col cols="12" md="3" class="my-auto">
+        <div class="d-flex">
+          <div>
+            <v-icon color="primary" class="mt-3">
+              fas fa-paper-plane
+            </v-icon>
+          </div>
           <div class="d-flex flex-column pl-3">
             <strong>Email</strong>
             <p>
@@ -24,12 +19,14 @@
           </div>
         </div>
       </v-col>
-      <v-col cols="12" md="3" class="d-flex flex-column justify-center">
-        <div class="d-flex flex-row">
-          <v-icon color="primary" class="mt-3">
-            fas fa-phone-alt
-          </v-icon>
-          <div class="d-flex flex-column pl-2">
+      <v-col cols="12" md="3" class="my-auto">
+        <div class="d-flex">
+          <div>
+            <v-icon color="primary" class="mt-3">
+              fas fa-phone-alt
+            </v-icon>
+          </div>
+          <div class="d-flex flex-column pl-3">
             <strong>Call</strong>
             <p>
               Call Us: + 1235 2355 98
@@ -37,7 +34,7 @@
           </div>
         </div>
       </v-col>
-      <v-col cols="12" md="2" class="d-flex flex-column justify-center">
+      <v-col cols="12" md="2" class="my-auto">
         <v-btn class="mt-2" color="primary" to="/application">
           Apply Now
         </v-btn>
