@@ -61,43 +61,13 @@ export default {
           description: ''
         },
         {
-          image: require('../assets/hawaii.jpg'),
-          name: 'Hawaii: Oahu',
-          description: ''
-        },
-        {
           image: require('../assets/new-gallery-2.jpg'),
           name: 'Graduation Ceremony 2018',
           description: ''
         },
         {
-          image: require('../assets/new-gallery-4.jpg'),
-          name: 'USAG Awards 2017',
-          description: ''
-        },
-        {
           image: require('../assets/new-gallery-5.jpg'),
           name: 'Graduation Ceremony 2017',
-          description: ''
-        },
-        {
-          image: require('../assets/new-gallery-8.jpg'),
-          name: 'USAG Awards 2016',
-          description: ''
-        },
-        {
-          image: require('../assets/photo-gallery-7.jpg'),
-          name: 'Hawaii Fair 2014',
-          description: ''
-        },
-        {
-          image: require('../assets/new-gallery-10.jpg'),
-          name: 'USAG Awards 2014',
-          description: ''
-        },
-        {
-          image: require('../assets/new-gallery-9.jpg'),
-          name: 'USAG Awards 2013',
           description: ''
         }
       ]

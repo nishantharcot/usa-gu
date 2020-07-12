@@ -6,7 +6,7 @@
         <v-col cols="12">
           <h1 class="display-1">
             <strong>
-              Events Gallery
+              Photo Gallery
             </strong>
           </h1>
           <p class="mt-5">
@@ -56,32 +56,17 @@ export default {
     return {
       photoGallery: [
         {
-          image: require('../assets/photo-gallery-1.jpg'),
-          name: 'Graduation Ceremony 2019',
-          description: ''
-        },
-        {
-          image: require('../assets/photo-gallery-2.jpg'),
+          image: require('../assets/hawaii.jpg'),
           name: 'Hawaii: Oahu',
           description: ''
         },
         {
-          image: require('../assets/photo-gallery-3.jpg'),
-          name: 'Graduation Ceremony 2018',
-          description: ''
-        },
-        {
-          image: require('../assets/photo-gallery-4.jpg'),
+          image: require('../assets/new-gallery-4.jpg'),
           name: 'USAG Awards 2017',
           description: ''
         },
         {
-          image: require('../assets/photo-gallery-5.jpg'),
-          name: 'Graduation Ceremony 2017',
-          description: ''
-        },
-        {
-          image: require('../assets/photo-gallery-6.jpg'),
+          image: require('../assets/new-gallery-8.jpg'),
           name: 'USAG Awards 2016',
           description: ''
         },
@@ -91,12 +76,12 @@ export default {
           description: ''
         },
         {
-          image: require('../assets/photo-gallery-8.jpg'),
-          name: 'USAG Awards 2014',
+          image: require('../assets/new-gallery-10.jpg'),
+          name: 'USAG Awards 2018',
           description: ''
         },
         {
-          image: require('../assets/photo-gallery-9.jpg'),
+          image: require('../assets/new-gallery-9.jpg'),
           name: 'USAG Awards 2013',
           description: ''
         }
