@@ -158,15 +158,12 @@
     </v-container>
     <v-parallax
       :height="$vuetify.breakpoint.smAndDown ? 1000 : 500"
-      src="../assets/about2.jpg"
+      src="../assets/image_4-min.jpg"
     >
       <v-overlay opacity="0.7" absolute style="max-width: 100vw">
         <v-container style="max-width: 100vw">
           <v-row align="stretch" justify="center">
             <v-col class="" cols="12" md="5">
-              <!-- <LazyYoutubeVideo
-                src="https://www.youtube.com/embed/xmCWXOO1XNA"
-              /> -->
               <v-img src="../assets/bg_2.jpg"></v-img>
             </v-col>
             <v-col cols="12" md="5" class="" align="stretch">
@@ -352,36 +349,15 @@
         </v-col>
       </v-row>
     </v-container>
-    <!-- <EndScreen /> -->
   </div>
 </template>
 
 <style lang="scss" scoped>
-#screen1 {
-  min-height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url('../assets/bg_1.jpg');
-  background-size: cover;
-  background-position: center;
-  color: white;
-}
-
 v-list-item {
   display: flex !important;
   justify-content: center !important;
   align-content: center !important;
   align-self: center !important;
-}
-#screen1-content {
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(black, 0.5);
-  z-index: 2;
 }
 
 .screen2Text {
@@ -547,47 +523,6 @@ export default {
           title: 'Admin Officer',
           qualification: 'BA. PGD',
           name: 'Veronica Donowan'
-        }
-      ],
-      collegeStatistics: [
-        {
-          title: 18,
-          label: 'Professors'
-        },
-        {
-          title: 401,
-          label: 'Students'
-        },
-        {
-          title: 30,
-          label: 'Courses'
-        },
-        {
-          title: 50,
-          label: 'Awards Won'
-        }
-      ],
-      studentTestimonials: [
-        {
-          name: 'WILSON E. POLAND',
-          image: require('../assets/admission-last-screen-2.jpg'),
-          branch: 'Computer Science, Bachelor Degree',
-          description:
-            'USAG University is amazing because it lets me pursue my dream of working in computer science alongside my demanding full-time job.'
-        },
-        {
-          name: 'AMANDA C, UNITED STATES',
-          image: require('../assets/admission-last-screen-1.jpg'),
-          branch: 'Business Administration, Bachelor Degree',
-          description:
-            'I am glad to be a part of USAG University because it stands for the standardization of higher education that should be provided globally to all mankind'
-        },
-        {
-          name: 'ELIZAVETA K. UKRAINE',
-          image: require('../assets/admission-last-screen-3.jpg'),
-          branch: 'Computer Science, Master Degree',
-          description:
-            'USAG University has rekindled my enthusiasm to achieve my academic dreams with rigorous academic programs and the highest standards of academic excellence.'
         }
       ],
       photoGallery: [

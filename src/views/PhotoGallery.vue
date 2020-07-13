@@ -17,12 +17,7 @@
             share a few photos from these wonderful events with you.
           </p>
         </v-col>
-        <v-col
-          v-for="photoCard in photoGallery"
-          :key="photoCard.name"
-          cols="12"
-          md="4"
-        >
+        <v-col v-for="(photoCard, i) in photoGallery" :key="i" cols="12" md="4">
           <v-card class="mx-auto" max-width="400">
             <v-img
               class="white--text align-end"
