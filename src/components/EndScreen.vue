@@ -101,7 +101,7 @@ export default {
       require('../assets/image_1.jpg'),
       require('../assets/image_2.jpg'),
       require('../assets/course-1.jpg'),
-      require('../assets/image_4.jpg')
+      require('../assets/image_4-min.jpg')
     ],
     items: [
       {
@@ -120,7 +120,7 @@ export default {
         h: 400
       },
       {
-        src: '../assets/image_4.jpg',
+        src: '../assets/image_4-min.jpg',
         w: 600,
         h: 400
       }

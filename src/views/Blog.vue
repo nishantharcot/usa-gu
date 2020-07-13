@@ -35,7 +35,7 @@ export default {
           title: 'Electrical Engineering'
         },
         {
-          image: require('../assets/image_4.jpg'),
+          image: require('../assets/image_4-min.jpg'),
           title: 'Electrical Engineering'
         },
         {
