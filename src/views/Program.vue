@@ -139,11 +139,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.flexClass {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-</style>

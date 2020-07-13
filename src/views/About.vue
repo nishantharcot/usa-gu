@@ -581,14 +581,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h1,
-h2,
-h3,
-h4,
-h5,
-USAG University- Online and distance Learning h6 {
-  font-family: 'Roboto Slab', serif !important;
-}
 .screen1 {
   background-image: url('../assets/about-2.jpg');
 }

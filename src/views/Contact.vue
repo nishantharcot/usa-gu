@@ -14,18 +14,11 @@
 <script>
 import StartScreen from '@/components/StartScreen.vue'
 import ContactInfo from '@/components/ContactInfo.vue'
-// import { latLng } from 'leaflet'
-// import { LMap, LTileLayer, LMarker, LPopup, LTooltip } from 'vue2-leaflet'
 
 export default {
   components: {
     StartScreen,
     ContactInfo
-    // LMap,
-    // LTileLayer,
-    // LMarker,
-    // LPopup,
-    // LTooltip
   },
   data() {
     return {

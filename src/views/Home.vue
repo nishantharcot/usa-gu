@@ -4,8 +4,6 @@
       src="/video.mp4"
       style="max-height: 400px; height: 100vh;"
     >
-      <!-- <h1 style="color: black;">Hello welcome!</h1>
-       -->
       <v-overlay absolute opacity="0.8">
         <v-row class="pb-0" app>
           <v-col cols="12" sm="12" class="text-center">
@@ -22,7 +20,7 @@
     <v-container class="pt-0 mt-0" v-if="$vuetify.breakpoint.smAndDown">
       <v-row class="pt-0 mt-0">
         <v-col
-          class="pa-0 colorCard"
+          class="pa-0"
           cols="12"
           md="3"
           v-for="item in screen2Data"
@@ -51,7 +49,7 @@
     </v-container>
     <v-row v-else>
       <v-col
-        class="pa-0 colorCard"
+        class="pa-0"
         cols="12"
         md="3"
         v-for="item in screen2Data"
@@ -392,10 +390,7 @@ v-list-item {
 // @ is an alias to /src
 import Teacher from '@/components/Teacher.vue'
 import 'vue-lazy-youtube-video/dist/style.css'
-// import VideoBg from 'vue-videobg'
 import VideoBackground from 'vue-responsive-video-background-player'
-
-// import LazyYoutubeVideo from 'vue-lazy-youtube-video'
 
 export default {
   name: 'Home',

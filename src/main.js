@@ -46,7 +46,6 @@ import './registerServiceWorker'
 import router from './router'
 import vuetify from './plugins/vuetify'
 import VideoBackground from 'vue-responsive-video-background-player'
-import 'leaflet/dist/leaflet.css'
 
 library.add(
   faPhone,

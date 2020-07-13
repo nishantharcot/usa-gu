@@ -1869,29 +1869,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Roboto Slab', serif !important;
-}
 .screen1 {
   background-image: url('../assets/marketing.jpg');
-}
-
-#programHeading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-}
-#screen3 {
-  min-height: 30vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #536dfe;
 }
 </style>
