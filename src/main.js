@@ -15,6 +15,8 @@ import {
   faBars,
   faTrophy,
   faUserGraduate,
+  faCaretDown,
+  faChevronDown,
   faGraduationCap,
   faAngleDoubleRight,
   faHandHoldingUsd,
@@ -56,13 +58,15 @@ library.add(
   faQuora,
   faTrophy,
   faUserGraduate,
+  faCaretDown,
   faGraduationCap,
   faTrophy,
   faAngleDoubleRight,
   faHandHoldingUsd,
   faUsers,
   faAward,
-  faGlobe
+  faGlobe,
+  faChevronDown
 )
 Vue.config.productionTip = false
 
