@@ -13,19 +13,12 @@
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
     "@fortawesome/vue-fontawesome": "^0.1.10",
     "animate.css": "^4.1.0",
-    "core-js": "^3.6.5",
-    "leaflet": "^1.6.0",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
     "vue-lazy-youtube-video": "^2.0.0",
-    "vue-picture-swipe": "^1.2.0",
     "vue-responsive-video-background-player": "^1.1.1",
     "vue-router": "^3.2.0",
-    "vue-videobg": "^2.0.0",
-    "vue-youtube": "^1.4.0",
-    "vue2-leaflet": "^2.5.2",
-    "vuetify": "^2.2.11",
-    "vuex": "^3.4.0"
+    "vuetify": "^2.2.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
