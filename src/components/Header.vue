@@ -1,10 +1,10 @@
 <template>
   <v-container class="pa-0 full-width">
-    <v-row class="mt-5" v-if="$vuetify.breakpoint.mdAndUp">
-      <v-col cols="12" md="3">
-        <v-img src="../assets/USA-GU2.png" height="120" contain></v-img>
+    <v-row align="center" v-if="$vuetify.breakpoint.mdAndUp">
+      <v-col cols="12" md="3" class="">
+        <v-img src="../assets/USA-GU2.png" height="75" contain></v-img>
       </v-col>
-      <v-col cols="12" md="3" class="my-auto">
+      <v-col cols="12" md="3" class="mt-4">
         <div class="d-flex">
           <div>
             <v-icon color="primary" class="mt-3">
@@ -19,7 +19,7 @@
           </div>
         </div>
       </v-col>
-      <v-col cols="12" md="3" class="my-auto">
+      <v-col cols="12" md="3" class="mt-4">
         <div class="d-flex">
           <div>
             <v-icon color="primary" class="mt-3">
@@ -34,8 +34,8 @@
           </div>
         </div>
       </v-col>
-      <v-col cols="12" md="2" class="my-auto">
-        <v-btn class="mt-2" color="primary" to="/application">
+      <v-col cols="12" md="3">
+        <v-btn color="secondary" to="/application">
           Apply Now
         </v-btn>
       </v-col>
