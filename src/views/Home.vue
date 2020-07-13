@@ -424,11 +424,8 @@ import VideoBackground from 'vue-responsive-video-background-player'
 export default {
   name: 'Home',
   components: {
-    // EndScreen,
-    // CourseCard,
     Teacher,
     VideoBackground
-    // LazyYouubeVideo
   },
   data() {
     return {
