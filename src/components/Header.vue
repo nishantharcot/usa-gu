@@ -2,7 +2,7 @@
   <v-container class="pa-0 full-width">
     <v-row align="center" v-if="$vuetify.breakpoint.mdAndUp">
       <v-col cols="12" md="3" class="">
-        <v-img src="../assets/USA-GU2.png" height="75" contain></v-img>
+        <v-img src="../assets/USA-GU2-new.png" height="75" contain></v-img>
       </v-col>
       <v-col cols="12" md="3" class="mt-4">
         <div class="d-flex">
@@ -45,7 +45,7 @@
     >
       <v-toolbar-title v-if="$vuetify.breakpoint.smAndDown">
         <v-img
-          src="../assets/USA-GU2.png"
+          src="../assets/USA-GU2-new.png"
           height="55"
           width="55"
           contain
@@ -67,6 +67,11 @@
             <v-list-item v-for="link in links" :key="link.label" :to="link.url">
               <v-list-item-content>
                 <v-list-item-title>{{ link.label }}</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+            <v-list-item to="/application" v-if="$vuetify.breakpoint.smAndDown">
+              <v-list-item-content>
+                <v-list-item-title>Apply Now</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </v-list>
@@ -120,10 +125,6 @@ export default {
       {
         label: 'Contact',
         url: '/contact'
-      },
-      {
-        label: 'Apply Now',
-        url: '/application'
       }
     ]
   })
