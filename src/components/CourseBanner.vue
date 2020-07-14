@@ -40,6 +40,5 @@ export default {
 <style lang="scss" scoped>
 .course-banner {
   min-height: 25vh;
-  // background-color: #b22234;
 }
 </style>

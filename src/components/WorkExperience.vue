@@ -61,7 +61,7 @@ export default {
   name: 'WorkExperience',
   data() {
     return {
-      checkbox1: true,
+      checkbox1: true
     }
   }
 }

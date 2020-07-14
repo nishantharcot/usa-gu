@@ -563,15 +563,23 @@ export default {
       }
     ],
     accreditionData: [
-      require('../assets/logo1.jpeg'),
-      require('../assets/logo2.png'),
-      require('../assets/logo3.png'),
-      require('../assets/logo4.png'),
-      require('../assets/logo5.jpeg'),
-      require('../assets/logo6.jpeg'),
-      require('../assets/logo7.png'),
-      require('../assets/logo8.jpg'),
-      require('../assets/logo9.jpeg')
+      require('../assets/logo1.png'),
+      require('../assets/logo2.jpg'),
+      require('../assets/logo3.jpg'),
+      require('../assets/logo4.jpg'),
+      require('../assets/logo5.png'),
+      require('../assets/logo6.jpg'),
+      require('../assets/logo7.jpeg'),
+      require('../assets/logo8.jpeg'),
+      require('../assets/logo9.png'),
+      require('../assets/logo10.jpg'),
+      require('../assets/logo11.png'),
+      require('../assets/logo12.jpg'),
+      require('../assets/logo13.png'),
+      require('../assets/logo14.png'),
+      require('../assets/logo15.jpg'),
+      require('../assets/logo16.jpg'),
+      require('../assets/logo17.jpeg')
     ]
   }),
   components: {
