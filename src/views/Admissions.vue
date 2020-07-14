@@ -345,7 +345,7 @@ export default {
         {
           id: 2,
           heading: 'PG',
-          heading2: 'and all PG Diploma programs',
+          heading2: 'and all PG Diploma Programs',
           cost: '$6000*',
           description:
             '$4000.00* for the full diploma programme regardless of duration (programme fees $4500.00 USD plus $1500.00 USD supervisor’s professional fees)',
