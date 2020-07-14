@@ -10,7 +10,7 @@
             <h1 class="display-1 text-center">
               EDUCATION NEEDS COMPLETE SOLUTION
             </h1>
-            <v-btn x-large color="primary" class="mt-5">
+            <v-btn x-large color="primary" class="mt-5" to="/contact">
               CONTACT US
             </v-btn>
           </v-col>
@@ -416,13 +416,13 @@ export default {
         {
           id: 3,
           icon: 'fas fa-book-open',
-          title: 'Book & Library',
+          title: 'E-Library',
           content: ''
         },
         {
           id: 4,
           icon: 'fas fa-futbol',
-          title: 'Sport Clubs',
+          title: 'Online Memberships',
           content: ''
         }
       ],

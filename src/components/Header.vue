@@ -14,7 +14,7 @@
           <div class="d-flex flex-column pl-3">
             <strong>Email</strong>
             <p>
-              info@usaguniversity.org
+              info@usagu.org
             </p>
           </div>
         </div>
@@ -29,7 +29,7 @@
           <div class="d-flex flex-column pl-3">
             <strong>Call</strong>
             <p>
-              Call Us: + 1235 2355 98
+              Call Us: +1 302-827-3939
             </p>
           </div>
         </div>

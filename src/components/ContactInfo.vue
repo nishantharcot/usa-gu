@@ -36,7 +36,7 @@ export default {
       },
       {
         title: 'Email Address',
-        label: 'info@usaguniversity.org'
+        label: 'info@usagu.org'
       },
       {
         title: 'Website',

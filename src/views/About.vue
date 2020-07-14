@@ -365,7 +365,7 @@
     <v-container>
       <v-row class="mt-10">
         <v-col cols="12" md="4">
-          <v-img src="../assets/president.jpg" height="500"></v-img>
+          <v-img src="../assets/president-new.jpg"></v-img>
         </v-col>
         <v-col cols="12" md="8">
           <h4 class="text-h4">

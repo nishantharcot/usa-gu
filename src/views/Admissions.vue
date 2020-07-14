@@ -163,7 +163,7 @@
             <strong>
               USAG University
             </strong>
-            Studentship Award (usaguUSA)
+            Studentship Award
           </h1>
           <p class="mt-5">
             The USAG University offers a $1000 scholarship, off the total
@@ -334,7 +334,7 @@ export default {
         {
           id: 1,
           heading: 'Diploma',
-          heading2: 'and all Diploma programs',
+          heading2: 'and all Diploma Programs',
           icon: 'fas fa-user-check',
           cost: '$4000*',
           description:
@@ -345,7 +345,7 @@ export default {
         {
           id: 2,
           heading: 'PG',
-          heading2: 'and all PG programs',
+          heading2: 'and all PG Diploma programs',
           cost: '$6000*',
           description:
             '$4000.00* for the full diploma programme regardless of duration (programme fees $4500.00 USD plus $1500.00 USD supervisor’s professional fees)',
@@ -356,23 +356,23 @@ export default {
         {
           id: 3,
           heading: 'MBA, MSC, MA',
-          heading2: 'and all Master programs',
+          heading2: 'and all Master Programs',
           cost: '$8000*',
           description:
             '$6000.00* for the full degree programme regardless of duration (programme fees $5500.00 USD plus $2500.00 USD supervisor’s professional fees)',
           icon: 'fas fa-book-open',
-          title: 'Book & Library',
+          title: 'E-Library',
           content: ''
         },
         {
           id: 4,
           heading: 'PHD, DBA',
-          heading2: 'and all Doctorate programs',
+          heading2: 'and all Doctorate Programs',
           cost: '$10000*',
           description:
             '$4000.00* for the full diploma programme regardless of duration (programme fees $6500.00 USD plus $3500.00 USD supervisor’s professional fees)',
           icon: 'fas fa-futbol',
-          title: 'Sport Clubs',
+          title: 'Online Memberships',
           content: ''
         }
       ],
@@ -418,7 +418,7 @@ export default {
           image: require('../assets/people-new4.jpg'),
           branch: 'Computer Science, Master Degree',
           description:
-            'USAG University has rekindled my enthusiasm to achieve my academic dreams with rigorous programs and the highest standards of academic excellence.'
+            'USAG University has rekindled my enthusiasm to achieve my academic dreams with rigorous Programs and the highest standards of academic excellence.'
         }
       ]
     }

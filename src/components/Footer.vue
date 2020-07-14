@@ -23,7 +23,25 @@
           :key="item.heading"
         >
           <div>
-            <h3 class="display pl-2">{{ item.heading }}</h3>
+            <!-- <h3 class="display pl-2">{{ item.heading }}</h3> -->
+            <v-col v-for="data in item.data" :key="data.label">
+              <v-icon>
+                fas fa-angle-double-right
+              </v-icon>
+              <v-btn text :to="data.url">
+                {{ data.label }}
+              </v-btn>
+            </v-col>
+          </div>
+        </v-col>
+        <v-col
+          cols="12"
+          md="3"
+          v-for="item in footerResources2"
+          :key="item.heading"
+        >
+          <div>
+            <!-- <h3 class="display pl-2">{{ item.heading }}</h3> -->
             <v-col v-for="data in item.data" :key="data.label">
               <v-icon>
                 fas fa-angle-double-right
@@ -62,15 +80,15 @@ export default {
     footerStart: [
       {
         icon: 'fas fa-phone',
-        text: '+2 392 3929 210'
+        text: '+1 302-827-3939'
       },
       {
         icon: 'fas fa-envelope',
-        text: 'info@usaguniversity.org'
+        text: 'info@usagu.org'
       },
       {
         icon: 'fas fa-map-marker-alt',
-        text: '203 Fake St. Mountain View, San Francisco, California, USA'
+        text: 'USAG University, LLC 16192 Coastal Highway, Lewes, DE 19958, USA'
       }
     ],
     footerResources: [
@@ -92,7 +110,14 @@ export default {
           {
             label: 'Admissions & Fees',
             url: '/admissions'
-          },
+          }
+        ]
+      }
+    ],
+    footerResources2: [
+      {
+        heading: 'Links',
+        data: [
           {
             label: 'Award Verification',
             url: '/awards'
