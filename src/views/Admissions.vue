@@ -12,7 +12,6 @@
         >
           <v-card
             class="d-flex flex-colum cardClass mb-0 text-center"
-            height="400"
             :color="item.id % 2 === 0 ? 'primary' : 'secondary'"
             dark
             tile
@@ -59,7 +58,6 @@
         >
           <v-card
             class="d-flex flex-colum cardClass mb-0 text-center"
-            height="400"
             :color="item.id % 2 === 0 ? 'primary' : 'secondary'"
             dark
             tile
