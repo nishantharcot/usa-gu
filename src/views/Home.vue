@@ -40,8 +40,7 @@
             </div>
             <h3 class="text-center screen2Heading">{{ item.title }}</h3>
             <p class="text-center screen2Text px-3">
-              Even the all-powerful Pointing has no control about the blind
-              texts it is an almost unorthographic.
+              {{ item.content }}
             </p>
           </v-card>
         </v-col>
@@ -79,8 +78,7 @@
             {{ item.title }}
           </h3>
           <p class="screen2Text px-3">
-            Even the all-powerful Pointing has no control about the blind texts
-            it is an almost unorthographic.
+            {{ item.content }}
           </p>
         </v-card>
       </v-col>
@@ -92,9 +90,8 @@
             Our Achievement
           </h2>
           <p class="flexStart text-center">
-            USAG University University: Experience the benefits of a global
-            education community and interact with students in countries around
-            the world.
+            USAG University: Experience the benefits of a global education
+            community and interact with students in countries around the world.
           </p>
           <v-row class="align-center justify-center">
             <v-col
@@ -103,18 +100,9 @@
               cols="12"
               md="6"
             >
-              <!-- for card class="d-flex flex-column justify-center align-center" -->
               <v-card height="100%" flat>
                 <v-list-item>
-                  <!-- <v-list-item-avatar size="60" tile>
-                    <v-icon color="primary">
-                      {{ item.icon }}
-                    </v-icon>
-                  </v-list-item-avatar> -->
                   <v-list-item-content class="mx-auto text-center">
-                    <!-- <div class="overline mb-4">
-                      {{ item.title }}
-                    </div> -->
                     <v-icon size="60" color="primary">
                       {{ item.icon }}
                     </v-icon>
@@ -137,9 +125,6 @@
               :src="item.image"
             >
               <v-overlay absolute opacity="0.6" class="align-end">
-                <!-- <v-card-title class="justify-center" color="black"
-                  >Our Courses</v-card-title
-                > -->
                 <v-card-actions>
                   <v-btn color="white" text :to="item.link">
                     {{ item.text }}
@@ -274,11 +259,11 @@
               STUDYING AT USAG University
             </h1>
             <h4 class="subheading">
-              USAG University University’s formula has proven a great success
-              over the years. It is efficient, student-oriented, and can be
-              transmitted from any computer terminal anywhere in the world. That
-              is why this formula is now being championed by numerous online
-              educational institutions around the world.
+              USAG University’s formula has proven a great success over the
+              years. It is efficient, student-oriented, and can be transmitted
+              from any computer terminal anywhere in the world. That is why this
+              formula is now being championed by numerous online educational
+              institutions around the world.
             </h4>
             <v-btn class="mt-3" to="/about">
               Read More
@@ -405,25 +390,29 @@ export default {
           id: 1,
           icon: 'fas fa-user-check',
           title: 'Certified teachers',
-          content: ''
+          content:
+            'The University‘s academic staff are highly qualified and experienced. They are accustomed to working with executives and managers '
         },
         {
           id: 2,
           icon: 'fas fa-book-reader',
           title: 'Special Education',
-          content: ''
+          content:
+            'Educating students in a way that addresses their individual differences and special needs'
         },
         {
           id: 3,
           icon: 'fas fa-book-open',
           title: 'E-Library',
-          content: ''
+          content:
+            'Library integrates contents from Institutional Digital Repositories of large number of International Educational and Research institutions'
         },
         {
           id: 4,
           icon: 'fas fa-futbol',
           title: 'Online Memberships',
-          content: ''
+          content:
+            'Experience the benefits of a global education community and interact with students in countries around the world.'
         }
       ],
       screen3Data: [

@@ -59,8 +59,12 @@
         flat
       >
         <v-card-title>
-          <strong>&copy; All rights reserved</strong>
+          <strong>&copy; All rights reserved</strong> &nbsp;
         </v-card-title>
+        <v-spacer></v-spacer>
+        <v-card-text>
+          Designed by Digital Bot Solutions
+        </v-card-text>
 
         <v-spacer></v-spacer>
 
