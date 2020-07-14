@@ -354,7 +354,7 @@ export default {
         {
           id: 3,
           heading: 'MBA, MSC, MA',
-          heading2: 'and all Master Programs',
+          heading2: 'and all Masters Programs',
           cost: '$8000*',
           description:
             '$6000.00* for the full degree programme regardless of duration (programme fees $5500.00 USD plus $2500.00 USD supervisor’s professional fees)',
