@@ -61,11 +61,8 @@
         <v-card-title>
           <strong>&copy; All rights reserved</strong> &nbsp;
         </v-card-title>
-        <v-spacer></v-spacer>
-        <v-card-text>
-          Designed by Digital Bot Solutions
-        </v-card-text>
 
+        <v-spacer></v-spacer>
         <v-spacer></v-spacer>
 
         <v-card-actions>
@@ -74,6 +71,9 @@
           </v-btn>
         </v-card-actions>
       </v-card>
+      <v-row justify="center">
+        <span>Designed by Digital Bot Solutions</span>
+      </v-row>
     </v-container>
   </v-footer>
 </template>

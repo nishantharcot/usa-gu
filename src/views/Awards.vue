@@ -9,15 +9,24 @@
     <v-container>
       <!-- If using vue-router -->
       <v-row class="test" justify="center" align="center">
-        <v-col cols="12" md="5">
-          <v-card>
-            <v-card-text class="pb-0">
+        <v-col cols="12">
+          <p>
+            USAG Universities' qualifications will help to build your career.
+            E-commerce, Public Relations and many more. To find out more about
+            our individual module awards email::: info@usagu.org
+          </p>
+        </v-col>
+        <v-col cols="12">
+          <v-row align="end">
+            <v-col cols="12" md="6">
               <v-text-field
                 v-model="cno"
                 name="name"
                 label="Certification Number"
-                solo
+                outlined
               ></v-text-field>
+            </v-col>
+            <v-col cols="12" md="6">
               <span class="pt-0 mt-0 mb-0 pb-0">
                 Date of Birth
               </span>
@@ -58,7 +67,7 @@
                       '30',
                       '31'
                     ]"
-                    solo
+                    outlined
                     dense
                     label="Date"
                   ></v-select>
@@ -80,7 +89,7 @@
                       '11',
                       '12'
                     ]"
-                    solo
+                    outlined
                     dense
                     label="Month"
                   ></v-select>
@@ -157,26 +166,22 @@
                       '2018',
                       '2019'
                     ]"
-                    solo
+                    outlined
                     dense
                     label="Year"
                   ></v-select>
                 </v-col>
               </v-row>
-            </v-card-text>
+            </v-col>
+          </v-row>
+          <v-card flat>
+            <v-card-text class="pb-0"> </v-card-text>
             <v-card-actions class="justify-center mt-0 pt-0">
               <v-btn class="mt-0 mb-4" color="primary" @click="validateCno()">
                 Get Result
               </v-btn>
             </v-card-actions>
           </v-card>
-        </v-col>
-        <v-col cols="12" md="6">
-          <p>
-            USAG Universities' qualifications will help to build your career.
-            E-commerce, Public Relations and many more. To find out more about
-            our individual module awards email::: info@usagu.org
-          </p>
         </v-col>
       </v-row>
       <v-row class="mt-4 test" justify="center">
@@ -257,7 +262,7 @@ export default {
           title: 'Media',
           level: 'Level 3',
           date: '25-12-2019',
-          certificate: 'GTU1234567890'
+          certificate: 'USAGU1234567890'
         }
       ],
       show: false
@@ -265,7 +270,7 @@ export default {
   },
   methods: {
     validateCno() {
-      if (this.cno === 'GTU1234567890') {
+      if (this.cno === 'USAGU1234567890') {
         this.show = true
       }
     }

@@ -326,7 +326,13 @@
             </strong>
           </h1>
         </v-col>
-        <v-col cols="6" md="4" v-for="(item, i) in accreditionData" :key="i">
+        <v-col
+          cols="6"
+          lg="2"
+          md="3"
+          v-for="(item, i) in accreditionData"
+          :key="i"
+        >
           <v-img class="mx-auto" :src="item" width="200" height="100" contain>
           </v-img>
         </v-col>
@@ -391,28 +397,28 @@ export default {
           icon: 'fas fa-user-check',
           title: 'Certified teachers',
           content:
-            'The University‘s academic staff are highly qualified and experienced. They are accustomed to working with executives and managers '
+            'Highly qualified, experienced and accustomed to industry professionals'
         },
         {
           id: 2,
           icon: 'fas fa-book-reader',
           title: 'Special Education',
           content:
-            'Educating students in a way that addresses their individual differences and special needs'
+            "Addresses each students' individual differences and special needs"
         },
         {
           id: 3,
           icon: 'fas fa-book-open',
           title: 'E-Library',
           content:
-            'Library integrates contents from Institutional Digital Repositories of large number of International Educational and Research institutions'
+            'E-Library integrates contents from Institutional Digital Repositories'
         },
         {
           id: 4,
           icon: 'fas fa-futbol',
           title: 'Online Memberships',
           content:
-            'Experience the benefits of a global education community and interact with students in countries around the world.'
+            'Experience the benefits of a global education community around the world.'
         }
       ],
       screen3Data: [

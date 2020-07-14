@@ -364,10 +364,10 @@
     </v-row>
     <v-container>
       <v-row class="mt-10">
-        <v-col cols="12" md="4">
-          <v-img src="../assets/president-new.jpg"></v-img>
+        <v-col cols="12" md="2">
+          <v-img contain src="../assets/president-new.jpg"></v-img>
         </v-col>
-        <v-col cols="12" md="8">
+        <v-col cols="12" md="10">
           <h4 class="text-h4">
             <strong>
               President's Message
@@ -490,7 +490,13 @@
             </strong>
           </h1>
         </v-col>
-        <v-col cols="6" md="4" v-for="(item, i) in accreditionData" :key="i">
+        <v-col
+          cols="6"
+          md="3"
+          lg="2"
+          v-for="(item, i) in accreditionData"
+          :key="i"
+        >
           <v-img class="mx-auto" :src="item" width="200" height="100" contain>
           </v-img>
         </v-col>
