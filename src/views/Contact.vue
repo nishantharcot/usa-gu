@@ -53,7 +53,7 @@
             </v-card-text>
             <v-card-text>
               <span class="font-weight-bold blue--text">Email: </span><br />
-              info@londoncollegeofmedia.co.uk
+              info@londoncollegeoftechnology.co.uk
             </v-card-text>
             <v-card-text>
               <span class="font-weight-bold blue--text">Phone: </span><br />
