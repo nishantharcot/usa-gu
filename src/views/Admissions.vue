@@ -34,7 +34,7 @@
               <v-btn
                 x-large
                 :color="item.id % 2 === 0 ? 'secondary' : 'primary'"
-                to="/apply"
+                to="/application"
               >
                 Apply Now
               </v-btn>
@@ -82,7 +82,7 @@
               <v-btn
                 x-large
                 :color="item.id % 2 === 0 ? 'secondary' : 'primary'"
-                to="/apply"
+                to="/application"
               >
                 Apply Now
               </v-btn>
