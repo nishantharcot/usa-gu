@@ -62,6 +62,7 @@
             :color="item.id % 2 === 0 ? 'primary' : 'secondary'"
             dark
             tile
+            height="100%"
           >
             <v-card-title class="justify-center pb-0 font-weight-bold">
               {{ item.heading }}

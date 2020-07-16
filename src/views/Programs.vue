@@ -394,7 +394,14 @@
               <v-expansion-panel-content>
                 <div v-if="$vuetify.breakpoint.smAndDown">
                   <h3 class="display mb-3">Overview</h3>
-                  <p>This is overview of the course {{ course.title }}</p>
+                  <p>
+                    The objective of {{ course.title }} is to provide learners
+                    with an in depth understanding of the operations and
+                    structure of businesses. Successful completion of this
+                    qualification will equip learners with some of the
+                    underpinning knowledge and skills required to succeed in
+                    employment or further studies.
+                  </p>
                   <div>
                     <v-dialog v-model="dialog" width="500">
                       <template v-slot:activator="{ on, attrs }">

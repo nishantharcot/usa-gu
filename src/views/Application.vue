@@ -63,6 +63,17 @@
         </v-card>
       </v-col>
     </v-row>
+    <v-row class="justify-center" justify="center">
+      <v-col class="text-center">
+        <v-btn
+          x-large
+          color="primary"
+          href="/USAG-UNIVERSITY-application-form.pdf"
+        >
+          Download Application Form
+        </v-btn>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
