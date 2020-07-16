@@ -25,9 +25,7 @@
               :src="photoCard.image"
             >
             </v-img>
-            <v-card-title>
-              {{ photoCard.name }}
-            </v-card-title>
+            <v-card-title> {{ photoCard.name }} </v-card-title>
             <v-card-text class="text--primary">
               Have a look at the most captivating moments from our Graduation
               Ceremony, where we handed out diplomas to our successful
@@ -74,5 +72,9 @@ export default {
 <style lang="scss" scoped>
 .screen1 {
   background-image: url('../assets/gallery.jpg');
+}
+
+.v-card__title {
+  word-break: normal !important;
 }
 </style>

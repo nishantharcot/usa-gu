@@ -23,6 +23,7 @@
           class="pa-0"
           cols="12"
           md="3"
+          sm="6"
           v-for="item in screen2Data"
           :key="item.title"
         >
@@ -98,7 +99,7 @@
               v-for="item in screen3Data"
               :key="item.text"
               cols="12"
-              md="6"
+              sm="6"
             >
               <v-card height="100%" flat>
                 <v-list-item>
@@ -117,7 +118,13 @@
         </v-col>
       </v-row>
       <v-row class="mb-10">
-        <v-col v-for="item in foo1Data" :key="item.text" cols="12" md="3">
+        <v-col
+          v-for="item in foo1Data"
+          :key="item.text"
+          cols="12"
+          md="3"
+          sm="6"
+        >
           <v-card class="mx-auto" max-width="400">
             <v-img
               class="dark--text align-end"
@@ -182,75 +189,121 @@
     <v-container>
       <!-- Admission last screen -->
 
-      <v-row class="justify-center">
-        <v-col cols="12">
-          <h1 class="display-1">
-            <strong>What</strong>
-            People Say
-          </h1>
-          <p class="mt-5">
-            Here are some of the feedback from our students that we have
-            received from some of our recent seminars and e-learning courses:
-          </p>
-        </v-col>
-        <v-col
-          v-for="testimonial in studentTestimonials.slice(0, 3)"
-          :key="testimonial.name"
-          cols="12"
-          md="3"
-        >
-          <v-card class="mx-auto" max-width="350">
-            <v-img
-              class="white--text align-end"
-              height="275px"
-              :src="testimonial.image"
-              position="top"
-            >
-            </v-img>
-            <v-card-text class="text--primary">
-              {{ testimonial.description }}
-            </v-card-text>
-            <v-card-subtitle class="py-0">
-              <b>
-                {{ testimonial.name }}
-              </b>
-            </v-card-subtitle>
-            <v-card-subtitle class="py-0">
-              {{ testimonial.branch }}
-            </v-card-subtitle>
-          </v-card>
-        </v-col>
-      </v-row>
-      <v-row class="justify-center">
-        <v-col
-          v-for="testimonial in studentTestimonials.slice(3, 6)"
-          :key="testimonial.name"
-          cols="12"
-          md="3"
-        >
-          <v-card class="mx-auto" max-width="350">
-            <v-img
-              class="white--text align-end"
-              height="275px"
-              :src="testimonial.image"
-              position="top"
-            >
-            </v-img>
-            <v-card-text class="text--primary">
-              {{ testimonial.description }}
-            </v-card-text>
-            <v-card-subtitle class="py-0">
-              <b>
-                {{ testimonial.name }}
-              </b>
-            </v-card-subtitle>
-            <v-card-subtitle class="py-0">
-              {{ testimonial.branch }}
-            </v-card-subtitle>
-          </v-card>
-        </v-col>
-      </v-row>
+      <!-- What People Say Start -->
+      <template v-if="$vuetify.breakpoint.mdAndUp">
+        <v-row class="justify-center">
+          <v-col cols="12">
+            <h1 class="display-1">
+              <strong>What</strong>
+              People Say
+            </h1>
+            <p class="mt-5">
+              Here are some of the feedback from our students that we have
+              received from some of our recent seminars and e-learning courses:
+            </p>
+          </v-col>
+          <v-col
+            v-for="testimonial in studentTestimonials.slice(0, 3)"
+            :key="testimonial.name"
+            cols="12"
+            md="3"
+          >
+            <v-card class="mx-auto" height="100%" max-width="350">
+              <v-img
+                class="white--text align-end"
+                height="275px"
+                :src="testimonial.image"
+                position="top"
+              >
+              </v-img>
+              <v-card-text class="text--primary">
+                {{ testimonial.description }}
+              </v-card-text>
+              <v-card-subtitle class="py-0">
+                <b>
+                  {{ testimonial.name }}
+                </b>
+              </v-card-subtitle>
+              <v-card-subtitle class="py-0">
+                {{ testimonial.branch }}
+              </v-card-subtitle>
+            </v-card>
+          </v-col>
+        </v-row>
+        <v-row class="justify-center">
+          <v-col
+            v-for="testimonial in studentTestimonials.slice(3, 6)"
+            :key="testimonial.name"
+            cols="12"
+            md="3"
+          >
+            <v-card class="mx-auto" height="100%" max-width="350">
+              <v-img
+                class="white--text align-end"
+                height="275px"
+                :src="testimonial.image"
+                position="top"
+              >
+              </v-img>
+              <v-card-text class="text--primary">
+                {{ testimonial.description }}
+              </v-card-text>
+              <v-card-subtitle class="py-0">
+                <b>
+                  {{ testimonial.name }}
+                </b>
+              </v-card-subtitle>
+              <v-card-subtitle class="py-0">
+                {{ testimonial.branch }}
+              </v-card-subtitle>
+            </v-card>
+          </v-col>
+        </v-row>
+      </template>
+      <template v-else>
+        <v-row class="justify-center">
+          <v-col cols="12">
+            <h1 class="display-1">
+              <strong>What</strong>
+              People Say
+            </h1>
+            <p class="mt-5">
+              Here are some of the feedback from our students that we have
+              received from some of our recent seminars and e-learning courses:
+            </p>
+          </v-col>
+          <v-col
+            v-for="testimonial in studentTestimonials"
+            :key="testimonial.name"
+            cols="12"
+            sm="6"
+          >
+            <v-card class="mx-auto" height="100%" max-width="350">
+              <v-img
+                class="white--text align-end"
+                height="275px"
+                :src="testimonial.image"
+                position="top"
+              >
+              </v-img>
+              <v-card-text class="text--primary">
+                {{ testimonial.description }}
+              </v-card-text>
+              <v-card-subtitle class="py-0">
+                <b>
+                  {{ testimonial.name }}
+                </b>
+              </v-card-subtitle>
+              <v-card-subtitle class="py-0">
+                {{ testimonial.branch }}
+              </v-card-subtitle>
+            </v-card>
+          </v-col>
+        </v-row>
+      </template>
+      <!-- What People Say End -->
 
+      <!-- Latest Events Start -->
       <v-row class="justify-center">
         <v-col cols="12" md="8">
           <div class="text-center">
@@ -272,9 +325,9 @@
           v-for="photoCard in photoGallery"
           :key="photoCard.name"
           cols="12"
-          md="4"
+          sm="4"
         >
-          <v-card max-width="400" class="mx-auto">
+          <v-card max-width="400" height="100%" class="mx-auto">
             <v-img
               class="white--text align-end"
               height="300px"
@@ -302,6 +355,8 @@
           </div>
         </v-col>
       </v-row>
+      <!-- Latest Events End -->
+
       <v-parallax dark src="../assets/vbanner-min.jpg">
         <v-row align="center" justify="center">
           <v-col class="text-center" cols="12" md="8">
@@ -316,6 +371,9 @@
               institutions around the world.
             </h4>
             <v-btn color="primary" class="mt-3" to="/about">
+              <v-icon>
+                fas fa-angle-double-right
+              </v-icon>
               Read More
             </v-btn>
           </v-col>
@@ -421,6 +479,10 @@ v-list-item {
   justify-content: space-evenly;
 }
 
+v-card__title {
+  word-break: normal !important;
+}
+
 .mainHeading {
   font-size: 50px;
   font-weight: 900;
@@ -445,7 +507,7 @@ export default {
         {
           id: 1,
           icon: 'fas fa-user-check',
-          title: 'Certified teachers',
+          title: 'Certified Professors',
           content:
             'Highly qualified, experienced and accustomed to industry professionals'
         },

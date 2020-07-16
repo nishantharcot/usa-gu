@@ -6,9 +6,9 @@
         <v-col
           class="pa-0"
           cols="12"
-          md="3"
+          sm="6"
           v-for="item in screen2Data"
-          :key="item.title"
+          :key="item.heading"
         >
           <v-card
             class="d-flex flex-colum cardClass mb-0 text-center"
@@ -55,7 +55,7 @@
           cols="12"
           md="3"
           v-for="item in screen2Data"
-          :key="item.title"
+          :key="item.heading"
         >
           <v-card
             class="d-flex flex-colum cardClass mb-0 text-center"
@@ -266,7 +266,13 @@
           <hr />
         </v-col>
         <v-col cols="2"></v-col>
-        <v-col v-for="item in achievements" :key="item.title" cols="12" md="3">
+        <v-col
+          v-for="item in achievements"
+          :key="item.title"
+          cols="12"
+          md="3"
+          sm="6"
+        >
           <div class="d-flex flex-row justify-center">
             <v-icon color="white" class="mt-3" size="50">
               {{ item.icon }}
@@ -282,74 +288,120 @@
           </div>
         </v-col>
       </v-row>
-      <v-row class="justify-center">
-        <v-col cols="12">
-          <h1 class="display-1">
-            <strong>What</strong>
-            People Say
-          </h1>
-          <p class="mt-5">
-            Here are some of the feedback from our students that we have
-            received from some of our recent seminars and e-learning courses:
-          </p>
-        </v-col>
-        <v-col
-          v-for="testimonial in studentTestimonials.slice(0, 3)"
-          :key="testimonial.name"
-          cols="12"
-          md="3"
-        >
-          <v-card class="mx-auto" max-width="350">
-            <v-img
-              class="white--text align-end"
-              height="275px"
-              :src="testimonial.image"
-              position="top"
-            >
-            </v-img>
-            <v-card-text class="text--primary">
-              {{ testimonial.description }}
-            </v-card-text>
-            <v-card-subtitle class="py-0">
-              <b>
-                {{ testimonial.name }}
-              </b>
-            </v-card-subtitle>
-            <v-card-subtitle class="py-0">
-              {{ testimonial.branch }}
-            </v-card-subtitle>
-          </v-card>
-        </v-col>
-      </v-row>
-      <v-row class="justify-center">
-        <v-col
-          v-for="testimonial in studentTestimonials.slice(3, 6)"
-          :key="testimonial.name"
-          cols="12"
-          md="3"
-        >
-          <v-card class="mx-auto" max-width="350">
-            <v-img
-              class="white--text align-end"
-              height="275px"
-              :src="testimonial.image"
-              position="top"
-            >
-            </v-img>
-            <v-card-text class="text--primary">
-              {{ testimonial.description }}
-            </v-card-text>
-            <v-card-subtitle class="py-0">
-              <b>
-                {{ testimonial.name }}
-              </b>
-            </v-card-subtitle>
-            <v-card-subtitle class="py-0">
-              {{ testimonial.branch }}
-            </v-card-subtitle>
-          </v-card>
-        </v-col>
-      </v-row>
+
+      <!-- What People Say Start -->
+      <template v-if="$vuetify.breakpoint.mdAndUp">
+        <v-row class="justify-center">
+          <v-col cols="12">
+            <h1 class="display-1">
+              <strong>What</strong>
+              People Say
+            </h1>
+            <p class="mt-5">
+              Here are some of the feedback from our students that we have
+              received from some of our recent seminars and e-learning courses:
+            </p>
+          </v-col>
+          <v-col
+            v-for="testimonial in studentTestimonials.slice(0, 3)"
+            :key="testimonial.name"
+            cols="12"
+            md="3"
+          >
+            <v-card class="mx-auto" height="100%" max-width="350">
+              <v-img
+                class="white--text align-end"
+                height="275px"
+                :src="testimonial.image"
+                position="top"
+              >
+              </v-img>
+              <v-card-text class="text--primary">
+                {{ testimonial.description }}
+              </v-card-text>
+              <v-card-subtitle class="py-0">
+                <b>
+                  {{ testimonial.name }}
+                </b>
+              </v-card-subtitle>
+              <v-card-subtitle class="py-0">
+                {{ testimonial.branch }}
+              </v-card-subtitle>
+            </v-card>
+          </v-col>
+        </v-row>
+        <v-row class="justify-center">
+          <v-col
+            v-for="testimonial in studentTestimonials.slice(3, 6)"
+            :key="testimonial.name"
+            cols="12"
+            md="3"
+          >
+            <v-card class="mx-auto" height="100%" max-width="350">
+              <v-img
+                class="white--text align-end"
+                height="275px"
+                :src="testimonial.image"
+                position="top"
+              >
+              </v-img>
+              <v-card-text class="text--primary">
+                {{ testimonial.description }}
+              </v-card-text>
+              <v-card-subtitle class="py-0">
+                <b>
+                  {{ testimonial.name }}
+                </b>
+              </v-card-subtitle>
+              <v-card-subtitle class="py-0">
+                {{ testimonial.branch }}
+              </v-card-subtitle>
+            </v-card>
+          </v-col>
+        </v-row>
+      </template>
+      <template v-else>
+        <v-row class="justify-center">
+          <v-col cols="12">
+            <h1 class="display-1">
+              <strong>What</strong>
+              People Say
+            </h1>
+            <p class="mt-5">
+              Here are some of the feedback from our students that we have
+              received from some of our recent seminars and e-learning courses:
+            </p>
+          </v-col>
+          <v-col
+            v-for="testimonial in studentTestimonials"
+            :key="testimonial.name"
+            cols="12"
+            sm="6"
+          >
+            <v-card class="mx-auto" height="100%" max-width="350">
+              <v-img
+                class="white--text align-end"
+                height="275px"
+                :src="testimonial.image"
+                position="top"
+              >
+              </v-img>
+              <v-card-text class="text--primary">
+                {{ testimonial.description }}
+              </v-card-text>
+              <v-card-subtitle class="py-0">
+                <b>
+                  {{ testimonial.name }}
+                </b>
+              </v-card-subtitle>
+              <v-card-subtitle class="py-0">
+                {{ testimonial.branch }}
+              </v-card-subtitle>
+            </v-card>
+          </v-col>
+        </v-row>
+      </template>
+      <!-- What People Say End -->
     </v-container>
   </div>
 </template>
@@ -370,9 +422,7 @@ export default {
           icon: 'fas fa-user-check',
           cost: '$4000*',
           description:
-            '$4000.00* for the full diploma programme regardless of duration (programme fees $3000.00 USD plus $1000.00 USD supervisor’s professional fees)',
-          title: 'Certified teachers',
-          content: ''
+            '$4000.00* for the full diploma programme regardless of duration (programme fees $3000.00 USD plus $1000.00 USD supervisor’s professional fees)'
         },
         {
           id: 2,
@@ -381,9 +431,7 @@ export default {
           cost: '$6000*',
           description:
             '$6000.00* for the full diploma programme regardless of duration (programme fees $4500.00 USD plus $1500.00 USD supervisor’s professional fees)',
-          icon: 'fas fa-book-reader',
-          title: 'Special Education',
-          content: ''
+          icon: 'fas fa-book-reader'
         },
         {
           id: 3,
@@ -392,9 +440,7 @@ export default {
           cost: '$8000*',
           description:
             '$8000.00* for the full degree programme regardless of duration (programme fees $5500.00 USD plus $2500.00 USD supervisor’s professional fees)',
-          icon: 'fas fa-book-open',
-          title: 'E-Library',
-          content: ''
+          icon: 'fas fa-book-open'
         },
         {
           id: 4,
@@ -403,9 +449,7 @@ export default {
           cost: '$10000*',
           description:
             '$10000.00* for the full diploma programme regardless of duration (programme fees $6500.00 USD plus $3500.00 USD supervisor’s professional fees)',
-          icon: 'fas fa-futbol',
-          title: 'Online Memberships',
-          content: ''
+          icon: 'fas fa-futbol'
         }
       ],
       achievements: [
@@ -484,6 +528,10 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+v-card__title {
+  word-break: normal !important;
 }
 
 hr {

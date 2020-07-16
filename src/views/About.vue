@@ -17,9 +17,10 @@
         <v-col
           class="mt-10"
           v-for="item in screen1Data"
-          :key="item.text"
+          :key="item.title"
           cols="12"
           md="4"
+          sm="6"
         >
           <v-card height="100%" flat>
             <v-list-item>
@@ -64,7 +65,7 @@
             now being championed by numerous online educational institutions
             around the world.
           </p>
-          <v-btn color="primary" x-large to="/apply">
+          <v-btn color="primary" x-large to="/application">
             Apply Now
           </v-btn>
         </v-col>
@@ -90,18 +91,24 @@
           now being championed by numerous online educational institutions
           around the world.
         </p>
-        <v-btn color="primary" x-large to="/apply">
+        <v-btn color="primary" x-large to="/application">
           Apply Now
         </v-btn>
       </v-col>
     </v-row>
     <!-- For full width, must change later -->
+
+    <!-- Why Distance Learrning Start -->
     <v-container>
       <v-row class="mt-10">
-        <v-col cols="12" md="4">
-          <v-img src="../assets/about-screen3.jpg" height="500" contain></v-img>
+        <v-col cols="12" sm="4">
+          <v-img
+            src="../assets/about-screen3.jpg"
+            :height="$vuetify.breakpoint.xlOnly ? 500 : ''"
+            contain
+          ></v-img>
         </v-col>
-        <v-col cols="12" md="8">
+        <v-col cols="12" sm="8">
           <h4 class="text-h4">
             <strong>
               Why Distance Learning?
@@ -141,10 +148,19 @@
         </v-col>
       </v-row>
     </v-container>
+    <!-- Why Distance Learrning End -->
 
+    <!-- Faculty and affiliates Start -->
     <v-container v-if="$vuetify.breakpoint.smAndDown">
       <v-row class="mt-10 secondary white--text">
-        <v-col cols="12" md="8" class="order-2">
+        <v-col
+          cols="12"
+          sm="4"
+          :class="$vuetify.breakpoint.xsOnly ? 'order-1' : 'order-2'"
+        >
+          <v-img src="../assets/oldman-replace.jpg"></v-img>
+        </v-col>
+        <v-col cols="12" sm="8" class="order-1">
           <h4 class="text-h4">
             <strong>
               Faculty
@@ -185,9 +201,6 @@
             USAG University Online is licensed by E-Learning International LLC
             (California).
           </p>
-        </v-col>
-        <v-col cols="12" md="4">
-          <v-img src="../assets/oldman-replace.jpg"></v-img>
         </v-col>
       </v-row>
     </v-container>
@@ -237,11 +250,17 @@
         <v-img src="../assets/oldman-replace.jpg" height="500" contain></v-img>
       </v-col>
     </v-row>
+    <!-- Faculty and affiliates End -->
 
+    <!-- Modules Start -->
     <v-container>
       <v-row class="mt-10">
         <v-col cols="12" md="4">
-          <v-img src="../assets/about-screen5.jpg" height="750"></v-img>
+          <v-img
+            src="../assets/about-screen5.jpg"
+            :height="$vuetify.breakpoint.xlOnly ? 500 : ''"
+            contain
+          ></v-img>
         </v-col>
         <v-col cols="12" md="8">
           <h4 class="text-h4">
@@ -298,7 +317,9 @@
         </v-col>
       </v-row>
     </v-container>
+    <!-- Modules End -->
 
+    <!-- Will you need a computer Start -->
     <v-container v-if="$vuetify.breakpoint.smAndDown">
       <v-row class="mt-10 secondary white--text">
         <v-col cols="12" md="8" class="order-2">
@@ -328,7 +349,7 @@
           </p>
         </v-col>
         <v-col cols="12" md="4">
-          <v-img src="../assets/about-screen6.jpg" height="500"></v-img>
+          <v-img src="../assets/about-screen6.jpg"></v-img>
         </v-col>
       </v-row>
     </v-container>
@@ -362,6 +383,8 @@
         <v-img src="../assets/about-screen6.jpg" height="400"></v-img>
       </v-col>
     </v-row>
+    <!-- Will you need a computer End -->
+
     <v-container>
       <v-row class="mt-10">
         <v-col cols="12" md="2">
