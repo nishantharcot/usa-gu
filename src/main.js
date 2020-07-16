@@ -22,7 +22,8 @@ import {
   faHandHoldingUsd,
   faUsers,
   faAward,
-  faGlobe
+  faGlobe,
+  faCheckSquare
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faTwitter,
@@ -66,7 +67,8 @@ library.add(
   faUsers,
   faAward,
   faGlobe,
-  faChevronDown
+  faChevronDown,
+  faCheckSquare
 )
 Vue.config.productionTip = false
 

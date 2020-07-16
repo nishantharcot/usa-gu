@@ -16,40 +16,24 @@
           </v-main>
         </v-col>
         <v-spacer></v-spacer>
-        <v-col
-          cols="12"
-          md="3"
-          v-for="item in footerResources"
-          :key="item.heading"
-        >
-          <div>
-            <!-- <h3 class="display pl-2">{{ item.heading }}</h3> -->
-            <v-col v-for="data in item.data" :key="data.label">
-              <v-icon>
-                fas fa-angle-double-right
-              </v-icon>
-              <v-btn text :to="data.url">
-                {{ data.label }}
-              </v-btn>
-            </v-col>
+        <v-col cols="12" md="3">
+          <div v-for="item in footerResources.slice(0, 4)" :key="item.label">
+            <v-icon>
+              fas fa-angle-double-right
+            </v-icon>
+            <v-btn text :to="item.url">
+              {{ item.label }}
+            </v-btn>
           </div>
         </v-col>
-        <v-col
-          cols="12"
-          md="3"
-          v-for="item in footerResources2"
-          :key="item.heading"
-        >
-          <div>
-            <!-- <h3 class="display pl-2">{{ item.heading }}</h3> -->
-            <v-col v-for="data in item.data" :key="data.label">
-              <v-icon>
-                fas fa-angle-double-right
-              </v-icon>
-              <v-btn text :to="data.url">
-                {{ data.label }}
-              </v-btn>
-            </v-col>
+        <v-col cols="12" md="3">
+          <div v-for="item in footerResources.slice(4, 8)" :key="item.label">
+            <v-icon>
+              fas fa-angle-double-right
+            </v-icon>
+            <v-btn text :to="item.url">
+              {{ item.label }}
+            </v-btn>
           </div>
         </v-col>
       </v-row>
@@ -97,48 +81,36 @@ export default {
     ],
     footerResources: [
       {
-        heading: 'Links',
-        data: [
-          {
-            label: 'Home',
-            url: '/'
-          },
-          {
-            label: 'About us',
-            url: '/about'
-          },
-          {
-            label: 'Programmes',
-            url: '/programs'
-          },
-          {
-            label: 'Admissions & Fees',
-            url: '/admissions'
-          }
-        ]
-      }
-    ],
-    footerResources2: [
+        label: 'Home',
+        url: '/'
+      },
       {
-        heading: 'Links',
-        data: [
-          {
-            label: 'Award Verification',
-            url: '/awards'
-          },
-          {
-            label: 'Gallery',
-            url: '/gallery'
-          },
-          {
-            label: 'Contact',
-            url: '/contact'
-          },
-          {
-            label: 'Apply Now',
-            url: '/application'
-          }
-        ]
+        label: 'About us',
+        url: '/about'
+      },
+      {
+        label: 'Programmes',
+        url: '/programs'
+      },
+      {
+        label: 'Admissions & Fees',
+        url: '/admissions'
+      },
+      {
+        label: 'Award Verification',
+        url: '/awards'
+      },
+      {
+        label: 'Gallery',
+        url: '/gallery'
+      },
+      {
+        label: 'Contact',
+        url: '/contact'
+      },
+      {
+        label: 'Apply Now',
+        url: '/application'
       }
     ],
     icons: [

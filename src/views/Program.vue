@@ -11,12 +11,12 @@
             <v-card flat>
               <v-card-text>
                 <p>
-                  The objective of Level 3 Certificate in Business Studies
-                  qualification is to provide learners with an in depth
-                  understanding of the operations and structure of businesses.
-                  Successful completion of this qualification will equip
-                  learners with some of the underpinning knowledge and skills
-                  required to succeed in employment or further studies.
+                  The objective of {{ course.title }}
+                  is to provide learners with an in depth understanding of the
+                  operations and structure of businesses. Successful completion
+                  of this qualification will equip learners with some of the
+                  underpinning knowledge and skills required to succeed in
+                  employment or further studies.
                 </p>
               </v-card-text>
             </v-card>

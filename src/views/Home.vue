@@ -126,7 +126,7 @@
             >
               <v-overlay absolute opacity="0.6" class="align-end">
                 <v-card-actions>
-                  <v-btn color="white" text :to="item.link">
+                  <v-btn color="primary" text :to="item.link">
                     {{ item.text }}
                     <v-icon>
                       fas fa-angle-double-right
@@ -168,7 +168,7 @@
                 this formula is now being championed by numerous online
                 educational institutions around the world.
               </p>
-              <v-btn class="info" to="/about">
+              <v-btn class="primary" to="/about">
                 <v-icon>
                   fas fa-angle-double-right
                 </v-icon>
@@ -180,29 +180,78 @@
       </v-overlay>
     </v-parallax>
     <v-container>
-      <v-row>
-        <v-col cols="2"></v-col>
-        <v-col cols="12" md="8">
-          <div class="text-center">
-            <h1 class="mainHeading">
-              USAG University TEAM
-            </h1>
-          </div>
+      <!-- Admission last screen -->
+
+      <v-row class="justify-center">
+        <v-col cols="12">
+          <h1 class="display-1">
+            <strong>What</strong>
+            People Say
+          </h1>
+          <p class="mt-5">
+            Here are some of the feedback from our students that we have
+            received from some of our recent seminars and e-learning courses:
+          </p>
         </v-col>
-        <v-col cols="2"></v-col>
-      </v-row>
-      <v-row class="mx-auto mt-10">
         <v-col
-          v-for="index2 in courseteachers.length"
-          :key="index2"
+          v-for="testimonial in studentTestimonials.slice(0, 3)"
+          :key="testimonial.name"
           cols="12"
           md="3"
         >
-          <Teacher :teacher="courseteachers[index2 - 1]" />
+          <v-card class="mx-auto" max-width="350">
+            <v-img
+              class="white--text align-end"
+              height="275px"
+              :src="testimonial.image"
+              position="top"
+            >
+            </v-img>
+            <v-card-text class="text--primary">
+              {{ testimonial.description }}
+            </v-card-text>
+            <v-card-subtitle class="py-0">
+              <b>
+                {{ testimonial.name }}
+              </b>
+            </v-card-subtitle>
+            <v-card-subtitle class="py-0">
+              {{ testimonial.branch }}
+            </v-card-subtitle>
+          </v-card>
         </v-col>
       </v-row>
-      <v-row>
-        <v-col cols="2"></v-col>
+      <v-row class="justify-center">
+        <v-col
+          v-for="testimonial in studentTestimonials.slice(3, 6)"
+          :key="testimonial.name"
+          cols="12"
+          md="3"
+        >
+          <v-card class="mx-auto" max-width="350">
+            <v-img
+              class="white--text align-end"
+              height="275px"
+              :src="testimonial.image"
+              position="top"
+            >
+            </v-img>
+            <v-card-text class="text--primary">
+              {{ testimonial.description }}
+            </v-card-text>
+            <v-card-subtitle class="py-0">
+              <b>
+                {{ testimonial.name }}
+              </b>
+            </v-card-subtitle>
+            <v-card-subtitle class="py-0">
+              {{ testimonial.branch }}
+            </v-card-subtitle>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <v-row class="justify-center">
         <v-col cols="12" md="8">
           <div class="text-center">
             <h1 class="mainHeading">
@@ -217,16 +266,15 @@
             </p>
           </div>
         </v-col>
-        <v-col cols="2"></v-col>
       </v-row>
-      <v-row id="screen2" class="mx-auto mb-10">
+      <v-row class="justify-center">
         <v-col
           v-for="photoCard in photoGallery"
           :key="photoCard.name"
           cols="12"
           md="4"
         >
-          <v-card max-width="400">
+          <v-card max-width="400" class="mx-auto">
             <v-img
               class="white--text align-end"
               height="300px"
@@ -243,13 +291,15 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col>
-          <v-btn class="info" to="/eventgallery">
-            <v-icon>
-              fas fa-angle-double-right
-            </v-icon>
-            See All Events
-          </v-btn>
+        <v-col class="justify-center">
+          <div class="d-flex justify-center">
+            <v-btn class="primary" to="/eventgallery">
+              <v-icon>
+                fas fa-angle-double-right
+              </v-icon>
+              See All Events
+            </v-btn>
+          </div>
         </v-col>
       </v-row>
       <v-parallax dark src="../assets/vbanner-min.jpg">
@@ -265,7 +315,7 @@
               formula is now being championed by numerous online educational
               institutions around the world.
             </h4>
-            <v-btn class="mt-3" to="/about">
+            <v-btn color="primary" class="mt-3" to="/about">
               Read More
             </v-btn>
           </v-col>
@@ -379,14 +429,14 @@ v-list-item {
 
 <script>
 // @ is an alias to /src
-import Teacher from '@/components/Teacher.vue'
+// import Teacher from '@/components/Teacher.vue'
 import 'vue-lazy-youtube-video/dist/style.css'
 import VideoBackground from 'vue-responsive-video-background-player'
 
 export default {
   name: 'Home',
   components: {
-    Teacher,
+    // Teacher,
     VideoBackground
   },
   data() {
@@ -463,6 +513,50 @@ export default {
           image: require('../assets/home-screen-4.jpg'),
           text: '270+ Championships',
           link: '/gallery'
+        }
+      ],
+      studentTestimonials: [
+        {
+          name: 'CLAYTON E. CARTINELLI, UK',
+          image: require('../assets/people-new2.jpg'),
+          branch: 'Computer Science, PG Degree',
+          description:
+            'USAG University is amazing because it lets me pursue my dream of working in computer science alongside my demanding full-time job.'
+        },
+        {
+          name: 'BIANCA C, UNITED STATES',
+          image: require('../assets/people-new3.jpg'),
+          branch: 'Business Administration, PG Degree',
+          description:
+            'I am glad to be a part of USAG University because it stands for the standardization of higher education that should be provided globally to all'
+        },
+        {
+          name: 'CHRISTINE VONE, BRAZIL',
+          image: require('../assets/people-new4.jpg'),
+          branch: 'Computer Science, Master Degree',
+          description:
+            'USAG University has rekindled my enthusiasm to achieve my dreams with rigorous Programs and highest standards of academic excellence.'
+        },
+        {
+          name: 'OLIVIA TYSON, AUSTRALIA',
+          image: require('../assets/people-new5.jpg'),
+          branch: 'Tourism Management, PG Degree',
+          description:
+            'USAG University gives a great opportunity for students to broaden their knowledge beyond their field of studies within an international multicultural environment.'
+        },
+        {
+          name: 'ALYSSA HEALY, NEWZEALAND',
+          image: require('../assets/people-new6.jpg'),
+          branch: 'Computer Science, Master Degree',
+          description:
+            'The exceptional programmes and teaching methodologies backed by practical skills and industry interface have given me the confidence to pursue my career ahead.'
+        },
+        {
+          name: 'COURTNEY COOK, RUSSIA',
+          image: require('../assets/people-new7.jpg'),
+          branch: 'Hospitality Management, PG Degree',
+          description:
+            'The academic experience with a world class infrastructure and excellent faculty at USAG University has endured me with a lifelong career excellence.'
         }
       ],
       courseteachers: [
@@ -565,8 +659,9 @@ export default {
         require('../assets/logo13.png'),
         require('../assets/logo14.png'),
         require('../assets/logo15.jpg'),
-        require('../assets/logo16.jpg'),
-        require('../assets/logo17.jpeg')
+        require('../assets/logo16.jpeg'),
+        require('../assets/logo17.jpeg'),
+        require('../assets/logo18.jpg')
       ],
       isIntersecting: false
     }

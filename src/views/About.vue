@@ -584,8 +584,9 @@ export default {
       require('../assets/logo13.png'),
       require('../assets/logo14.png'),
       require('../assets/logo15.jpg'),
-      require('../assets/logo16.jpg'),
-      require('../assets/logo17.jpeg')
+      require('../assets/logo16.jpeg'),
+      require('../assets/logo17.jpeg'),
+      require('../assets/logo18.jpg')
     ]
   }),
   components: {

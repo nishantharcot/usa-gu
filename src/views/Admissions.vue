@@ -34,6 +34,7 @@
               <v-btn
                 x-large
                 :color="item.id % 2 === 0 ? 'secondary' : 'primary'"
+                to="/apply"
               >
                 Apply Now
               </v-btn>
@@ -80,6 +81,7 @@
               <v-btn
                 x-large
                 :color="item.id % 2 === 0 ? 'secondary' : 'primary'"
+                to="/apply"
               >
                 Apply Now
               </v-btn>
@@ -279,7 +281,7 @@
           </div>
         </v-col>
       </v-row>
-      <v-row class="mt-15">
+      <v-row class="justify-center">
         <v-col cols="12">
           <h1 class="display-1">
             <strong>What</strong>
@@ -291,15 +293,15 @@
           </p>
         </v-col>
         <v-col
-          v-for="testimonial in studentTestimonials"
+          v-for="testimonial in studentTestimonials.slice(0, 3)"
           :key="testimonial.name"
           cols="12"
-          md="4"
+          md="3"
         >
-          <v-card class="mx-auto" max-width="400">
+          <v-card class="mx-auto" max-width="350">
             <v-img
               class="white--text align-end"
-              height="300px"
+              height="275px"
               :src="testimonial.image"
               position="top"
             >
@@ -307,10 +309,41 @@
             <v-card-text class="text--primary">
               {{ testimonial.description }}
             </v-card-text>
-            <v-card-title>
-              {{ testimonial.name }}
-            </v-card-title>
-            <v-card-subtitle class="pb-0">
+            <v-card-subtitle class="py-0">
+              <b>
+                {{ testimonial.name }}
+              </b>
+            </v-card-subtitle>
+            <v-card-subtitle class="py-0">
+              {{ testimonial.branch }}
+            </v-card-subtitle>
+          </v-card>
+        </v-col>
+      </v-row>
+      <v-row class="justify-center">
+        <v-col
+          v-for="testimonial in studentTestimonials.slice(3, 6)"
+          :key="testimonial.name"
+          cols="12"
+          md="3"
+        >
+          <v-card class="mx-auto" max-width="350">
+            <v-img
+              class="white--text align-end"
+              height="275px"
+              :src="testimonial.image"
+              position="top"
+            >
+            </v-img>
+            <v-card-text class="text--primary">
+              {{ testimonial.description }}
+            </v-card-text>
+            <v-card-subtitle class="py-0">
+              <b>
+                {{ testimonial.name }}
+              </b>
+            </v-card-subtitle>
+            <v-card-subtitle class="py-0">
               {{ testimonial.branch }}
             </v-card-subtitle>
           </v-card>
@@ -346,7 +379,7 @@ export default {
           heading2: 'and all PG Diploma Programs',
           cost: '$6000*',
           description:
-            '$4000.00* for the full diploma programme regardless of duration (programme fees $4500.00 USD plus $1500.00 USD supervisor’s professional fees)',
+            '$6000.00* for the full diploma programme regardless of duration (programme fees $4500.00 USD plus $1500.00 USD supervisor’s professional fees)',
           icon: 'fas fa-book-reader',
           title: 'Special Education',
           content: ''
@@ -357,7 +390,7 @@ export default {
           heading2: 'and all Masters Programs',
           cost: '$8000*',
           description:
-            '$6000.00* for the full degree programme regardless of duration (programme fees $5500.00 USD plus $2500.00 USD supervisor’s professional fees)',
+            '$8000.00* for the full degree programme regardless of duration (programme fees $5500.00 USD plus $2500.00 USD supervisor’s professional fees)',
           icon: 'fas fa-book-open',
           title: 'E-Library',
           content: ''
@@ -368,7 +401,7 @@ export default {
           heading2: 'and all Doctorate Programs',
           cost: '$10000*',
           description:
-            '$4000.00* for the full diploma programme regardless of duration (programme fees $6500.00 USD plus $3500.00 USD supervisor’s professional fees)',
+            '$10000.00* for the full diploma programme regardless of duration (programme fees $6500.00 USD plus $3500.00 USD supervisor’s professional fees)',
           icon: 'fas fa-futbol',
           title: 'Online Memberships',
           content: ''
@@ -409,14 +442,35 @@ export default {
           image: require('../assets/people-new3.jpg'),
           branch: 'Business Administration, PG Degree',
           description:
-            'I am glad to be a part of USAG University because it stands for the standardization of higher education that should be provided globally to all mankind'
+            'I am glad to be a part of USAG University because it stands for the standardization of higher education that should be provided globally to all'
         },
         {
           name: 'CHRISTINE VONE, BRAZIL',
           image: require('../assets/people-new4.jpg'),
           branch: 'Computer Science, Master Degree',
           description:
-            'USAG University has rekindled my enthusiasm to achieve my academic dreams with rigorous Programs and the highest standards of academic excellence.'
+            'USAG University has rekindled my enthusiasm to achieve my dreams with rigorous Programs and highest standards of academic excellence.'
+        },
+        {
+          name: 'OLIVIA TYSON, AUSTRALIA',
+          image: require('../assets/people-new5.jpg'),
+          branch: 'Tourism Management, PG Degree',
+          description:
+            'USAG University gives a great opportunity for students to broaden their knowledge beyond their field of studies within an international multicultural environment.'
+        },
+        {
+          name: 'ALYSSA HEALY, NEWZEALAND',
+          image: require('../assets/people-new6.jpg'),
+          branch: 'Computer Science, Master Degree',
+          description:
+            'The exceptional programmes and teaching methodologies backed by practical skills and industry interface have given me the confidence to pursue my career ahead.'
+        },
+        {
+          name: 'COURTNEY COOK, RUSSIA',
+          image: require('../assets/people-new7.jpg'),
+          branch: 'Hospitality Management, PG Degree',
+          description:
+            'The academic experience with a world class infrastructure and excellent faculty at USAG University has endured me with a lifelong career excellence.'
         }
       ]
     }

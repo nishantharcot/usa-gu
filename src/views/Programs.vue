@@ -222,7 +222,7 @@
           <h2 class="display my-4">PG Diploma programs</h2>
           <v-expansion-panels>
             <v-expansion-panel
-              v-for="course in diplomaPrograms"
+              v-for="course in pgDiplomaPrograms"
               :key="course.title"
             >
               <v-expansion-panel-header>{{
@@ -1551,10 +1551,6 @@ export default {
         overview: ''
       },
       {
-        title: 'Diploma in Human Resource Management',
-        overview: ''
-      },
-      {
         title: 'Diploma in Logistics and Supply Chain Management',
         overview: ''
       },
@@ -1572,6 +1568,52 @@ export default {
       },
       {
         title: 'Diploma in Creative Media and Management',
+        overview: ''
+      },
+      {
+        title: 'Diploma in Chaplaincy',
+        overview: ''
+      }
+    ],
+    pgDiplomaPrograms: [
+      {
+        title: 'Postgraduate Diploma in Business Management',
+        overview: ''
+      },
+      {
+        title: 'Postgraduate Diploma in Accounting and Finance Management',
+        overview: ''
+      },
+      {
+        title: 'Postgraduate Diploma in Education and Training Management',
+        overview: ''
+      },
+      {
+        title: 'Postgraduate Diploma in Health and Social Care Management',
+        overview: ''
+      },
+      {
+        title: 'Postgraduate Diploma in Logistics and Supply Chain Management',
+        overview: ''
+      },
+      {
+        title: 'Postgraduate Diploma in Travel and Tourism Management',
+        overview: ''
+      },
+      {
+        title: 'Postgraduate Diploma in Hospitality and Management',
+        overview: ''
+      },
+      {
+        title: 'Postgraduate Diploma in Information and Technology Management',
+        overview: ''
+      },
+      {
+        title: 'Postgraduate Diploma in Creative Media and Management',
+        overview: ''
+      },
+      {
+        title: 'Postgraduate Diploma in Chaplaincy',
         overview: ''
       }
     ],
@@ -1617,23 +1659,27 @@ export default {
     ],
     masterOfArtsPrograms: [
       {
-        title: 'MA in Tamil Education',
+        title: 'MA in Agriculture',
         overview: ''
       },
       {
-        title: 'MA in Tamil History',
+        title: 'MA in Communications and Media',
         overview: ''
       },
       {
-        title: 'MA in Tamil Music',
+        title: 'MA in Computer Science and Information Technology',
         overview: ''
       },
       {
-        title: 'MA in Bharatanatyam',
+        title: 'MA in Hospitality and Event Management',
         overview: ''
       },
       {
-        title: 'MA in Yoga ',
+        title: 'MA in Chaplaincy',
+        overview: ''
+      },
+      {
+        title: 'MA in Pastoral Care and Chaplaincy',
         overview: ''
       }
     ],

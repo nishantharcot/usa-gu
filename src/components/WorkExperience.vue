@@ -32,7 +32,11 @@
             WorkExperience
           </v-list-item-content>
           <v-list-item-content>
-            <v-checkbox class="ml-5" v-model="checkbox1"></v-checkbox>
+            <v-checkbox
+              class="ml-5"
+              item-disabled="locked"
+              v-model="checkbox1"
+            ></v-checkbox>
           </v-list-item-content>
         </v-list-item>
         <v-list-item>
@@ -40,7 +44,11 @@
             Do you have any criminal background history
           </v-list-item-content>
           <v-list-item-content>
-            <v-checkbox class="ml-5" v-model="checkbox1"></v-checkbox>
+            <v-checkbox
+              class="ml-5"
+              item-disabled="locked"
+              v-model="checkbox2"
+            ></v-checkbox>
           </v-list-item-content>
         </v-list-item>
         <v-list-item>
@@ -48,7 +56,7 @@
             I accept terms and conditions
           </v-list-item-content>
           <v-list-item-content>
-            <v-checkbox class="ml-5" v-model="checkbox1"></v-checkbox>
+            <v-checkbox class="ml-5" item-disabled="locked"></v-checkbox>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -61,7 +69,10 @@ export default {
   name: 'WorkExperience',
   data() {
     return {
-      checkbox1: true
+      checkbox1: true,
+      checkbox2: true,
+      checkbox3: true,
+      locked: true
     }
   }
 }

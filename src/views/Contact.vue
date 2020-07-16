@@ -15,7 +15,8 @@
             </v-card-title>
             <v-divider></v-divider>
             <v-card-text>
-              <span class="font-weight-bold blue--text">Location: </span><br />
+              <span class="font-weight-bold primary--text">Location: </span
+              ><br />
               USAG University <br />
               LLC 16192 Coastal Highway <br />
               Lewes <br />
@@ -23,11 +24,11 @@
               United States of America
             </v-card-text>
             <v-card-text>
-              <span class="font-weight-bold blue--text">Email: </span><br />
+              <span class="font-weight-bold primary--text">Email: </span><br />
               info@usagu.org
             </v-card-text>
             <v-card-text>
-              <span class="font-weight-bold blue--text">Phone: </span><br />
+              <span class="font-weight-bold primary--text">Phone: </span><br />
               +1 302-827-3939
             </v-card-text>
           </v-card>
@@ -42,7 +43,8 @@
             </v-card-title>
             <v-divider></v-divider>
             <v-card-text>
-              <span class="font-weight-bold blue--text">Location: </span><br />
+              <span class="font-weight-bold primary--text">Location: </span
+              ><br />
               London College of Technology, <br />
               West Midlands House <br />
               Gipsy Lane, Willenhall
@@ -52,11 +54,13 @@
               United Kingdom
             </v-card-text>
             <v-card-text>
-              <span class="font-weight-bold blue--text">Email: </span><br />
+              <span class="font-weight-bold primary--text" color="primary"
+                >Email: </span
+              ><br />
               info@londoncollegeoftechnology.co.uk
             </v-card-text>
             <v-card-text>
-              <span class="font-weight-bold blue--text">Phone: </span><br />
+              <span class="font-weight-bold primary--text">Phone: </span><br />
               +44(0)2034752556
             </v-card-text>
           </v-card>
