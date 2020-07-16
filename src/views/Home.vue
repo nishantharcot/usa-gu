@@ -126,7 +126,7 @@
             >
               <v-overlay absolute opacity="0.6" class="align-end">
                 <v-card-actions>
-                  <v-btn color="primary" text :to="item.link">
+                  <v-btn text :to="item.link">
                     {{ item.text }}
                     <v-icon>
                       fas fa-angle-double-right
