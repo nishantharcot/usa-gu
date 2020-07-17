@@ -138,7 +138,7 @@
             USAG University is a private international institution. USAG
             University Online is specialized in Distance Learning education our
             international learning arm is London College of Technology
-            (www.usagumedia.com).
+            (www.londoncollegeoftechnology.com).
           </p>
           <p class="mt-5">
             Distance learning is rapidly becoming the preferred alternative, and
