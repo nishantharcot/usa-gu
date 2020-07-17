@@ -6,7 +6,7 @@
     <v-container>
       <v-row class="justify-center">
         <v-col cols="12" xl="4" md="6">
-          <v-img src="../assets/usflag.jpg" height="375"></v-img>
+          <v-img eager src="../assets/usflag.jpg" height="375"></v-img>
         </v-col>
         <v-col cols="12" xl="4" md="6">
           <v-card>
@@ -71,11 +71,11 @@
           xl="4"
           md="6"
         >
-          <v-img src="../assets/ukflag.jpg" height="375"></v-img>
+          <v-img eager src="../assets/ukflag.jpg" height="375"></v-img>
         </v-col>
       </v-row>
       <!-- <v-col cols="12" class="pb-0">
-        <v-img src="../assets/contactPhoto.jpg"></v-img>
+        <v-img eager  src="../assets/contactPhoto.jpg"></v-img>
       </v-col> -->
     </v-container>
   </div>

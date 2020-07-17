@@ -103,6 +103,7 @@
       <v-row class="mt-10">
         <v-col cols="12" sm="4">
           <v-img
+            eager
             src="../assets/about-screen3.jpg"
             :height="$vuetify.breakpoint.xlOnly ? 500 : ''"
             contain
@@ -158,7 +159,7 @@
           sm="4"
           :class="$vuetify.breakpoint.xsOnly ? 'order-1' : 'order-2'"
         >
-          <v-img src="../assets/oldman-replace.jpg"></v-img>
+          <v-img eager src="../assets/oldman-replace.jpg"></v-img>
         </v-col>
         <v-col cols="12" sm="8" class="order-1">
           <h4 class="text-h4">
@@ -247,7 +248,12 @@
         </p>
       </v-col>
       <v-col cols="12" md="4" class="mt-10">
-        <v-img src="../assets/oldman-replace.jpg" height="500" contain></v-img>
+        <v-img
+          eager
+          src="../assets/oldman-replace.jpg"
+          height="500"
+          contain
+        ></v-img>
       </v-col>
     </v-row>
     <!-- Faculty and affiliates End -->
@@ -257,6 +263,7 @@
       <v-row class="mt-10">
         <v-col cols="12" md="4">
           <v-img
+            eager
             src="../assets/about-screen5.jpg"
             :height="$vuetify.breakpoint.xlOnly ? 500 : ''"
             contain
@@ -349,7 +356,7 @@
           </p>
         </v-col>
         <v-col cols="12" md="4">
-          <v-img src="../assets/about-screen6.jpg"></v-img>
+          <v-img eager src="../assets/about-screen6.jpg"></v-img>
         </v-col>
       </v-row>
     </v-container>
@@ -380,7 +387,7 @@
         </p>
       </v-col>
       <v-col cols="12" md="4" class="mt-10">
-        <v-img src="../assets/about-screen6.jpg" height="400"></v-img>
+        <v-img eager src="../assets/about-screen6.jpg" height="400"></v-img>
       </v-col>
     </v-row>
     <!-- Will you need a computer End -->
@@ -388,7 +395,7 @@
     <v-container>
       <v-row class="mt-10">
         <v-col cols="12" md="2">
-          <v-img contain src="../assets/president-new.jpg"></v-img>
+          <v-img eager contain src="../assets/president-new.jpg"></v-img>
         </v-col>
         <v-col cols="12" md="10">
           <h4 class="text-h4">
@@ -520,7 +527,14 @@
           v-for="(item, i) in accreditionData"
           :key="i"
         >
-          <v-img class="mx-auto" :src="item" width="200" height="100" contain>
+          <v-img
+            eager
+            class="mx-auto"
+            :src="item"
+            width="200"
+            height="100"
+            contain
+          >
           </v-img>
         </v-col>
       </v-row>

@@ -20,6 +20,7 @@
         <v-col v-for="(photoCard, i) in photoGallery" :key="i" cols="12" md="4">
           <v-card class="mx-auto" max-width="400">
             <v-img
+              eager
               class="white--text align-end"
               height="300px"
               :src="photoCard.image"

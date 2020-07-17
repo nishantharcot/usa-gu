@@ -2,7 +2,7 @@
   <v-container class="pa-0 full-width">
     <v-row align="center" v-if="$vuetify.breakpoint.mdAndUp">
       <v-col cols="12" md="3" class="">
-        <v-img src="../assets/USA-GU2.png" height="125" contain></v-img>
+        <v-img eager src="../assets/USA-GU2.png" height="125" contain></v-img>
       </v-col>
       <v-col cols="12" md="3" class="mt-4">
         <div class="d-flex">
@@ -45,6 +45,7 @@
     >
       <v-toolbar-title v-if="$vuetify.breakpoint.smAndDown">
         <v-img
+          eager
           src="../assets/USA-GU2.png"
           height="55"
           width="55"

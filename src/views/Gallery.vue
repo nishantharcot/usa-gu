@@ -28,7 +28,7 @@
           cols="12"
           md="6"
         >
-          <v-img src="../assets/gallery-new-1.jpg"></v-img>
+          <v-img eager src="../assets/gallery-new-1.jpg"></v-img>
         </v-col>
       </v-row>
       <v-row>
@@ -38,7 +38,7 @@
           md="6"
         >
           <!-- <LazyYoutubeVideo src="https://www.youtube.com/embed/xmCWXOO1XNA" /> -->
-          <v-img src="../assets/event-image.jpg"></v-img>
+          <v-img eager src="../assets/event-image.jpg"></v-img>
         </v-col>
         <v-col class="order-2" cols="12" md="6">
           <h1 class="display-1">

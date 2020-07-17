@@ -31,6 +31,7 @@
             <v-window-item :value="5">
               <div class="pa-4 text-center">
                 <v-img
+                  eager
                   class="mb-4"
                   contain
                   height="128"

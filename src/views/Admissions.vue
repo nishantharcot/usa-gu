@@ -135,6 +135,7 @@
           md="4"
         >
           <v-img
+            eager
             src="../assets/admission-new-1.jpeg"
             height="400"
             contain
@@ -147,7 +148,7 @@
           cols="12"
           md="4"
         >
-          <v-img src="../assets/admission-new-2.jpg"></v-img>
+          <v-img eager src="../assets/admission-new-2.jpg"></v-img>
         </v-col>
         <v-col class="order-2" cols="12" md="8">
           <h1 class="display-1">
@@ -213,7 +214,7 @@
           cols="12"
           md="4"
         >
-          <v-img src="../assets/advanced-payment.jpg"></v-img>
+          <v-img eager src="../assets/advanced-payment.jpg"></v-img>
         </v-col>
       </v-row>
       <v-row class="mt-10">
@@ -222,7 +223,7 @@
           cols="12"
           md="4"
         >
-          <v-img src="../assets/withdrawal.jpg"></v-img>
+          <v-img eager src="../assets/withdrawal.jpg"></v-img>
         </v-col>
         <v-col class="order-2" cols="12" md="8">
           <h1 class="display-1">
@@ -310,6 +311,7 @@
           >
             <v-card class="mx-auto" height="100%" max-width="350">
               <v-img
+                eager
                 class="white--text align-end"
                 height="275px"
                 :src="testimonial.image"
@@ -339,6 +341,7 @@
           >
             <v-card class="mx-auto" height="100%" max-width="350">
               <v-img
+                eager
                 class="white--text align-end"
                 height="275px"
                 :src="testimonial.image"
@@ -380,6 +383,7 @@
           >
             <v-card class="mx-auto" height="100%" max-width="350">
               <v-img
+                eager
                 class="white--text align-end"
                 height="275px"
                 :src="testimonial.image"

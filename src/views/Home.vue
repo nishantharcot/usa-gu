@@ -127,6 +127,7 @@
         >
           <v-card class="mx-auto" max-width="400">
             <v-img
+              eager
               class="dark--text align-end"
               height="200px"
               :src="item.image"
@@ -154,7 +155,7 @@
         <v-container style="max-width: 100vw">
           <v-row align="stretch" justify="center">
             <v-col class="" cols="12" md="5">
-              <v-img src="../assets/bg_2.jpg"></v-img>
+              <v-img eager src="../assets/bg_2.jpg"></v-img>
             </v-col>
             <v-col cols="12" md="5" class="" align="stretch">
               <h1 class="text-h5 mb-4">
@@ -210,6 +211,7 @@
           >
             <v-card class="mx-auto" height="100%" max-width="350">
               <v-img
+                eager
                 class="white--text align-end"
                 height="275px"
                 :src="testimonial.image"
@@ -239,6 +241,7 @@
           >
             <v-card class="mx-auto" height="100%" max-width="350">
               <v-img
+                eager
                 class="white--text align-end"
                 height="275px"
                 :src="testimonial.image"
@@ -280,6 +283,7 @@
           >
             <v-card class="mx-auto" height="100%" max-width="350">
               <v-img
+                eager
                 class="white--text align-end"
                 height="275px"
                 :src="testimonial.image"
@@ -329,6 +333,7 @@
         >
           <v-card max-width="400" height="100%" class="mx-auto">
             <v-img
+              eager
               class="white--text align-end"
               height="300px"
               :src="photoCard.image"
@@ -441,7 +446,14 @@
           v-for="(item, i) in accreditionData"
           :key="i"
         >
-          <v-img class="mx-auto" :src="item" width="200" height="100" contain>
+          <v-img
+            eager
+            class="mx-auto"
+            :src="item"
+            width="200"
+            height="100"
+            contain
+          >
           </v-img>
         </v-col>
       </v-row>

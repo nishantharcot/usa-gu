@@ -1,6 +1,11 @@
 <template>
   <v-card class="mx-auto text-center" max-width="450">
-    <v-img class="white--text align-end" height="300px" :src="teacher.image">
+    <v-img
+      eager
+      class="white--text align-end"
+      height="300px"
+      :src="teacher.image"
+    >
     </v-img>
 
     <v-card-title class="justify-center">

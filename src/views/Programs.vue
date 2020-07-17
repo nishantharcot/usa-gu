@@ -4,7 +4,7 @@
     <v-container>
       <v-row class="mt-10">
         <v-col cols="12" md="4">
-          <v-img src="../assets/programs.jpeg" height="725"></v-img>
+          <v-img eager src="../assets/programs.jpeg" height="725"></v-img>
         </v-col>
         <v-col cols="12" md="8">
           <h4 class="text-h4">
