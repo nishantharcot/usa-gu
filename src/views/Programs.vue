@@ -219,7 +219,7 @@
           </v-expansion-panels>
 
           <CourseBanner courseName="PG DIPLOMA PROGRAMS" />
-          <h2 class="display my-4">PG Diploma programs</h2>
+          <h2 class="display my-4">PG Diploma Programs</h2>
           <v-expansion-panels>
             <v-expansion-panel
               v-for="course in pgDiplomaPrograms"
