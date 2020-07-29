@@ -724,18 +724,17 @@ export default {
         require('../assets/logo4.jpg'),
         require('../assets/logo5.png'),
         require('../assets/logo6.jpg'),
-        require('../assets/logo7.jpeg'),
-        require('../assets/logo8.jpeg'),
         require('../assets/logo9.png'),
         require('../assets/logo10.jpg'),
         require('../assets/logo11.png'),
         require('../assets/logo12.jpg'),
         require('../assets/logo13.png'),
-        require('../assets/logo14.png'),
         require('../assets/logo15.jpg'),
         require('../assets/logo16.jpeg'),
         require('../assets/logo17.jpeg'),
-        require('../assets/logo18.jpg')
+        require('../assets/logo18.jpeg'),
+        require('../assets/logo-new.jpeg'),
+        require('../assets/logo-last.png')
       ],
       isIntersecting: false
     }
