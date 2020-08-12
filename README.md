@@ -1,6 +1,6 @@
 # usa-gu
 
-## Site is live at https://reverent-shirley-48c03f.netlify.app/
+## Site is live at http://usagu.org
 
 
 ## Project setup
